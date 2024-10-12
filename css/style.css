@@ -14,13 +14,13 @@ body {
 
 @media (min-width: 768px) {
     .container {
-        margin: 30px 50px;
+        margin: 30px 200px;
     }
 }
 
 @media (max-width: 767px) {
     .container {
-        margin: 30px 100px;
+        margin: 30px 20px;
     }
 }
 
