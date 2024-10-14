@@ -42,18 +42,25 @@ body {
 
 #descripcio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
 }
-
+/*
 #membres {
     display: flex;
     justify-content: center;
     min-height: 100vh;
 }
-
-
+*/
+ #contacte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
 
 #logoe3000 {
     display: block;
@@ -68,6 +75,30 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
+    min-height: 100vh;
+}
+
+#estatuts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#estatuts h3 {
+    margin-top: 5em;
+    font-size: 24px;
+}
+
+#estatuts h4 {
+    font-size: 20px;
+    margin-top: 2em;
+    font-family: "Instrument Serif", serif;
+    margin-bottom: 0px;
+}
+
+#estatuts q {
+    margin-top: 20px;
 }
 
 
