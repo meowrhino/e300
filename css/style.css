@@ -1,3 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+h2{
+    font-family: "Instrument Serif", serif;
+    font-size: 32px;
+
+}
+
+h3{
+    font-family: "Instrument Serif", serif;
+    font-size: 20px;
+    text-align: right;
+}
+
+h4{
+    /*font-family: "Instrument Serif", serif;*/
+    font-size: 16px;
+}
+
 body {
     font-family: 'Courier New', monospace;
     font-size: 16px;
@@ -5,13 +24,60 @@ body {
     margin: 0px;
 }
 
+/*
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*/
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#descripcio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#membres {
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
 #logoe3000 {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60%;
-    margin-top: 200px;
+    /*margin-top: 200px;*/
 }
+
+#membres {
+    margin: 2em 0em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 768px) {
     .container {
@@ -34,12 +100,30 @@ body {
     font-weight: bold;
 }
 
+.menu-links {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    bottom: 10px;
+    right: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: right;
+    transition: max-height 0.5s ease;
+    /* Animación para abrir y cerrar */
+}
+
 a {
     text-decoration: none;
 }
 
 a.link-con-href {
     color: dimgray;
+}
+
+a.link-con-href:hover {
+    color: blue;
+    font-weight: bold;
 }
 
 /*https://es.wikipedia.org/wiki/Colores_web*/
