@@ -31,3 +31,23 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(section);
     });
 });
+
+
+
+//removeMobileHoverEffect()
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Código previo del activeMenu.js para manejar las secciones activas
+  
+    // Función para manejar el hover de los enlaces en dispositivos móviles
+    const links = document.querySelectorAll('.menu-links a');
+  
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        links.forEach(l => l.classList.remove('hovered')); // Remueve el hover de todos los enlaces
+        this.classList.add('hovered'); // Añade la clase de hover solo al enlace actual
+      });
+    });
+  });
+  
+  
