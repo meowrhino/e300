@@ -160,8 +160,12 @@ body {
 
 @media (max-width: 767px) {
     .menu-links {
-        line-height: 1.2; /* Ajusta el valor según el espacio que necesites */
+        line-height: 1; /* Ajusta el valor según el espacio que necesites */
     }
+}
+
+.menu-links a.active {
+    color: LightGray;
 }
 
 a {
@@ -178,4 +182,6 @@ a.link-con-href:hover {
     text-decoration: underline;
 }
 
+
 /*https://es.wikipedia.org/wiki/Colores_web*/
+
