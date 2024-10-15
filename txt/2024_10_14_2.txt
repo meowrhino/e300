@@ -4536,6 +4536,372 @@ Déjame saber si esto funciona como esperas o si necesitas ajustar algo más.
 
 
 
+Tú dijiste:
+        <section id="projectes" aria-label="3 o 4 projectes molt relevants ara mateix">
+
+            <div class="project-item">
+                <h2>El Judici</h2>
+                <img src="img/judici.jpg" alt="El Judici">
+                <p>Després de la invitació a participar en el programa d’ArtNou 2021 a la Galería dels Àngels es crea
+                    una divisió interna entre l’afiliació del col·lectiu: una part a favor d’exposar, l'altra en contra.
+                </p>
+
+                <p>Aquesta divisió, exacerbada pel fet que es va acceptar de manera unilateral la participació en el
+                    programa, genera un conflicte que no pot ser resolt fora de l'espai artístic. És en aquest context
+                    que es decideix exposar el propi conflicte en si: una part d’E3000 denuncia l’altra part d’E3000 per
+                    actuar de forma individual.</p>
+
+                <p>Seguint l'estètica d'un dispositiu judicial real, es repliquen els espais i les figures que els
+                    habiten. A partir d’una denuncia s’enfronta judicialment Estructuras 3000 contra ella mateixa
+                    traient a la llum qüestions de participació, status quo, explotació, democràcia, egoismes,
+                    desigualtats i individualismes…</p>
+
+                <p>Aquesta acció es va presentar com a clausura del projecte de curaduria de Grup d’Estudi.</p>
+
+            </div>
+
+            <div class="project-item">
+                <h2>Escola 3000</h2>
+                <img src="img/escola.jpg" alt="Escola 3000">
+                <p>Des de l’Escola 3000, es proposa un espai de reflexió col·lectiva als centres educatius sobre com
+                    l’arquitectura i el seu disseny modulen i intervenen en les dinàmiques de poder (gènere, classe,
+                    raça…) a través de recursos del teatre comunitari.</p>
+
+                <p>Amb l'arribada d'una caixa de transport de peces artístiques a l'aula, que es descobreix en realitat
+                    com un conjunt d'elements gràfics i de suport per a l'activitat, es convida a l'alumnat a
+                    experimentar i imaginar alternatives d'arquitectura de l'edifici escolar. Per grups, es qüestionen i
+                    redissenyen els espais de l'escola (pati, aula, menjador, direcció, banys…), fent una posada en comú
+                    de la nova escola alternativa.</p>
+
+                <p>El procés creatiu grupal s'acompanya de dinàmiques i exercicis de teatre de l'oprimit. Aquest mètode
+                    basat en pràctiques d'Augusto Boal es basa en la representació de conceptes i narratives per part de
+                    l'alumnat, utilitzant els seus cossos i moviments en lloc de paraules. Es proposen escenes de
+                    “conflicte” amb les quals l'alumnat explora i analitza imatges corporals que reflecteixen els
+                    conflictes habituals de la seva escola i s'usa la nova escola projectada per a intentar trobar
+                    desenllaços alternatius afectats pel nou disseny de l'espai.</p>
+
+                <p>Aquest taller va ser proposat i dut a terme en la primavera del 2024 en diversos instituts de Matarò
+                    (IES laia l’Arquera: 1r de Batxillerat, Escola Freta: 1r de *CFGS en educació infantil, IES Miquel
+                    Biada: 4t de l'ESO), en el marc de la convocatòria Zona Intrusa 17” del *MAC de Mataró.</p>
+
+            </div>
+
+            <div class="project-item">
+                <h2>Peepshow</h2>
+                <img src="img/peepshow.jpg" alt="Peepshow">
+                <p>El Peepshow d'Estructuras 3000 és un dispositiu escènic que desafia les condicions de l'experiència
+                    expositiva. Presentat a la Fundació Joan Brossa com a part de l'exposició "OTHER TRASH: STOP
+                    THEATRE", aquest espai va acollir diverses accions, espectacles i performances. Peepshow funciona
+                    com un panòptic invertit, un espectacle de mirades, i també com una estructura adaptable, sempre
+                    disposada a ser transformada per les necessitats de cada acció i ser practicable.</p>
+            </div>
+
+            <div class="project-item">
+                <h2>Conferències</h2>
+                <img src="img/conferencies.jpg" alt="Conferències">
+                <p>L’espai d'Estructuras 3000 es converteix en una caixa negra amb tot un recobriment de pissarra: totes les parets, sostre, terra i mobles queden pintats. 
+                    Dins de la caixa negra i durant 3 dies el col·lectiu acull conferències de tot tipus de conferenciants: tant de gent professional del sector educatiu (educació secundària o universitària) com altres conferències variades sobre temes com aprendre a fer pa, o sobre tipus de soldadura i com realitzar-les. D’altres conferències van ser més performatives i qüestionaven problemàtiques del context artístic i cultural.
+                    Espectaduria i artistia van quedar barrejats en aquestes conferencies donat que si hi volies assistir havies d’ofernir-ne també una. L’única condició era no esborrar el rastre de cap altre.
+                    Després de 3 dies van quedar les parets blanques.</p>
+            </div>
+
+        </section>
+
+
+me podrias resumir un poco los textos para que queden igual de largos todos? de la longitud del peepshow,
+ChatGPT Plus
+ChatGPT
+Claro, aquí tienes los textos resumidos para que todos queden con una longitud similar al del proyecto "Peepshow":
+
+He resumido los textos de cada proyecto para que queden más uniformes y de una longitud similar. Si necesitas ajustar algo más o quieres cambios adicionales, házmelo saber.
+
+
+
+
+
+Tú dijiste:
+perfe, ahora en movil se me siguen quedando hovereados los enlaces como te conte antes en la conver, lo unico que hice fue añadir lo que me dijiste al css, ergo, quedó así: 
+
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+/*font-family: "Instrument Serif", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/**/
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+h2 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 32px;
+
+}
+
+h3 {
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: right;
+}
+
+h4 {
+    /*font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 300;*/
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0px;
+}
+
+#logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#logo-container--404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+#descripcio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#projectes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.project-item {
+    transition: transform 0.3s;
+}
+
+.project-item:hover {
+    transform: translateY(-5px); /* Añadir un pequeño efecto al hacer hover */
+}
+
+.project-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.project-item:hover img {
+    filter: grayscale(0%);
+}
+
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%; /* Una sola columna en pantallas pequeñas */
+    }
+
+    .project-item img {
+        filter: none; /* Mostrar imágenes en color siempre en móviles */
+    }
+}
+
+#membres {
+    margin: 2em 0em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    min-height: 100vh;
+}
+
+.membre:hover {
+    transform: translateY(-5px); /* Añadir un pequeño efecto al hacer hover */
+}
+
+.pronoms {
+    color: darkgray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#contacte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#logoe3000 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+#estatuts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#estatuts h3 {
+    margin-top: 5em;
+    font-size: 24px;
+}
+
+#estatuts h4 {
+    font-size: 20px;
+    margin-top: 2em;
+    font-family: "Instrument Serif", serif;
+    margin-bottom: 0px;
+}
+
+#estatuts q {
+    margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        margin: 30px 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 30px 20px;
+    }
+}
+
+.language-links {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.menu-links {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    bottom: 10px;
+    right: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: right;
+    transition: max-height 0.5s ease;
+    /* Animación para abrir y cerrar */
+}
+
+@media (max-width: 767px) {
+    .menu-links {
+        line-height: 1;
+        /* Ajusta el valor según el espacio que necesites */
+    }
+}
+
+.menu-links a.active {
+    color: LightGray;
+}
+
+a {
+    text-decoration: none;
+}
+
+a.link-con-href {
+    color: DimGray;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a.link-con-href:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+@media (hover: none) {
+    .menu-links a:hover {
+        background-color: none;
+        /* Quita o ajusta lo que necesites */
+    }
+}
+
+/*https://es.wikipedia.org/wiki/Colores_web*/
+ChatGPT Plus
+ChatGPT
+Parece que el comportamiento de los enlaces "hovereados" en dispositivos móviles puede deberse a cómo los navegadores móviles manejan la interacción con los estilos :hover. Te sugeriría usar una técnica más dirigida para asegurarte de que esos estilos de hover no permanezcan después de hacer clic.
+
+Podrías implementar esta solución para evitar que los enlaces queden "marcados" al hacer clic en dispositivos móviles:
+
+Añade un script JavaScript simple que remueva el efecto hover después del clic:
+javascript
+Copiar código
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('.menu-links a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function() {
+      links.forEach(l => l.classList.remove('hovered')); // Remueve el hover de todos los enlaces
+      this.classList.add('hovered'); // Añade la clase de hover solo al enlace actual
+    });
+  });
+});
+Añade una clase en CSS para el estado después del clic:
+css
+Copiar código
+.menu-links a.hovered {
+  background-color: transparent; /* Aquí puedes definir cómo quieres que se vea después del clic */
+}
+Este enfoque permite asegurarse de que al hacer clic en un enlace, se gestione el estado visual de manera más explícita, y no se quede "hovereado" cuando el usuario ya ha hecho clic. Dale un intento y dime si mejora el comportamiento.
+
+
+
+
+
+Tú dijiste:
+como llamarias a ese script? va bien si lo meto en el de activeMenu.js?
+ChatGPT Plus
+ChatGPT
+Sí, tiene sentido agregar este código en el mismo archivo activeMenu.js, ya que también está relacionado con la gestión del estado del menú y de los enlaces. Puedes incluir este script como una extensión del existente, así se centralizan todas las funciones de comportamiento del menú en un solo lugar.
+
+Podrías llamar a esta parte del script algo como handleMobileLinkHover() o simplemente removeMobileHoverEffect(), para mantener claridad sobre cuál es su propósito.
+
+Por ejemplo, puedes agregarlo de esta manera al final de activeMenu.js:
+
+javascript
+Copiar código
+document.addEventListener('DOMContentLoaded', function() {
+  // Código previo del activeMenu.js para manejar las secciones activas
+
+  // Función para manejar el hover de los enlaces en dispositivos móviles
+  const links = document.querySelectorAll('.menu-links a');
+
+  links.forEach(link => {
+    link.addEventListener('click', function() {
+      links.forEach(l => l.classList.remove('hovered')); // Remueve el hover de todos los enlaces
+      this.classList.add('hovered'); // Añade la clase de hover solo al enlace actual
+    });
+  });
+});
+Incluirlo en el mismo archivo hace que la gestión del menú sea más ordenada y evita tener varios scripts dispersos relacionados con una misma funcionalidad. Además, el nombre removeMobileHoverEffect() refleja bien la intención del script.
+
+
+
+
 
 
 
