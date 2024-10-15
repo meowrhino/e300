@@ -1,26 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+/*font-family: "Instrument Serif", serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/**/
 
 h2{
-    font-family: "Instrument Serif", serif;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 600;
     font-size: 32px;
 
 }
 
 h3{
-    font-family: "Instrument Serif", serif;
+    font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 600;
     font-size: 20px;
     text-align: right;
 }
 
 h4{
-    /*font-family: "Instrument Serif", serif;*/
+    /*font-family: "Saira Extra Condensed", sans-serif;
+    font-weight: 300;*/
     font-size: 16px;
 }
 
 body {
     font-family: 'Courier New', monospace;
     font-size: 16px;
-    line-height: 29px;
+    line-height: 30px;
     margin: 0px;
 }
 
@@ -37,6 +43,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
+}
+
+#logo-container--404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     min-height: 100vh;
 }
 
@@ -78,6 +92,15 @@ body {
     min-height: 100vh;
 }
 
+.pronoms {
+    color: darkgray;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+
+
+
 #estatuts {
     display: flex;
     flex-direction: column;
@@ -100,15 +123,6 @@ body {
 #estatuts q {
     margin-top: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 @media (min-width: 768px) {
     .container {
@@ -144,17 +158,24 @@ body {
     /* Animación para abrir y cerrar */
 }
 
+@media (max-width: 767px) {
+    .menu-links {
+        line-height: 1.2; /* Ajusta el valor según el espacio que necesites */
+    }
+}
+
 a {
     text-decoration: none;
 }
 
 a.link-con-href {
-    color: dimgray;
+    color: DimGray;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 
 a.link-con-href:hover {
-    color: blue;
-    font-weight: bold;
+    color: black;
+    text-decoration: underline;
 }
 
 /*https://es.wikipedia.org/wiki/Colores_web*/
