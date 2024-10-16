@@ -1,7 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
-/*font-family: "Instrument Serif", serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
-/**/
 
 html {
     scroll-behavior: smooth;
@@ -162,9 +159,9 @@ body {
 }
 
 #estatuts h4 {
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 2em;
-    font-family: "Instrument Serif", serif;
+    font-family: "Saira Extra Condensed", sans-serif;
     margin-bottom: 0px;
 }
 
