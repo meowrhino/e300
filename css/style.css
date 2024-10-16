@@ -104,7 +104,10 @@ body {
 }
 
 .membre:hover {
-    transform: translateY(-5px); /* Añadir un pequeño efecto al hacer hover */
+    color: gray;
+    transform: scale(1.1); /* Aumenta el tamaño un 5% */
+    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+    transition: transform 0.3s ease, z-index 0.3s; /* Añadir una transición suave */
 }
 
 .pronoms {
