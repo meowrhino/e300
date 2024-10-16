@@ -58,6 +58,7 @@ body {
     min-height: 100vh;
 }
 
+/* Estilos para el contenedor de proyectos */
 #projectes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -66,14 +67,20 @@ body {
     min-height: 100vh;
 }
 
+/* Estilos para cada proyecto */
 .project-item {
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: space-between; /* Distribuir espacio entre los elementos */
+    height: 100%;
     transition: transform 0.3s;
 }
 
 .project-item:hover {
-    transform: translateY(-5px); /* Añadir un pequeño efecto al hacer hover */
+    transform: translateY(-5px); /* Efecto de hover */
 }
 
+/* Estilos para la imagen del proyecto */
 .project-item img {
     width: 100%;
     height: auto;
@@ -85,6 +92,13 @@ body {
     filter: grayscale(0%);
 }
 
+/* Estilos para el enlace "Click para ver más" */
+.projecte-ver-mas {
+    margin-top: auto; /* Empujar el enlace hacia la parte inferior del contenedor */
+    transition: background-color 0.3s ease;
+}
+
+/* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .project-item {
         width: 100%; /* Una sola columna en pantallas pequeñas */
@@ -105,7 +119,7 @@ body {
 
 .membre:hover {
     color: gray;
-    transform: scale(1.1); /* Aumenta el tamaño un 5% */
+    transform: scale(1.05); /* Aumenta el tamaño un 5% */
     z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
     transition: transform 0.3s ease, z-index 0.3s; /* Añadir una transición suave */
 }
