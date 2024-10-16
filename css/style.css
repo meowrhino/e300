@@ -98,7 +98,7 @@ body {
 }
 
 /* Estilos para el enlace "Click para ver más" */
-.projecte-ver-mas {
+.projecte-veure-mes {
     margin-top: auto; /* Empujar el enlace hacia la parte inferior del contenedor */
     transition: background-color 0.3s ease;
 }
@@ -246,6 +246,8 @@ a.link-con-href:hover {
     margin: 0 auto;
     max-width: 800px;
     box-sizing: border-box;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
 }
 
 #container-projecte img {
