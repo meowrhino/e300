@@ -121,8 +121,8 @@ body {
 
 .membre:hover {
     color: gray;
-    transform: scale(1.05); /* Aumenta el tamaño un 5% */
-    z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
+    /* transform: scale(1.05); Aumenta el tamaño un 5% */
+    /*z-index: 10; Asegúrate de que esté por encima de otros elementos si pones el scale */
     transition: transform 0.3s ease, z-index 0.3s; /* Añadir una transición suave */
 }
 
