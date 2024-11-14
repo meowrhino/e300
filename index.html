@@ -4,922 +4,1201 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Estructuras 3000: Asociació sense ànim de lucre per la col·lectivització de l'art i la cultura a Catalunya.">
-    <meta name="keywords"
-        content="Estructuras 3000, arte colectivo, cultura catalana, prácticas colaborativas, asociaciones culturales">
-    <meta name="author" content="Estructuras 3000">
-    <title>e300</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Les Receptes de la Pats</title>
+    <style>
+        /* Estilos Generales */
+        body {
+            font-family: 'Georgia', serif;
+            /*background-color: #FFF3E0;*/
+            color: #5D4037;
+            line-height: 1.6;
+            padding: 20px;
+            margin: auto;
+            transition: background-color 0.3s ease-in-out;
+
+            background-color: #FFF3E0;
+            opacity: 1;
+            background: repeating-linear-gradient(-45deg, #B99470, #B99470 8px, #FFF3E0 8px, #FFF3E0 40px);
+            background-attachment: fixed;
+        }
+
+        h1,
+        h2,
+        h3 {
+            color: #BF360C;
+            font-family: cursive, serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 40px;
+            text-rendering: optimizeLegibility;
+            text-shadow: 1px 1px 2px #BF360C, 0 0 0.05em #BF360C;
+            color: #FFECC8;
+        }
+
+        /* Contenedor de recetas estilo masonry */
+        .recipe-container {
+            column-gap: 20px;
+            max-width: clamp(600px, 80%, 1600px);
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Media Queries para el Diseño Responsivo del Recipe Container */
+        @media (max-width: 1599px) {
+            .recipe-container {
+                column-count: 1;
+            }
+        }
+
+        @media (min-width: 1600px) {
+            .recipe-container {
+                column-count: 2;
+            }
+        }
+
+
+        /* Estilos para las Recetas */
+        .recipe {
+            position: relative;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s ease-in-out;
+        }
+
+        .info {
+            position: relative;
+            /* Asegura que los elementos hijos puedan ser posicionados de forma absoluta */
+            background-color: #B99470;
+            color: #5D4037;
+            border-radius: 8px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding-left: 100px;
+            margin-left: -100px;
+            overflow: visible;
+            transition: transform 0.6s cubic-bezier(0.25, 1.3, 0.5, 1), margin-left 0.6s cubic-bezier(0.25, 1.3, 0.5, 1);
+            transform: translateX(-100%);
+            /* Oculta inicialmente el contenedor completo */
+        }
+
+        /* Estilos para la lengüeta "info" */
+        .info-tab {
+            position: absolute;
+            right: -150px;
+            /* Ajuste inicial para colocar la lengüeta fuera */
+            top: 50%;
+            background-color: #5D4037;
+            color: #FFF3E0;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: -3px 0 6px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+            /* Para que esté siempre encima y visible */
+            transition: transform 0.4s cubic-bezier(0.25, 1.3, 0.5, 1);
+        }
+
+        /* Cambiar el z-index, la posición y aplicar la animación al pasar el ratón por la lengüeta */
+        .info-tab:hover {
+            transform: scale(1.25);
+        }
+
+
+        /* Definir la animación bouncy de derecha a izquierda */
+        @keyframes bounceHorizontalTab {
+            0% {
+                transform: translateY(-50%) rotate(90deg) translateX(0);
+            }
+
+            30% {
+                transform: translateY(-50%) rotate(90deg) translateX(10px);
+            }
+
+            50% {
+                transform: translateY(-50%) rotate(90deg) translateX(-5px);
+            }
+
+            70% {
+                transform: translateY(-50%) rotate(90deg) translateX(7px);
+            }
+
+            100% {
+                transform: translateY(-50%) rotate(90deg) translateX(0);
+            }
+        }
+
+
+
+        /* Aplicar tres colores alternativos a las recetas */
+        .recipe:nth-child(3n + 1) {
+            background: #FFECB3;
+            /* Color 1 */
+        }
+
+        .recipe:nth-child(3n + 2) {
+            background: #FFE0B2;
+            /* Color 2 */
+        }
+
+        .recipe:nth-child(3n) {
+            background: #FFECC8;
+            /* Color 3 */
+        }
+
+        .recipe h2 {
+            margin-top: 0;
+            color: #E65100;
+            font-size: 1.8em;
+        }
+
+        .recipe.hidden {
+            transform: scale(0.95);
+            opacity: 0.3;
+            color: #9e9e9e;
+            pointer-events: none;
+        }
+
+        .recipe.hidden .ingredients,
+        .recipe.hidden .steps {
+            display: none;
+        }
+
+        .recipe:hover {
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Transiciones y animaciones de las Recetas */
+        .hidden-bouncy {
+            animation: bounceOut 0.5s ease-in-out forwards;
+        }
+
+        .recipe.appearing {
+            animation: bounceIn 0.5s ease-in-out forwards;
+        }
+
+        @keyframes bounceOut {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1.05);
+            }
+
+            40% {
+                transform: scale(0.95);
+            }
+
+            60% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+
+            50% {
+                transform: scale(1.05);
+                opacity: 0.5;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        /* Estilos de Ingredientes y Pasos */
+        .ingredients,
+        .steps {
+            margin-top: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        li::before {
+            margin-right: 10px;
+        }
+
+        .steps ol {
+            counter-reset: step;
+        }
+
+        .steps ol li {
+            position: relative;
+            list-style: none;
+            padding-left: 15px;
+        }
+
+        .steps ol li::before {
+            counter-increment: step;
+            content: counter(step) ".";
+            position: absolute;
+            left: -15px;
+            color: #BF360C;
+            font-weight: bold;
+        }
+
+        /* Estilos para el Contenedor de Alérgenos */
+        #alergia-container {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+
+            /*quiero que alergia-container aparezca de la misma manera que aparece la nota informativa
+            ee incluso modificar la nota informativa para que diga "modo alergia" 
+            y que su texto sea " has actvado el modo alergia masacra tus alérgenos de esta página
+            (no garantizamos que quede receta en pie)
+            
+            y cuando le des a cada alérgeno
+            igual una animacion que salga el emoji de explosión por un momento
+            o que tu raton cuando entre en el selector de alergias cambiie a una diana de emoji
+            eso molaria tambien*/
+            margin-bottom: -50px;
+            margin-right: -50px;
+            padding-bottom: -50px;
+            padding-right: -50px;
+
+            background-color: #B99470;
+
+            padding: 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+
+            clip-path: 
+            polygon(40% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+
+            transform: translateX(100%);
+            transition: transform 0.4s cubic-bezier(0.25, 1.3, 0.5, 1);
+        }
+
+
+        #alergia-container p {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        .alergeno {
+            font-size: 1rem;
+            margin: 0 10px;
+            cursor: pointer;
+            transition: transform 0.3s, filter 0.3s;
+        }
+
+        .alergeno:hover {
+            transform: scale(1.2);
+        }
+
+        .alergeno.active {
+            filter: grayscale(100%);
+        }
+
+
+        .tooltip {
+            position: absolute;
+            background-color: #5D4037;
+            color: #FFF3E0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+            /* Asegura que el tooltip esté sobre otros elementos */
+            white-space: nowrap;
+            /* Mantiene el texto en una sola línea */
+            transition: opacity 0.3s ease-in-out;
+            opacity: 0;
+            /* Inicialmente invisible */
+        }
+
+        .tooltip.show {
+            opacity: 1;
+            /* Muestra el tooltip con una transición */
+        }
+
+        /*emojis*/
+
+        /* CSS para Estofat de pavo amb bolets */
+        .ingredients-pavo ul li:nth-child(1)::before {
+            content: "🦃 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(2)::before {
+            content: "🥕 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(3)::before {
+            content: "🧅 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(4)::before {
+            content: "🧄 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(5)::before {
+            content: "🫛 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(6)::before {
+            content: "🍄 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(7)::before {
+            content: "🍾 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(8)::before {
+            content: "🫙 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(9)::before {
+            content: "🪔 ";
+        }
+
+        .ingredients-pavo ul li:nth-child(10)::before {
+            content: "🍲 ";
+        }
+
+        /* CSS para Fideuà */
+        .ingredients-fideua ul li:nth-child(1)::before {
+            content: "🦑 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(2)::before {
+            content: "🦐 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(3)::before {
+            content: "🍝 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(4)::before {
+            content: "🌶️ ";
+        }
+
+        .ingredients-fideua ul li:nth-child(5)::before {
+            content: "🫑 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(6)::before {
+            content: "🍲 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(7)::before {
+            content: "🪔 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(8)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-fideua ul li:nth-child(9)::before {
+            content: "🫙 ";
+        }
+
+        /* CSS per Cheesecake (12 individuals) */
+        .ingredients-cheesecake ul li:nth-child(1)::before {
+            content: "🍪 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(2)::before {
+            content: "🧈 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(3)::before {
+            content: "🧀 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(4)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(5)::before {
+            content: "🥚 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(6)::before {
+            content: "🍋 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(7)::before {
+            content: "🫙 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(8)::before {
+            content: "🥛 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(9)::before {
+            content: "🍓 ";
+        }
+
+        .ingredients-cheesecake ul li:nth-child(10)::before {
+            content: "🍇 ";
+        }
+
+        /* CSS per Mandonguilles amb sípia */
+        .ingredients-pilotes li:nth-child(1)::before {
+            content: "🐄 ";
+        }
+
+        .ingredients-pilotes li:nth-child(2)::before {
+            content: "🐖 ";
+        }
+
+        .ingredients-pilotes li:nth-child(3)::before {
+            content: "🥚 ";
+        }
+
+        .ingredients-pilotes li:nth-child(4)::before {
+            content: "🌿 ";
+        }
+
+        .ingredients-pilotes li:nth-child(5)::before {
+            content: "🧄 ";
+        }
+
+        .ingredients-pilotes li:nth-child(6)::before {
+            content: "🍞 ";
+        }
+
+        .ingredients-pilotes li:nth-child(7)::before {
+            content: "🌾 ";
+        }
+
+        /* CSS per la Salsa de Mandonguilles amb sípia */
+        .ingredients-salsa li:nth-child(1)::before {
+            content: "🐙 ";
+        }
+
+        .ingredients-salsa li:nth-child(2)::before {
+            content: "🍲 ";
+        }
+
+        .ingredients-salsa li:nth-child(3)::before {
+            content: "🫛 ";
+        }
+
+        .ingredients-salsa li:nth-child(4)::before {
+            content: "🧅 ";
+        }
+
+        .ingredients-salsa li:nth-child(5)::before {
+            content: "🍾 ";
+        }
+
+        /* CSS per la Picada de Mandonguilles amb sípia */
+        .ingredients-picada li:nth-child(1)::before {
+            content: "🌰 ";
+        }
+
+        .ingredients-picada li:nth-child(2)::before {
+            content: "🧄 ";
+        }
+
+        .ingredients-picada li:nth-child(3)::before {
+            content: "🌰 ";
+        }
+
+        .ingredients-picada li:nth-child(4)::before {
+            content: "🌿 ";
+        }
+
+        .ingredients-picada li:nth-child(5)::before {
+            content: "🍫 ";
+        }
+
+
+        /* CSS per Llom a la taronja i vermut */
+        .ingredients-llom ul li:nth-child(1)::before {
+            content: "🐖 ";
+        }
+
+        .ingredients-llom ul li:nth-child(2)::before {
+            content: "🍊 ";
+        }
+
+        .ingredients-llom ul li:nth-child(3)::before {
+            content: "🥕 ";
+        }
+
+        .ingredients-llom ul li:nth-child(4)::before {
+            content: "🧅 ";
+        }
+
+        .ingredients-llom ul li:nth-child(5)::before {
+            content: "🍾 ";
+        }
+
+        .ingredients-llom ul li:nth-child(6)::before {
+            content: "🍇 ";
+        }
+
+        /* CSS per Entrepans de nab */
+        .ingredients-entrepans ul li:nth-child(1)::before {
+            content: "🍠 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(2)::before {
+            content: "🍏 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(3)::before {
+            content: "🧈 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(4)::before {
+            content: "🐟 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(5)::before {
+            content: "🌿 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(6)::before {
+            content: "🧄 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(7)::before {
+            content: "🪔 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(8)::before {
+            content: "🧀 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(9)::before {
+            content: "🥜 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(10)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-entrepans ul li:nth-child(11)::before {
+            content: "🥬 ";
+        }
+
+        /* CSS per Brownies de xocolata */
+        .ingredients-brownies ul li:nth-child(1)::before {
+            content: "🍫 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(2)::before {
+            content: "🧈 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(3)::before {
+            content: "🍬 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(4)::before {
+            content: "🥚 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(5)::before {
+            content: "🌾 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(6)::before {
+            content: "🍫 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(7)::before {
+            content: "🫙 ";
+        }
+
+        .ingredients-brownies ul li:nth-child(8)::before {
+            content: "🌰 ";
+        }
+
+        /* CSS per Pollastre a la cervesa */
+        .ingredients-pollastre ul li:nth-child(1)::before {
+            content: "🐔 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(2)::before {
+            content: "🧅 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(3)::before {
+            content: "🥕 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(4)::before {
+            content: "🧄 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(5)::before {
+            content: "🍺 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(6)::before {
+            content: "🍲 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(7)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-pollastre ul li:nth-child(8)::before {
+            content: "🪔 ";
+        }
+
+        /* CSS para Galetes de mantega */
+        .ingredients-galetes ul li:nth-child(1)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-galetes ul li:nth-child(2)::before {
+            content: "🧈 ";
+        }
+
+        .ingredients-galetes ul li:nth-child(3)::before {
+            content: "🌾 ";
+        }
+
+        .ingredients-galetes ul li:nth-child(4)::before {
+            content: "🧂 ";
+        }
+
+        /* CSS per Quiche */
+        .ingredients-quiche ul li:nth-child(1)::before {
+            content: "🥧 ";
+        }
+
+        .ingredients-quiche ul li:nth-child(2)::before {
+            content: "🥚 ";
+        }
+
+        .ingredients-quiche ul li:nth-child(3)::before {
+            content: "🥛 ";
+        }
+
+        .ingredients-quiche ul li:nth-child(4)::before {
+            content: "🧀 ";
+        }
+
+        /* CSS per Cheesecake (sense forn) */
+        .ingredients-cheesecake2 ul li:nth-child(1)::before {
+            content: "🧀 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(2)::before {
+            content: "🥛 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(3)::before {
+            content: "🍪 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(4)::before {
+            content: "🧈 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(5)::before {
+            content: "🧂 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(6)::before {
+            content: "🫙 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(7)::before {
+            content: "🍓 ";
+        }
+
+        .ingredients-cheesecake2 ul li:nth-child(8)::before {
+            content: "🍇 ";
+        }
+    </style>
+
 </head>
 
-
-
 <body>
-    <section id="logo-container">
-        <img src="img/logo.png" alt="logo e3000 gris" id="logoe3000">
-    </section>
 
-    <div class="container">
-        <section id="descripcio" aria-label="descripció del col·lectiu">
+    <marquee behavior="alternate">
+        <h1>Les Receptes de la Pats</h1>
+    </marquee>
 
-            <!--no sé si cambiaría los strong un poco creo que tampoco dicen lo más importante para un usuario 
-            o igual sí lo más importante como recordatorioo para el colectivo
-            pero no lo más llaminero para un usuario, me explico?-->
-            <div class="">
-                <p><strong>Estructures 3000</strong> és una associació sense ànim de lucre que té com a objectiu
-                    <strong>realitzar, vetllar i
-                        divulgar les pràctiques col·lectives i col·laboratives en el context artístic i cultural
-                        català.</strong> L'acció
-                    de l'entitat vol donar resposta a les dinàmiques habituals cap a un individualisme que atempta
-                    contra
-                    l'organització del col·lectiu artístic i l'accés democràtics als drets culturals, és per això que
-                    l'associació vetlla per la producció d'infraestructures, investigacions, tallers i accions en
-                    institucions del territori català per la col·lectivització del sector i les pràctiques artístiques.
-                </p>
-                <p>L'entitat també <strong>produeix <a href="https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?usp=sharing">fons bibliogràfic</a> com a patrimoni amb accés
-                        públic</strong> que treballen al voltant de les pràctiques col·lectives i col·laboratives de
-                    l'art i
-                    <strong>un mapatge dels col·lectius o agrupacions artístiques que han incidit en el territori
-                        català.</strong>
-                </p>
+    <div id="alergia-container">
 
-                <p>Estructures 3000 treballa per generar oportunitats per a altres col·lectius, contribuir a la defensa
-                    d'una remuneració justa, els drets culturals i a la professionalització de les pràctiques
-                    col·lectives
-                    contemporànies.
-                </p>
+        <span class="alergeno" data-alergeno="gluten" title="Gluten">🌾</span>
+        <span class="alergeno" data-alergeno="lacteos" title="Lácteos">🐄</span>
+        <span class="alergeno" data-alergeno="huevos" title="Huevos">🥚</span>
+        <span class="alergeno" data-alergeno="soja" title="Soja">🌱</span>
+        <span class="alergeno" data-alergeno="cacahuete" title="Cacahuete">🥜</span>
+        <span class="alergeno" data-alergeno="frutos-secos" title="Frutos Secos">🌰</span>
+        <span class="alergeno" data-alergeno="marisco" title="Marisco">🦐</span>
+        <span class="alergeno" data-alergeno="pescado" title="Pescado">🐟</span>
+        <span class="alergeno" data-alergeno="apio" title="Apio">🌿</span>
+        <span class="alergeno" data-alergeno="sesamo" title="Sésamo">🧆</span>
+        <span class="alergeno" data-alergeno="mostaza" title="Mostaza">🌭</span>
+        <span class="alergeno" data-alergeno="sulfitos" title="Sulfitos">🎇</span>
+    </div>
+
+    <div class="recipe-container">
+        <div class="info">
+            <div class="info-tab">Info</div>
+            <p>¿Tienes alguna alergia? Si pasas el ratón por los iconos de abajo descubrirás qué recetas podemos
+                censurarte para que no te haga mala sangre, para hacerlo sólo tienes que hacer click en el alérgeno que
+                desees
+                eliminar de tu menú</p>
+        </div>
+
+        <div class="recipe gluten sulfitos lacteos">
+            <h2>Estofat de pavo amb bolets</h2>
+            <div class="ingredients ingredients-pavo">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>700g de gall dindi</li>
+                    <li>3 pastanagues</li>
+                    <li>1 ceba gran</li>
+                    <li>2 alls</li>
+                    <li>200g de pèsols</li>
+                    <li>Qualsevol tipus de bolets</li>
+                    <li>Vi blanc</li>
+                    <li>Espècies (clau, romaní, farigola, llorer)</li>
+                    <li>AOVE</li>
+                    <li>Caldo (opcional)</li>
+                </ul>
             </div>
-        </section>
-
-        <section id="projectes" aria-label="3 o 4 projectes molt relevants ara mateix">
-
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>judici</h2>
-                    <a href="projectes/judici/judici.html">
-                        <img src="img/judici.jpg" alt="El Judici">
-                    </a>
-                    <p> Estructuras 3000 s'enfronta judicialment a ella mateixa, qüestionant participació, status quo i
-                        individualismes. Una part d’Estructuras 3000 denuncia a l’altra per haver actuat de manera
-                        unilateral.</p>
-                </div>
-                <a href="projectes/judici/judici.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Si els bolets són deshidratats, posar-los en aigua per hidratar-los.</li>
+                    <li>Preparar una paella amb tres cullerades d'oli, fregir dos alls fins que agafin gust.</li>
+                    <li>Fregir el gall dindi a foc ràpid per sellar-lo i retirar-lo de l'oli.</li>
+                    <li>Fregir la ceba picada fins que estigui tova.</li>
+                    <li>Afegir els pèsols, pastanaga tallada i els bolets i sofregir una mica.</li>
+                    <li>Afegir el gall dindi de nou i un raig de vi blanc.</li>
+                    <li>Afegir aigua o caldo fins a cobrir i posar les espècies.</li>
+                    <li>Deixar coure a foc lent durant una hora fins que es redueixi i corregir la sal.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>escola 3000</h2>
-                    <a href="projectes/escola3000/escola3000.html">
-                        <img src="img/escola.jpg" alt="Escola 3000">
-                    </a>
-                    <p>L'Escola 3000 proposa un espai de reflexió col·lectiva als centres
-                        educatius sobre com
-                        l’arquitectura i el seu disseny modulen i intervenen en les dinàmiques de poder. Els dissenys es
-                        converteixen en espais teatrals on escenificar aquestes dinàmiques de poder a partir del teatre
-                        de l’oprimit.</p>
-                </div>
-                <a href="projectes/escola3000/escola3000.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+        <div class="recipe marisco pescado sulfitos">
+            <h2>Fideuà</h2>
+            <div class="ingredients ingredients-fideua">
+                <h3>Ingredients (per a 4 persones):</h3>
+                <ul>
+                    <li>1 calamar (aprox. 300-400g)</li>
+                    <li>300-400g de gambes pelades</li>
+                    <li>400g de fideus</li>
+                    <li>1 pebrot vermell</li>
+                    <li>1 pebrot verd</li>
+                    <li>800ml de caldo</li>
+                    <li>AOVE</li>
+                    <li>sal (opcional)</li>
+                    <li>safrà (opcional)</li>
+                </ul>
             </div>
-
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>peepshow</h2>
-                    <a href="projectes/peepshow/peepshow.html">
-                        <img src="img/peepshow.jpg" alt="Peepshow">
-                    </a>
-                    <p> El Peepshow és un dispositiu escènic que explora l’experiència expositiva individualitzant la
-                        mirada i fent-la anònima. Durant la instal·lació van performar artistes de diferents disciplines
-                        i la pròpia estructura permetia ser modificada a conveniència.
-                    </p>
-                </div>
-                <a href="projectes/peepshow/peepshow.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Descongelar les gambes i els calamars si cal.</li>
+                    <li>Tallar la verdura a daus molt petits.</li>
+                    <li>Torrar els fideus amb dues cullerades d'oli a foc mitjà.</li>
+                    <li>Retirar els fideus i sofregir la verdura fins que estigui tova.</li>
+                    <li>Afegir el calamar i les gambes i cuinar uns minuts.</li>
+                    <li>Afegir els fideus torrats, remenar, i afegir el caldo i el safrà.</li>
+                    <li>Deixar coure uns 20 minuts, sacsejant la paella de tant en tant.</li>
+                    <li>Posar al forn a gratinar durant 5 minuts per aconseguir el socarrim.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>seminari d'artistes</h2>
-                    <a href="projectes/seminari/seminari.html">
-                        <img src="img/seminari.jpg" alt="seminari">
-                    </a>
-                    <p>Realització de conferències performativa entorn la pràctica artística
-                        col·lectiva a la Facultat
-                        de Belles Arts. Durant els seminaris es qüestionen temes d'individualització
-                        del sector artístic
-                        i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística.</p>
-                </div>
-                <a href="projectes/seminari/seminari.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+        <div class="recipe gluten lacteos frutos-secos huevos">
+            <h2>Cheesecake</h2>
+            <div class="ingredients ingredients-cheesecake">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>150g de galetes digestive</li>
+                    <li>60g de mantega fosa</li>
+                    <li>300g de formatge a temperatura ambient</li>
+                    <li>100g de sucre glass</li>
+                    <li>2 ous a temperatura ambient</li>
+                    <li>1 culleradeta de suc de llimona</li>
+                    <li>14g de farina</li>
+                    <li>185g de nata agra a temperatura ambient</li>
+                    <li>Melmelada de maduixa</li>
+                    <li>Fruits vermells al gust</li>
+                </ul>
             </div>
-
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>conferències</h2>
-                    <a href="projectes/conferencies/conferencies.html">
-                        <img src="img/conferencies.jpg" alt="conferències">
-                    </a>
-                    <p>Tot l’espai queda pintat de color negre pissarra per acollir conferències de diferents
-                        professionals i no-profesional al llarg de tres dies. Totes les parets van quedar recobertes de
-                        guix. L’única condició era que no estava permès fer fotos ni tampoc venir com a persona
-                        espectadora.
-                    </p>
-                </div>
-                <a href="projectes/conferencies/conferencies.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Fondre la mantega i triturar les galetes.</li>
+                    <li>Barrejar i fer una capa en els motlles de magdalena.</li>
+                    <li>Batre el formatge fins que quedi cremós i afegir el sucre.</li>
+                    <li>Afegir els ous un a un, després el suc de llimona i la farina, barrejant el mínim possible.</li>
+                    <li>Afegir la nata agra i dividir en els motlles.</li>
+                    <li>Enfornar a 160ºC durant 15 minuts o fins que tremolin una mica.</li>
+                    <li>Deixar refredar i posar a la nevera 8 hores.</li>
+                    <li>Decorar amb melmelada i fruits vermells abans de servir.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="project-item">
-                <div class="project-item-contingut">
-                    <h2>TNSTMTRTMR</h2>
-                    <a href="projectes/thereis/thereis.html">
-                        <img src="img/thereis.jpg"
-                            alt="no such thing as making too much Money or taking too many risks">
-                    </a>
-                    <p>Què passa quan portes a artistes reconeguts per exposar en el marc d'un cicle de creació jove i
-                        emergent? A partir de la creació d'un <i>white cube</i> apuntalat dins d'Estructures 3000
-                        l'espai comú
-                        queda anul·lat per tal d'acollir una obra cada dia per donar resposta a les condicions de
-                        precarització del sector artístic jove.
-                    </p>
-                </div>
-                <a href="projectes/thereis/thereis.html">
-                    <div class="projecte-veure-mes">Veure més</div>
-                </a>
+        <div class="recipe huevos frutos-secos pescado sulfitos">
+            <h2>Mandonguilles amb sípia</h2>
+            <div class="ingredients">
+                <h3>Pilotes:</h3>
+                <ul class="ingredients-pilotes">
+                    <li>360g de carn picada de vedella</li>
+                    <li>360g de carn picada de porc</li>
+                    <li>2 ous</li>
+                    <li>Julivert fresc</li>
+                    <li>3 alls</li>
+                    <li>Pa ratllat</li>
+                    <li>Farina</li>
+                </ul>
+                <h3>Salsa:</h3>
+                <ul class="ingredients-salsa">
+                    <li>3 sípies mitjanes</li>
+                    <li>1/2 litre de fumet</li>
+                    <li>Pèsols</li>
+                    <li>2 cebes</li>
+                    <li>1 got de vermut</li>
+                </ul>
+                <h3>Picada:</h3>
+                <ul class="ingredients-picada">
+                    <li>Avellanes</li>
+                    <li>All rostit</li>
+                    <li>Ametlles</li>
+                    <li>Julivert fresc</li>
+                    <li>Xocolata negra</li>
+                </ul>
             </div>
-
-
-
-        </section>
-
-        <section id="contacte" aria-label="contacta amb nosaltres">
-            <p>
-                <a href="mailto:estructuras3000info@gmail.com">estructuras3000info@gmail.com</a>
-            </p>
-            <p>
-                <a href="https://www.google.com/maps?q=Pere+Galvany+28+08950" target="_blank"> C/ Pere Galvany, 28,
-                    local, 08950</a>
-            </p>
-        </section>
-
-        <section id="membres" aria-label="tots els nostres membres">
-            <div class="membre">
-                <h2>Presidència 2024</h2>
-                <h3><span class="pronoms">ell/elli</span> Jordi Bretcha</h3>
-                <p>Artista, docent i investigador. Treballa en la producció de contextos col·lectius, burocracia alternativa i happenings. Graduat en Belles arts, Màster en Teoria de la Literatura i Literatura Comparada i Màster en Producció i Investigació artística a la Universitat de Barcelona.
-                    <strong>Esplugues de Llobregat, 1995</strong>
-                </p>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Formar les mandonguilles i enfarinar-les.</li>
+                    <li>Sofregir all picat i ceba en una olla.</li>
+                    <li>Afegir la sípia i cuinar fins que estigui feta.</li>
+                    <li>Preparar la picada amb els ingredients indicats.</li>
+                    <li>Afegir vermut a l'olla i evaporar l'alcohol.</li>
+                    <li>Afegir les mandonguilles, el fumet calent i la picada.</li>
+                    <li>Posar els pèsols i deixar coure 15 minuts.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="membre">
-                <h2>Vicepresidència 2024</h2>
-                <h3><span class="pronoms">ella</span> Bet Pahissa</h3>
-                <p>Artista i tècnica de polítiques culturals. Graduada en Global Studies per la UPF, també en Belles Arts i un posterior Màster en Disseny de Polítiques Públiques a la Universitat de Barcelona. La seva pràctica treballa entorn la participació i la democratització del sector artístic.
-                    <strong>Sant Just, 1997</strong></p>
+        <div class="recipe sulfitos">
+            <h2>Llom a la taronja i vermut</h2>
+            <div class="ingredients ingredients-llom">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 solomillo de porc</li>
+                    <li>Suc de 3 taronges i la polpa</li>
+                    <li>5 pastanagues petites</li>
+                    <li>2 cebes mitjanes</li>
+                    <li>1 got de vermut</li>
+                    <li>Orejons, prunes seques, panses</li>
+                </ul>
             </div>
-
-            <div class="membre">
-                <h2>Secretariat 2024</h2>
-                <h3><span class="pronoms">ella</span> Celine Lurac</h3>
-                <p>Artista gràfica i politòloga. Centrada en estudis i polítiques de gènere. Graduada a la Science Po de París i posterior màster en polítiques d'inclusió i gènere. Explora aspectes polítics que atravessen el gènere, la identitat, la violència i la feminització de les cures. 
-                    <strong>Ciutat de Mèxic, 2000</strong>
-                </p>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Fregir el solomillo per tots els costats.</li>
+                    <li>Caramel·litzar la ceba i la pastanaga.</li>
+                    <li>Afegir el vermut i evaporar l'alcohol.</li>
+                    <li>Afegir el suc i la polpa de taronja, les panses, prunes i orejons.</li>
+                    <li>Posar el solomillo i cuinar en olla a pressió durant 10 minuts.</li>
+                    <li>Treure el solomillo, reduir la salsa, tallar-lo i servir amb la salsa.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="membre">
-                <h2>Tresoreria 2024</h2>
-                <h3><span class="pronoms">ell</span> Didac Humà</h3>
-                <p>Artista i fotògraf, es centra en la imatge i el videoart experimental. Graduat en Belles Arts a la UB i posterior màster al LAV de Madrid, la seva pràctica parteix de la imatge, però s'expandeix en l'espai comú.
-                    <strong>Manlleu, 1997</strong>
-                </p>
+        <div class="recipe frutos-secos lacteos">
+            <h2>Entrepans de nab</h2>
+            <div class="ingredients ingredients-entrepans">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>Raves vermells</li>
+                    <li>Poma</li>
+                    <li>Mantega</li>
+                    <li>Anxova</li>
+                    <li>Alfàbrega</li>
+                    <li>All</li>
+                    <li>Oli d'oliva</li>
+                    <li>Formatge parmesà</li>
+                    <li>Pistatxo</li>
+                    <li>Sal</li>
+                    <li>Enciam</li>
+                </ul>
             </div>
-
-            <div class="membre">
-                <h2>Vocal</h2>
-                <h3><span class="pronoms">ell</span> Jordi Carmona i Maura</h3>
-                <p>Fabricant, cuiner i artista. Treballa amb mètodes constructius diversos des de la pràctica col·lectiva. Interessat en els vincles que es generen entre el públic i l'artefacte a través d'activacions. Graduat en Belles Arts a la UB, Màster en Contemporary Design a l'ETSAB.
-                    <strong>Barcelona, 1998</strong>
-                </p>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Fer mantega d'anxoves.</li>
+                    <li>Preparar el pesto amb festucs, oli, all, sal i formatge parmesà.</li>
+                    <li>Tallar els raves i la poma molt finets.</li>
+                    <li>Laminar poma.</li>
+                    <li>Muntar els entrepans amb enciam, raves, poma, mantega d'anxoves i pesto.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="membre">
-                <h2>Vocal</h2>
-                <h3><span class="pronoms">ell</span> Joan Boix</h3>
-                <p>Artista, docent i fuster. El seu camp d'interès són els espais i la seva formalització i alteració en relació als usuaris, espectadors i objectes. Graduat en Belles Arts a la Universitat de Barcelona, CFGS Disseny i Moblamenta.
-                    <strong>Palamós, 1996</strong>
-                </p>
+        <div class="recipe gluten lacteos huevos frutos-secos">
+            <h2>Brownies de xocolata</h2>
+            <div class="ingredients ingredients-brownies">
+                <h3>Ingredients (per a una safata de forn mitjana):</h3>
+                <ul>
+                    <li>250g de xocolata negra de bona qualitat</li>
+                    <li>150g de mantega</li>
+                    <li>165g de sucre moreno</li>
+                    <li>3 ous a temperatura ambient</li>
+                    <li>75g de farina blanca</li>
+                    <li>2 cullerades soperes de cacau pur</li>
+                    <li>1/2 sobre de llevat (7 grams)</li>
+                    <li>150g de nous sense closca</li>
+                </ul>
             </div>
-
-            <div class="membre">
-                <h2>Vocal</h2>
-                <a href="https://www.youtube.com/watch?v=nkgg1W5zyNA" target="_blank">
-                    <h3><span class="pronoms">el</span> pepe</h3>
-                </a>
-                <p>Recol•lector, dissenyador i artista. Treballa amb objectes. Cerca les seves possibilitats i els acompanya mitjançant arranjaments. Graduat en Belles Arts a la UB i Cultura del Disseny a Eina.
-                    <strong>Barcelona, 1997</strong>
-                </p>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Preescalfar el forn a 180ºC o 160ºC amb ventilador.</li>
+                    <li>Triturar la xocolata negra i la mantega i posar-los a fondre al bany maria. Remenar de tant en
+                        tant
+                        i vigilar que no hi entri aigua.</li>
+                    <li>Posar les nous sobre paper de forn a torrar durant 8-10 minuts.</li>
+                    <li>Retirar la xocolata i la mantega del foc i deixar refredar.</li>
+                    <li>Barrejar els 3 ous i el sucre suaument fins que els grans de sucre es dissolguin.</li>
+                    <li>Afegir la xocolata i la mantega un cop refredats.</li>
+                    <li>Barrejar els ingredients secs: farina, cacau i llevat, i tamisar-los a la barreja líquida.</li>
+                    <li>Remenar fins que no quedin grumolls.</li>
+                    <li>Afegir les nous torrades.</li>
+                    <li>Untar un motlle pla amb mantega i recobrir amb cacau en pols. Afegir la barreja.</li>
+                    <li>Enfornar durant 35-40 minuts.</li>
+                    <li>Retirar, deixar refredar i servir (amb nata muntada si es vol!).</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="membre">
-                <h2>Vocal</h2>
-                <h3><span class="pronoms">ella</span> Aina Canyelles</h3>
-                <p>Graduada en periodisme, combina la pràctica fotogràfica amb la investigació en arts visuals, la curadoria i la gestió cultural. El seu eix de treball parteix de l’intent de resoldre tensions entre l’ètica i l’estètica a través de temes com la identitat, la memòria històrica o el territori.
-                    <strong>Corbera de Llobregat, 1995</strong>
-                </p>
+        <div class="recipe gluten lacteos">
+            <h2>Galetes de mantega</h2>
+            <div class="ingredients ingredients-galetes">
+                <h3>Ingredients (per a 25 galetes petites):</h3>
+                <ul>
+                    <li>50g de sucre</li>
+                    <li>100g de mantega</li>
+                    <li>150g de farina</li>
+                    <li>Una mica de sal</li>
+                </ul>
             </div>
-
-            <div class="membre">
-                <h2>Vocal</h2>
-                <h3><span class="pronoms">ella/elli</span> Aurembiaix Montardit</h3>
-                <p>Graduada en arts escèniques a ERAM - UDG i escenografia a Elisava amb la beca Diariodesign. El seu eix de treball parteix de les arts en viu com a performer, alhora que des de la producció, la direcció i el disseny escenogràfic i de vídeo.
-                    <strong>Lleida, 1996</strong>
-                </p>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Deixar la mantega fora perquè s'ablaneixi.</li>
+                    <li>Preescalfar el forn a 180ºC amunt i avall sense ventilador.</li>
+                    <li>Barrejar la mantega i el sucre amb una batedora manual.</li>
+                    <li>Afegir la farina tamisada i barrejar amb les mans fins que tot estigui integrat.</li>
+                    <li>Embolicar en paper film i deixar a la nevera durant mitja hora.</li>
+                    <li>Formar boles de 10g i col·locar-les a la safata del forn freda amb paper de cuina.</li>
+                    <li>Enfornar durant 15-20 minuts fins que comencin a daurar-se una mica.</li>
+                    <li>Refredar damunt d'una reixeta.</li>
+                </ol>
             </div>
+        </div>
 
-            <div class="membre">
-                <h2>Vocal</h2>
-                <h3><span class="pronoms">elli/ella/ell</span> manu</h3>
-                <p>Artista i dissenyador UX/UI. Graduat en Arts i Disseny, manu crea narratives multimèdia que són petites, consistents i honestes. La seva obra integra lo digital i lo matèric per explorar interaccions i emocions. Manté una presència activa a la seva <a href="https://meowrhino.neocities.org/">web</a>. 
-                    <strong>El Puerto de Santa María, 1997</strong>
-                </p>
+        <div class="recipe gluten lacteos huevos">
+            <h2>Quiche</h2>
+            <div class="ingredients ingredients-quiche">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 massa trencada</li>
+                    <li>4 ous</li>
+                    <li>200ml de nata</li>
+                    <li>Farciment al gust</li>
+                </ul>
             </div>
-
-        </section>
-
-        <!-- Solución temporal para el problema de IntersectionObserver con la sección "estatuts" -->
-        <!-- Este código tiene dos elementos con el mismo ID. Esto no es óptimo y debería ser revisado en el futuro. -->
-        <section id="estatuts" aria-label="el nostre funcionament"></section>
-
-        <section id="estatuts" aria-label="el nostre funcionament">
-            <h2>ESTATUTS DE L’ASSOCIACIÓ ETRESMIL: Estructures de Treballs Relacionals, Encontres Socials, Materialitats
-                i Imaginaris Liminals</h2>
-
-            <h3>Capítol I. La denominació, els fins i el domicili</h3>
-
-            <q><strong>article 01</strong></q>
-
-            <p>L’ASSOCIACIÓ ETRESMIL regula les seves activitats d’acord amb el que estableix la Llei 4/2008, de 24
-                d’abril, del llibre tercer del Codi Civil de Catalunya, relatiu a les persones jurídiques; la Llei
-                orgànica 1/2002, de 22 de març, reguladora del dret d’associació, i els seus estatuts.</p>
-
-            <q><strong>article 02</strong></q>
-
-            <ol>
-                <li>L’associació ETRESMIL té com a objecte realitzar, promoure i divulgar pràctiques artístiques des de
-                    la col·lectivitat per respondre a les dinàmiques habituals orientades a l’individualitat de la
-                    pràctica artística i vetllar per al manteniment i reproducció d’aquest moviment alternatiu de les
-                    arts contemporànies i d’una transformació del context cultural comunitari.</li>
-                <li>Els fins d’ETRESMIL —Estructures de Treballs Relacionals, Encontres Socials, Materialitats i
-                    Imaginaris Liminals— es divideixen a partir de la denominació de l’associació:</li>
-            </ol>
-
-            <h4>Estructurar (E)</h4>
-            <ul>
-                <li>Elaborar una estructura organitzativa interna que permeti bones pràctiques de l’acció col·lectiva
-                    artística.</li>
-                <li>Traslladar i reproduir aquestes metodologies a l’entorn cultural contemporani.</li>
-                <li>Lluitar pels drets del col·lectiu artístic i el treball digne del sector concretant en les
-                    problemàtiques i necessitats de les produccions col·lectives i associatives culturals.</li>
-                <li>Buscar un retorn social i una efectivitat del funcionament associatiu al seu entorn.</li>
-                <li>Utilitzar una metodologia dialògica i de participació horitzontal per assolir un major índex
-                    democràtic i igualitari de la pràctica artística conjunta. Unint la pràctica científica —social,
-                    política,...—, l’artística i les vivències sociopolítiques de la membresia i el seu entorn.
-                </li>
-            </ul>
-
-            <h4>Desenvolupar la pràctica artística col·lectiva des del Treball Relacional (TR)</h4>
-            <ul>
-                <li>Relacionar les pràctiques, disciplines i necessitats de l’associació per cercar noves maneres de fer
-                    artístiques que qüestionin l’imaginari dominant.</li>
-                <li>Fomentar la relació entre la producció artística i la ciutadania, sobretot a aquells sectors on no
-                    hi arriba.</li>
-                <li>Fomentar el debat dialògic en igualtat de condicions en un espai segur on les persones associades
-                    s’impliquin amb proximitat i cura.</li>
-                <li>Incloure els valors emocionals dins els òrgans de gestió per poder objectivitzar els malestars i les
-                    denúncies procedents de la membresía.</li>
-                <li>Assegurar la participació inclusiva des d’un punt de vista de clase, cultura i gènere a través de la
-                    creació col·lectiva i consensuada de protocolos externs i interns de diversidad. Per protocol
-                    s’entén la disposició d’una redacció consensuada d’una serie de normes i valors. </li>
-            </ul>
-
-            <h4>Promoure els Encontres Socials (ES)</h4>
-            <ul>
-                <li>Permetre un espai cultural de trobada entre membresia, amistats de l’associació i ciutadania.</li>
-                <li>Buscar una transversalitat dels encontres socials i no aïllar-ne el fer artístic.</li>
-            </ul>
-
-            <h4>Treballar a partir de Materialitats i Imaginaris Liminals (MIL)</h4>
-            <ul>
-                <li>Realitzar pràctiques artístiques des de la col·lectivitat a través de materialitats diverses.</li>
-                <li>Fomentar l’autonomia de fabricació i producció de la membresia de l’associació i divulgar
-                    l’ensenyament sobre aquestes.</li>
-                <li>Possibilitar la fabricació i producció dels materials i dispositius de l’associació per realitzar
-                    els seus fins comunitaris.</li>
-                <li>Produir i promoure imaginaris col·lectius que treballin en el context cultural comunitari.</li>
-                <li>Divulgar la producció d’imaginaris de les pràctiques col·lectives i l‘objecte de l’associació.</li>
-                <li>Assegurar una formalització artística variada i plural exposant els vincles i les relacions dels qui
-                    hi participen, així com entenen el seu context i la seva direcció.</li>
-                <li>Les activitats i les funcions de l’entitat ETRESMIL es desenvoluparan en una interrelació i
-                    col·laboració entre les seves comissions, la membresia, les amistats i el públic mentenint sempre
-                    una correspodència.</li>
-                <li><strong>En queda exclòs tot ànim de lucre.</strong></li>
-            </ul>
-
-            <ol start="3">
-                <li>Per aconseguir les seves finalitats l’associació realitza les activitats següents:
-                    <ul>
-                        <li>Disposar, presentar i exposar accions, instal·lacions i performances artístiques des d’una
-                            pràctica de l’art col·lectiva que resulti plural i no unitària.</li>
-                        <li>Vetllar per a la producció col·lectiva dins del sector cultural vinculat al sindicat
-                            d’artistes.</li>
-                        <li>Realitzar accions educatives i oferir dispositius artístics oberts al públic en institucions
-                            públiques, privades o fora d’aquestes.</li>
-                    </ul>
-                </li>
-
-                <q><strong>article 03</strong></q>
-
-                <li>El domicili de l’associació s’estableix a Esplugues de Llobregat i radica al Carrer Pere Galvany nº
-                    28 local, amb districte postal 08950.</li>
-
-                <li>Les funcions d’aquesta associació s’exerceixen majoritàriament a Catalunya.</li>
-            </ol>
-
-            <h3>Capítol II. La membresia de l’associació, els drets i les obligacions</h3>
-
-            <q><strong>article 04</strong></q>
-
-            <p>Potencialment, poden formar part de l’associació totes les persones físiques que, de manera lliure i
-                voluntària, tinguin interès en les finalitats d’aquesta.</p>
-
-            <ul>
-                <li>Cal que tinguin capacitat d’obrar.</li>
-                <li>Si són menors, d’edats compreses entre els 14 i els 18 anys i sense emancipació, necessiten el
-                    consentiment parental per formar part de l’associació de ple dret, amb dret de vot a les assemblees
-                    generals. Així i tot, no podran formar part de la Junta Directiva.</li>
-                <li>Menors de 14 anys poden adquirir la condició de qui s’associa i exercir els drets derivats d’aquesta
-                    condició per mitjà de representants legals.</li>
-            </ul>
-
-            <p>Per integrar-se cal enviar un correu electrònic a l’associació per concertar una trobada. En aquesta
-                trobada es preguntarà l’interès de qui ho sol·licita i s’estudiarà el cas particular amb la membresia de
-                l’associació. Es tindran en compte, entre d’altres, com qui sol·licita s’ha assabentat de l’associació,
-                com es vincula amb el seu entorn, l’interès personal relatiu a la pràctica individual i col·lectiva. Es
-                plantejaran les dues opcions de membresia, en qualsevol dels casos, durant la propera assemblea
-                ordinària es prendrà una decisió sobre la petició de qui s’ha interessat. La decisió haurà de ser
-                unànime. Al finalitzar aquest procés, es comunicarà a la persona que hagi sol·licitat la membresia la
-                decisió presa.</p>
-
-
-            <q><strong>article 05</strong></q>
-            <h4>Les diferents tipologies de la membresia de l’associació en les que es poden inscriure són:</h4>
-
-            <ul>
-                <li><strong>Membre tipus 1:</strong> membre que paga una quota completa, disposa d’accés lliure a les
-                    instal·lacions de l’associació.</li>
-                <li><strong>Membre tipus 2:</strong> membre que paga una quota reduïda, no disposa d’un accés lliure a
-                    les instal·lacions de l’associació. L’accés estarà obert durant les activitats, reunions o
-                    sol·licitant accés a un dels socis tipus 1.</li>
-            </ul>
-
-            <p>Tant Membre tipus 1 com Membre tipus 2 tenen igualtat de veu i vot en les assemblees, reunions i
-                projectes que es duguin a terme en el si de l’associació, així com accés als càrrecs de la junta
-                directiva (si s’escau). </p>
-
-            <p>S'afegeix una tipologia paral·lela anomenada Amistats d’ETRESMIL. És una modalitat gratuïta amb opció a
-                donacions voluntàries a l’associació que permet un accés a les xarxes informatives directes. Tenen accés
-                i veu a les reunions i assemblees, si així ho sol·liciten, però la seva participació no és constitutiva
-                de les decisions que s’hi prenguin ni tenen dret a vot. Només tindran accés a la documentació de
-                l’associació si ho sol·liciten i s’aprova en Assemblea Ordinària.</p>
-
-            <q><strong>article 06</strong></q>
-            <h4>Són drets de la membresia de l’associació, de Membres tipus 1 i tipus 2:</h4>
-
-            <ul>
-                <li>Assistir amb veu i de manera constituent a les reunions de l’Assemblea General.</li>
-                <li>Elegir o ser persona elegida per als llocs de representació o per exercir càrrecs directius.</li>
-                <li>Exercir la representació que se’ls confereix en cada cas.</li>
-                <li>Intervenir en el govern i les gestions, en els serveis i les activitats de l’associació, d’acord amb
-                    les normes legals i estatutàries.</li>
-                <li>Exposar a l’Assemblea i a la Junta Directiva tot el que considerin que pugui contribuir a fer més
-                    plena la vida de l’associació i més eficaç la realització dels objectius socials bàsics.</li>
-                <li>Qüestionar problemàtiques estatutàries i de protocols de conducta per a la seva possible
-                    modificació.</li>
-                <li>Sol·licitar i obtenir explicacions sobre l’administració i la gestió de la Junta Directiva i les
-                    comissions de l’associació.</li>
-                <li>Dret a la parla i l’escolta igualitària.</li>
-                <li>Disposar d’un espai segur on desenvolupar les problemàtiques.</li>
-                <li>Rebre informació sobre les activitats de l’associació.</li>
-                <li>Fer ús dels serveis comuns que l’associació estableixi o tingui a la seva disposició.</li>
-                <li>Formar part de les comissions i crear-ne de noves.</li>
-                <li>Posseir un exemplar dels estatuts.</li>
-                <li>Consultar els llibres de l’associació i qualsevol documentació rellevant.</li>
-                <li>Proposar, en cas excepcional i en assemblea, el bescanvi de pagament de la quota per una
-                    contraprestació de serveis específica i mediada per tota la membresia en assemblea ordinària.</li>
-                <li>Saber les quotes de la membresia corresponent i les seves actualitzacions.</li>
-                <li>Dret a l’escolta i la defensa abans que s’adoptin mesures disciplinàries.</li>
-
-            </ul>
-
-            <q><strong>article 07</strong></q>
-            <h4>Són deures de la membresia de l’associació, tant de Membres tipus 1 com de tipus 2:</h4>
-
-            <ul>
-                <li>Comprometre’s amb les finalitats de l’associació i participar activament per assolir-les.</li>
-                <li>Comunicar, articular o fer públics els conflictes que sorgeixin dins el marc de les activitats de
-                    l’associació en les assemblees o en la pròpia comunicació interna.</li>
-                <li>Sotmetre a mediació les controvèrsies que sorgeixin per raó del funcionament de l’associació.</li>
-            </ul>
-
-            <q><strong>article 08</strong></q>
-
-            <p><strong>Són causes per ser donat de baixa de l’associació:</strong></p>
-            <ul>
-                <li>Que ho decideixi la persona interessada, que ha de comunicar per escrit la seva decisió a la Junta
-                    Directiva.</li>
-                <li>No satisfer les quotes fixades o les altres formes de pagament establertes.</li>
-                <li>No complir les obligacions estatutàries.</li>
-                <li>Comportaments reiterats que violin el codi de les Pràctiques Desitjables.</li>
-            </ul>
-
-            <h3>Capítol III. L’Assemblea General</h3>
-
-            <q><strong>article 09</strong></q>
-
-            <ol>
-                <li>L’Assemblea General és l’òrgan sobirà de l’associació; la membresia en forma part per dret propi i
-                    irrenunciable.</li>
-                <li>La membresia de l’associació, reunida en Assemblea General legalment constituïda, decideix per
-                    unanimitat els assumptes que són competència de l’Assemblea.</li>
-                <li>Tota la membresia queda subjecta als acords de l’Assemblea General, incloent-hi qui està absent, qui
-                    en discrepa i qui hi està present que s’ha abstingut de votar.</li>
-            </ol>
-
-            <q><strong>article 10</strong></q>
-
-            <h4>L’Assemblea General té les facultats següents:</h4>
-            <ul>
-                <li>Aprovar la gestió de l’òrgan de govern, el pressupost i els comptes anuals.</li>
-                <li>Elegir i separar qui forma part de l’òrgan de govern i controlar-ne l’activitat.</li>
-                <li>Modificar els estatuts per incloure diversitats.</li>
-                <li>Acordar la forma i l’import de les contribucions al finançament de l’associació o al pagament de les
-                    seves despeses, incloent-hi les aportacions al patrimoni de l’associació.</li>
-                <li>Acordar la transformació, la fusió, l’escissió o la dissolució de l’associació.</li>
-                <li>Acordar l’ingrés i la baixa en federacions o confederacions.</li>
-                <li>Sol·licitar la declaració d’utilitat pública.</li>
-                <li>Aprovar el reglament de règim intern i les seves modificacions.</li>
-                <li>Conèixer les sol·licituds presentades per les persones associades, i també les altes i les baixes
-                    per una raó diferent de la separació definitiva.</li>
-                <li>Ratificar, si escau, la baixa disciplinària i les altres sancions imposades per la Junta Directiva
-                    per faltes molt greus.</li>
-                <li>Resoldre sobre les qüestions que no estiguin expressament atribuïdes a cap altre òrgan de
-                    l’associació.</li>
-            </ul>
-
-            <q><strong>article 11</strong></q>
-
-            <ol start="1">
-                <li>L’Assemblea General es reuneix en sessió ordinària com a mínim un cop l’any, dins dels sis mesos
-                    següents a la data de tancament de l’exercici econòmic.</li>
-                <li>L’òrgan de govern pot convocar l’Assemblea General amb caràcter extraordinari sempre que ho
-                    consideri convenient, i ho ha de fer quan ho sol·liciti un 8% de la membresia; en aquest cas,
-                    l’Assemblea ha de tenir lloc dins el termini de set dies a comptar des de la sol·licitud.</li>
-            </ol>
-
-            <q><strong>article 12</strong></q>
-
-            <h4>Convocatòria i funcionament de l’Assemblea General</h4>
-            <ol>
-                <li>L’Assemblea General és convocada per l’òrgan de govern mitjançant una convocatòria que ha de
-                    contenir, com a mínim, l’ordre del dia, el lloc, la data i l’hora de la reunió.</li>
-                <li>La convocatòria s’ha de comunicar quinze dies abans de la data de la reunió, individualment i
-                    mitjançant un escrit adreçat al domicili postal, a l’adreça de correu electrònic o a altres mitjans
-                    telemàtics de comunicació que constin de manera identificada i actualitzada els contactes de la
-                    membresia de l’associació.</li>
-                <li>Les reunions es poden dur a terme per mitjà de videoconferència o d’altres mitjans de comunicació,
-                    sempre que quedi garantida la identificació de qui assisteix, la continuïtat de la comunicació, la
-                    possibilitat d’intervenir en la deliberació i l’emissió del vot. En aquest cas, s’entén que la
-                    reunió se celebra on és la persona que la presideix.</li>
-                <li>Les reunions de l’Assemblea General, les presideix la persona a càrrec de la Presidència de
-                    l’associació. Si no hi és, l’han de substituir, successivament, la persona a càrrec de la
-                    Vicepresidència o qui sigui vocal per decisió unànime de la resta de membresia present a la reunió.
-                    Hi ha d’actuar com persona a càrrec de la Secretaria qui ocupi el mateix càrrec a la Junta
-                    Directiva.</li>
-                <li>La Secretaria redacta l’acta de cada reunió, que ha de signar juntament amb La Presidència, en la
-                    qual hi ha de figurar un extracte de les deliberacions, el text dels acords adoptats, el resultat
-                    numèric de les votacions i la llista de les persones assistents.</li>
-                <li>Al començament de cada reunió de l’Assemblea General es llegeix l’acta de la sessió anterior a fi
-                    que s’aprovi o s’esmeni. Cinc dies abans, de tota manera, l’acta i qualsevol altra documentació ha
-                    d’estar a disposició de la membresia al local social.</li>
-            </ol>
-
-            <q><strong>article 13</strong></q>
-            <h4>Funcionament de l’Assemblea General</h4>
-
-            <ol>
-                <li>L’Assemblea General es constitueix vàlidament sigui quin sigui el nombre de persones presents o
-                    representades.</li>
-                <li>El 8% de la membresia pot sol·licitar a l’òrgan de govern la inclusió en l’ordre del dia d’un o més
-                    assumptes per tractar. En el cas que ja s’hagi convocat l’Assemblea, poden fer-ho dins el primer
-                    terç del període comprès entre la recepció de la convocatòria i la data en què aquest òrgan s’ha de
-                    reunir. L’Assemblea únicament pot adoptar acords respecte als punts inclosos en l’ordre del dia,
-                    llevat que s’hagi constituït amb caràcter universal o que els acords es refereixin a la convocatòria
-                    d’una nova Assemblea General.</li>
-            </ol>
-
-            <q><strong>article 14</strong></q>
-            <h4>Adopció d’acords</h4>
-
-            <ol>
-                <li>En les reunions de l’Assemblea General, correspon un vot a cada membre de l’associació.</li>
-                <li>Els acords es prenen per unanimitat de vots dels membres presents o qui està representat.</li>
-                <li>Es poden adoptar acords sense reunió de manera excepcional —a instància de la Presidència de
-                    l’associació, de dos terços de qui forma part de la Junta Directiva o d’un 8% de la membresia—
-                    mitjançant l’emissió del vot per correspondència postal, comunicació telemàtica o qualsevol altre
-                    mitjà, sempre que quedin garantits els drets d’informació i de vot, que quedi constància de la
-                    recepció del vot i que se’n garanteixi l’autenticitat. S’entén que l’acord s’adopta al lloc del
-                    domicili de la persona jurídica i en la data de recepció del darrer dels vots vàlidament emesos.
-                </li>
-                <li>Per adoptar acords sobre la modificació dels estatuts, la dissolució de l’associació, la constitució
-                    d’una federació amb associacions similars o la integració en una de ja existent, i la disposició o
-                    alienació de béns, es requereix una decisió unànime de la membresia present o representada.</li>
-                <li>En qualsevol cas, l’elecció de la Junta Directiva, si es presenten diverses candidatures, es fa per
-                    acord de la membresia present o representada.</li>
-                <li>Les candidatures que es presenten formalment tenen dret a una còpia de la llista de la membresia i
-                    dels domicilis i adreces de correu electrònic, sempre que se n’hagi obtingut l’autorització
-                    expressa.</li>
-            </ol>
-
-            <h3>Capítol IV. Assemblea Ordinària</h3>
-
-            <q><strong>article 15</strong></q>
-
-            <p>L’Assemblea Ordinària és un tipus d’assemblea que té lloc amb una periodicitat de quinze dies en la qual
-                es prendran decisions vinculants relatives a propostes i projectes que estiguin en marxa i es debatrà
-                sobre problemàtiques relacionades amb això. Les Assemblees Ordinàries també són un espai on es poden
-                comunicar les activitats de les diferents comissions.</p>
-
-            <q><strong>article 16</strong></q>
-
-            <h4>L’Assemblea Ordinària té les facultats següents:</h4>
-            <ul>
-                <li>Presentar, compartir i informar de l’evolució de les comissions.</li>
-                <li>Mostrar i explicar els exercicis econòmics en procés i els seus reculls trimestrals.</li>
-                <li>Tractar i debatre les funcions de l'associació.</li>
-                <li>Recollir dissensos.</li>
-                <li>Tractar temes de manteniment de l’espai.</li>
-            </ul>
-
-            <q><strong>article 17</strong></q>
-
-            <p>L’Assemblea Ordinària tindrà lloc cada dues setmanes i es pactarà l’horari i data concreta de la següent
-                al final de cada sessió. La decisió presa es comunicarà de forma oficial a tot el conjunt d’associats a
-                través del canal de comunicació habitual. L’assistència de la membresia, exceptuant la Junta Directiva o
-                la seva substitució, no és obligatòria, però sí la consulta de les actes per tal d’assabentar-se del
-                desenvolupament de la reunió.</p>
-
-            <q><strong>article 18</strong></q>
-
-            <p>En casos excepcionals i d’urgència la Junta Directiva o el 8% de la membresia pot convocar una Assemblea
-                Extraordinària amb un equilibri mediat entre la capacitat d’assistència de la membresia i la data més
-                propera possible.</p>
-
-            <h3>Capítol V. La Junta Directiva</h3>
-
-            <q><strong>article 19</strong></q>
-
-            <ol>
-                <li>La Junta Directiva regeix, administra i representa l’associació. Componen aquest òrgan la
-                    Presidència, la Vicepresidència, la Secretaria, la Tresoreria i vocals; càrrecs que han de ser
-                    exercits per persones diferents.</li>
-                <li>L’elecció de la formació de la Junta Directiva, que han de ser part de la membresia i majors d’edat,
-                    es fa per votació unànime de l’Assemblea General. Les persones elegides entren en funcions després
-                    d’haver acceptat el càrrec.</li>
-                <li>El nomenament i el cessament dels càrrecs s’han de comunicar al Registre d’associacions mitjançant
-                    un certificat, emès per la Secretaria sortint amb el vistiplau de la Presidència, que ha d’incloure
-                    també l’acceptació de la nova Presidència i de la nova Secretaria.</li>
-                <li>Qui forma la Junta Directiva exerceix el càrrec gratuïtament.</li>
-            </ol>
-
-            <q><strong>article 20</strong></q>
-            <h4>Duració del mandat i cessament dels càrrecs</h4>
-
-            <ol>
-                <li>Qui forma la Junta Directiva exerceix el càrrec durant el període de dos anys ampliables a quatre
-                    anys, sense perjudici que puguin escollir-se una altra candidatura.</li>
-                <li>El cessament dels càrrecs abans d’extingir-se el termini reglamentari del seu mandat pot
-                    esdevenir-se per:
-                    <ul>
-                        <li>Mort o declaració d’absència.</li>
-                        <li>Incapacitat o inhabilitació.</li>
-                        <li>Renúncia notificada a l’òrgan de govern.</li>
-                        <li>Separació acordada per l’Assemblea General.</li>
-                        <li>Qualsevol altra causa que estableixin la llei o els estatuts.</li>
-                    </ul>
-                </li>
-                <li>Les vacants que es produeixin en la Junta Directiva s’han de cobrir en la primera reunió de
-                    l’Assemblea General que tingui lloc. Mentrestant, un membre de l’associació pot ocupar
-                    provisionalment el càrrec vacant votat en acord per unanimitat per la resta de membresia.</li>
-            </ol>
-
-            <q><strong>article 21</strong></q>
-            <h4>La Junta Directiva té les facultats següents:</h4>
-            <ol>
-                <li>Representar, dirigir i administrar l’associació de la manera més àmplia que reconegui la llei; així
-                    mateix, complir les decisions preses per l’Assemblea General, d’acord amb les normes, instruccions i
-                    directrius que aquesta Assemblea estableixi.</li>
-                <li>Prendre els acords que calgui en relació amb la compareixença davant dels organismes públics i per
-                    exercir tota mena d’accions legals i interposar els recursos pertinents.</li>
-                <li>Suggerir a l’Assemblea General la defensa dels interessos de l’associació.</li>
-                <li>Suggerir a l’Assemblea General la defensa de l’establiment de les quotes que els membres de
-                    l’associació han de satisfer.</li>
-                <li>Convocar les assemblees generals i controlar que es compleixin els acords que s’hi adoptin.</li>
-                <li>Presentar el balanç i l’estat de comptes de cada exercici a l’Assemblea General perquè els aprovi, i
-                    confeccionar els pressupostos de l’exercici següent.</li>
-                <li>Contractar persones empleades que l’associació pugui tenir.</li>
-                <li>Inspeccionar la comptabilitat i preocupar-se perquè els serveis funcionin amb normalitat.</li>
-                <li>Establir grups de treball per aconseguir de la manera més eficient i eficaç els fins de
-                    l’associació, i autoritzar les actes que aquests grups projectin dur a terme.</li>
-                <li>Nomenar vocals de la Junta Directiva que s’hagin d’encarregar de cada grup de treball, a proposta
-                    dels mateixos grups.</li>
-                <li>Dur a terme les gestions necessàries davant d’organismes públics, entitats i altres persones, per
-                    aconseguir:
-                    <ul>
-                        <li>Subvencions o altres ajuts.</li>
-                        <li>L’ús de locals o edificis que puguin arribar a ser un lloc de convivència i comunicació i
-                            també un centre de recuperació ciutadana.</li>
-                    </ul>
-                </li>
-                <li>Obrir comptes corrents i llibretes d’estalvis a qualsevol establiment de crèdit o d’estalvi i
-                    disposar dels fons que hi hagi en aquest dipòsit. La disposició dels fons es determina a l’article
-                    34.</li>
-                <li>Resoldre provisionalment qualsevol cas que no hagin previst els estatuts i donar-ne compte en la
-                    primera reunió de l’Assemblea General.</li>
-                <li>Qualsevol altra facultat que no sigui atribuïda d’una manera específica a algun altre òrgan de
-                    govern de l’associació o que li hagi estat delegada expressament.</li>
-            </ol>
-
-            <q><strong>article 22</strong></q>
-            <h4>Reunions de la Junta Directiva</h4>
-
-            <ol>
-                <li>La Junta Directiva, convocada prèviament per la Presidència o per la persona que el substitueixi,
-                    s’ha de reunir en sessió ordinària amb la periodicitat que la membresia decideixi, que en cap cas no
-                    pot ser inferior a una vegada cada trimestre.</li>
-                <li>S’ha de reunir en sessió extraordinària quan la Presidència la convoqui amb aquest caràcter o bé si
-                    ho sol·licita un terç dels membres que la componen.</li>
-                <li>Les reunions es poden dur a terme per mitjà de videoconferència o d’altres mitjans de comunicació,
-                    sempre que quedi garantida la identificació de qui assisteix, la continuïtat de la comunicació, la
-                    possibilitat d’intervenir en la deliberació i l’emissió del vot. En aquest cas, s’entén que la
-                    reunió se celebra on és la persona que la presideix.</li>
-            </ol>
-
-            <q><strong>article 23</strong></q>
-            <h4>Constitució i adopció d’acords de la Junta Directiva</h4>
-
-            <ol>
-                <li>La Junta Directiva queda constituïda vàlidament si ha estat convocada amb antelació i hi ha un
-                    quòrum unànime de la membresia.</li>
-                <li>Qui forma la Junta Directiva té obligació a assistir a totes les reunions que es convoquin, encara
-                    que, per causes justificades, poden excusar-se’n. L’assistència de la Presidència o de la Secretaria
-                    o de les persones que substitueixin hi és necessària sempre.</li>
-                <li>La Junta Directiva pren els acords per votació unànime de qui assisteix.</li>
-                <li>Es poden adoptar acords sense reunió física de manera excepcional —a instància de la Presidència de
-                    l’associació o de dos terços dels membres de la junta directiva— mitjançant l’emissió del vot per
-                    correspondència postal, comunicació telemàtica o qualsevol altre mitjà, sempre que quedin garantits
-                    els drets d’informació i de vot, que quedi constància de la recepció del vot i que se’n garanteixi
-                    l’autenticitat. S’entén que l’acord s’adopta al lloc del domicili de la persona jurídica i en la
-                    data de recepció del darrer dels vots vàlidament emesos.</li>
-            </ol>
-
-            <q><strong>article 24</strong></q>
-            <h4>Delegació de facultats</h4>
-
-            <ol>
-                <li>La Junta Directiva pot delegar alguna de les seves facultats en una o diverses comissions o grups de
-                    treball si compta, per fer-ho, amb el consens de la resta de la membresia de l’associació i de qui
-                    integra la comissió.</li>
-                <li>També pot nomenar, amb el mateix quòrum, altres persones mandatàries per exercir la funció que els
-                    confiï en les facultats que cregui oportú conferir-los en cada cas.</li>
-                <li>No són delegables la formulació dels comptes ni les actes que hagin de ser autoritzades o aprovades
-                    per l’Assemblea General.</li>
-            </ol>
-
-            <q><strong>article 25</strong></q>
-
-            <p>Els acords de la Junta Directiva s’han de fer constar en el llibre d’actes i els han de signar La
-                Secretaria i la Presidència. En iniciar-se cada reunió de la Junta Directiva, s’ha de llegir l’acta de
-                la sessió anterior perquè s’aprovi o es rectifiqui, si és procedent.</p>
-
-            <h3>Capítol VI. La Presidència i la Vicepresidència</h3>
-
-            <q><strong>article 26</strong></q>
-
-            <ol>
-                <li>Són pròpies de la Presidència les funcions següents:
-                    <ul>
-                        <li>Dirigir i representar legalment l’associació, per delegació de l’Assemblea General i de la
-                            Junta Directiva.</li>
-                        <li>Presidir i dirigir els debats, tant de l’Assemblea General, Ordinària com de la Junta
-                            Directiva.</li>
-                        <li>Mediar en cas de votació per la resolució d’un vot unànime.</li>
-                        <li>Establir la convocatòria de les reunions de l’Assemblea General i de la Junta Directiva.
-                        </li>
-                        <li>Visar les actes i els certificats confeccionats per la Secretaria de l’associació.</li>
-                        <li>Les atribucions restants pròpies del càrrec i les delegades per l’Assemblea General o la
-                            Junta Directiva.</li>
-                    </ul>
-                </li>
-                <li>La Presidència és substituïda, en cas d’absència o malaltia, per la Vicepresidència —si n’hi ha— o
-                    el vocal acordat de la Junta, per aquest ordre.</li>
-            </ol>
-
-            <h3>Capítol VII. La Tresoreria i la Secretaria</h3>
-
-            <q><strong>article 27</strong></q>
-
-            <p>La Tresoreria té com a funció la custòdia i el control dels recursos de l’associació, com també
-                l’elaboració del pressupost, el balanç i la liquidació de comptes. Porta un llibre de caixa. Signa els
-                rebuts de quotes i altres documents de tresoreria. Paga les factures aprovades per la Junta Directiva,
-                les quals han de ser visades prèviament per la Presidència, i ingressa el que sobra en dipòsits oberts
-                en establiments de crèdit o d’estalvi. Estableix les quotes de la Membresia Tipus 1 i Membresia Tipus 2
-                en funció de les despeses de l’Associació així com determinar les dates de pagament a efectuar per la
-                membresia. En cas que la quota mensual canviï, Tresoreria ha d’avisar a la membresia com a mínim set
-                dies abans de l’efectuació del pagament.</p>
-
-            <q><strong>article 28</strong></q>
-
-            <p>La Secretaria ha de custodiar la documentació de l’associació, aixecar, redactar i signar les actes de
-                les reunions de l’Assemblea General i la Junta Directiva, redactar i autoritzar els certificats que
-                calgui lliurar, i també portar el llibre de registre de la membresia.</p>
-
-            <h3>Capítol VIII. Les Comissions o Grups de Treball</h3>
-
-            <q><strong>article 29</strong></q>
-
-            <p>La creació i constitució de qualsevol Comissió o Grup de Treball, ha de plantejar-se per part de la
-                membresia de l’associació que vulguin formar-los, que han d’informar la Junta Directiva i la resta de
-                membres, via mitjans de comunicació interns habituals i exposició pública, per explicar les activitats
-                que es proposen dur a terme i obrir la comissió a altres participants.</p>
-            <p>La Junta Directiva s’ha d’ocupar d’analitzar les diferents comissions o grups de treball, qui s’encarrega
-                de les comissions han de presentar trimestralment en Assemblea Ordinària, com a mínim, un informe
-                detallat de les seves actuacions.</p>
-            <p>L’associació consta de tres comissions, amb la possibilitat d’ampliar-ne el número:</p>
-
-            <h4>Comissió d’investigació i divulgació:</h4>
-            <ul>
-                <li>Articular l'administració amb serveis i espais de formació.</li>
-                <li>Dur la interlocució amb agents externs i cossos administratius.</li>
-                <li>Treballar conjuntament amb les altres comissions quan tinguin necessitat de realitzar comunicats
-                    públics.</li>
-                <li>Confeccionar documents de representació i premsa.</li>
-                <li>Articular projectes col·laboratius entre entitats.</li>
-                <li>Suggerir subvencions i ajuts d'interès d'acord amb la direcció política.</li>
-                <li>Estudiar propostes relacionades amb mobilitat, intercanvi, etc.</li>
-                <li>Promoure metodologies d’aprenentatge i experimentació cultural que reforcin la vinculació amb la
-                    comunitat i els territoris.</li>
-                <li>Donar suport a la recerca i a la producció.</li>
-                <li>Treballar pel desenvolupament de la investigació artística com a generadora de coneixement i
-                    experiències.</li>
-                <li>Vetllar per una visió crítica i dialògica envers les accions de l’associació.</li>
-            </ul>
-
-            <h4>Comissió de polítiques internes i gènere:</h4>
-            <ul>
-                <li>Treballar per la construcció d’una línia política concreta i representativa del col·lectiu.</li>
-                <li>Elaboració de protocols, polítiques i funcionaments interns.</li>
-                <li>Revisar i qüestionar les pràctiques polítiques de l’associació.</li>
-                <li>Fer constituents les pràctiques i metodologies internes.</li>
-                <li>Fomentar els incentius per a la participació de la membresia en processos constituents.</li>
-                <li>Desplegar metodologies dialèctiques en la presa de decisions durant les votacions unànimes.</li>
-                <li>Apropar a qui no disposi del capital social, temporal o cultural les idees de l’associació.</li>
-            </ul>
-
-            <h4>Comissió de tallers:</h4>
-            <ul>
-                <li>Manteniment i revisió de l’estat dels tallers dels quals disposa l’associació.</li>
-                <li>Elaboració de protocols interns dins de cada espai de treball.</li>
-                <li>Assistir a la membresia que sol·liciti ajuda tècnica per a fer servir el taller.</li>
-                <li>Formació específica dels diversos materials i eines disponibles a la membresia interessada, així com
-                    els riscos que comporten aquests.</li>
-                <li>Replantejament dels usos i disposició dels espais del local, així com el seu ordre intern.</li>
-                <li>Reposició i adquisició de fungibles així com propostes per a noves adquisicions d’eines.</li>
-            </ul>
-
-            <q><strong>article 30</strong></q>
-
-            <p>Qualsevol membre que no formi part d’una comissió tindrà dret a assistir i participar activament a les
-                reunions d’aquestes. Tanmateix, la persona membre que assisteix sense formar-ne part tindrà veu
-                vinculant però no constituent a l’hora de la presa de decisions de la mateixa Comissió o Grup de
-                Treball, que es prendran per unanimitat.</p>
-
-            <h3>Capítol IX. El règim econòmic</h3>
-
-            <q><strong>article 31</strong></q>
-
-            <p>Els recursos econòmics de l’associació es nodreixen de:</p>
-            <ul>
-                <li>Les quotes que fixa l’Assemblea General per la membresia.</li>
-                <li>Les subvencions oficials o particulars, convenis, contractes o premis oficials o particulars afins a
-                    la línia política.</li>
-                <li>Les donacions, les herències o els llegats.</li>
-                <li>Les rendes del patrimoni mateix o bé d’altres ingressos que puguin obtenir-se.</li>
-            </ul>
-
-            <q><strong>article 32</strong></q>
-
-            <p>Tota la membresia de l’associació té l’obligació de sostenir-la econòmicament, mitjançant quotes,
-                derrames o contraprestacions, de la manera i en la proporció que determini l’Assemblea General a
-                proposta de la Junta Directiva.</p>
-            <p>L’Assemblea General pot establir quotes d’ingrés, quotes periòdiques mensuals —que s’han d’abonar per
-                mesos, trimestres o semestres, segons el que disposi la Junta Directiva— i quotes extraordinàries.</p>
-
-            <q><strong>article 33</strong></q>
-            <p>L’exercici econòmic coincideix amb l’any natural i queda tancat el 31 de desembre.</p>
-
-            <q><strong>article 34</strong></q>
-            <h4>Gestió dels comptes corrents o llibretes d’estalvi</h4>
-
-            <p>En els comptes corrents o llibretes d’estalvis obertes en establiments de crèdit o d’estalvi, hi han de
-                figurar les signatures de la Junta Directiva. Tot i això, la titularitat dels comptes anirà en nom de
-                l’Associació ETRESMIL.</p>
-            <p>Per poder disposar dels fons n’hi ha prou amb signatures indistintes, de les quals han de ser de
-                Tresoreria o bé de la Presidència.</p>
-
-            <h3>Capítol X. El règim disciplinari</h3>
-            <q><strong>article 35</strong></q>
-
-            <p>L’òrgan de govern pot sancionar les infraccions comeses per la membresia.</p>
-            <p>La Junta Directiva tindrà en compte el codi de Pràctiques Desitjables per a la resolució.</p>
-            <p>Aquestes infraccions es poden qualificar de lleus, greus i molt greus, i les sancions corresponents poden
-                anar des d’una amonestació fins a l’expulsió de l’associació, segons el que estableixi el reglament
-                intern.</p>
-            <p>El procediment sancionador s’inicia d’ofici o bé a conseqüència d’una denúncia o comunicació. En el
-                termini de deu dies, la Junta Directiva nomena una persona instructora, que tramita l’expedient
-                sancionador i proposa la resolució en el termini de quinze dies, amb audiència prèvia de la persona
-                presumpta infractora. La resolució final, que ha de ser motivada i aprovada per dues terceres parts de
-                la membresia de la Junta Directiva, l’adopta aquest òrgan de govern també dins d’un període de quinze
-                dies.</p>
-            <p>En els casos de sancions per faltes molt greus acordades per la Junta Directiva, les persones
-                interessades poden sol·licitar la ratificació de la sanció davant la primera Assemblea General que
-                tingui lloc.</p>
-
-            <h3>Capítol XI. La dissolució</h3>
-            <q><strong>article 36</strong></q>
-
-            <p>L’associació es pot dissoldre si ho acorda l’Assemblea General, convocada amb caràcter extraordinari
-                expressament per a aquest fi.</p>
-
-            <q><strong>article 37</strong></q>
-
-            <ol>
-                <li>Un cop acordada la dissolució, l’Assemblea General ha de prendre les mesures oportunes tant pel que
-                    fa a la destinació dels béns i drets de l’associació, com a la finalitat, l’extinció i la liquidació
-                    de qualsevol operació pendent.</li>
-                <li>L’Assemblea està facultada per elegir una comissió liquidadora sempre que ho cregui necessari.</li>
-                <li>La membresia de l’associació està exempta de responsabilitat personal. La seva responsabilitat queda
-                    limitada a complir les obligacions que hagin contret voluntàriament.</li>
-                <li>El romanament net que resulti de la liquidació s’ha de lliurar directament a l’entitat pública o
-                    privada sense afany de lucre que, en l’àmbit territorial d’actuació de l’associació, hagi destacat
-                    més en la seva activitat a favor d’obres benèfiques.</li>
-                <li>Les funcions de liquidació i d’execució dels acords a què fan referència els apartats anteriors
-                    d’aquest mateix article són competència de la Junta Directiva si l’Assemblea General no confereix
-                    aquesta missió a una comissió liquidadora especialment designada a aquest efecte.</li>
-            </ol>
-
-            <p><strong>Esplugues de Llobregat, 6 d’octubre de 2024</strong></p>
-            <p><strong>Per la present, signen:</strong></p>
-            <p>La secretària: Céline Lurac</p>
-            <p>Vistiplau del president: Joan Boix i Moya</p>
-
-            <p><strong>firmado fecha: 6 octubre 2024</strong></p>
-
-        </section>
-
-        <div class="language-links"></div>
-
-        <div class="menu-links">
-            <a href="#logo-container">logo</a>
-            <a href="#descripcio">descripció</a>
-            <a href="#projectes">projectes</a>
-            <a href="#contacte">contacte</a>
-            <a href="#membres">membres</a>
-            <a href="#estatuts">estatuts</a>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Preescalfar el forn a 180-200ºC.</li>
+                    <li>Cuinar la massa sola primer al forn durant uns minuts.</li>
+                    <li>Barrejar els ous amb la nata i afegir el farciment que es vulgui.</li>
+                    <li>Abocar la barreja sobre la massa i enfornar durant 30 minuts.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe sulfitos">
+            <h2>Pollastre a la cervesa</h2>
+            <div class="ingredients ingredients-pollastre">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>2-3 pits de pollastre sencers</li>
+                    <li>1 ceba gran</li>
+                    <li>2-3 pastanagues grans</li>
+                    <li>2 alls</li>
+                    <li>1 cervesa de bona qualitat (millor negra)</li>
+                    <li>Caldo de pollastre</li>
+                    <li>Sal i pebre</li>
+                    <li>AOVE</li>
+                </ul>
+            </div>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Tallar els pits de pollastre a trossos grans.</li>
+                    <li>En una paella amb oli d'oliva, daurar els alls aixafats.</li>
+                    <li>Afegir els trossos de pollastre i daurar-los per fora.</li>
+                    <li>Retirar el pollastre i daurar la ceba picada amb el mateix oli.</li>
+                    <li>Afegir les pastanagues tallades i sofregir uns minuts.</li>
+                    <li>Afegir el pollastre de nou, abocar la cervesa fins a cobrir el pollastre.</li>
+                    <li>Afegir caldo fins a cobrir si cal i deixar bullir a foc baix durant 1 hora.</li>
+                    <li>Salpebrar al gust i servir.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="recipe gluten lacteos frutos-secos">
+            <h2>Cheesecake (sense forn)</h2>
+            <div class="ingredients ingredients-cheesecake2">
+                <h3>Ingredients:</h3>
+                <ul>
+                    <li>1 terrina de formatge tipus Philadelphia</li>
+                    <li>1 pot de nata líquida per muntar</li>
+                    <li>1 paquet de galetes Digestive</li>
+                    <li>150g de mantega</li>
+                    <li>80g de sucre (al gust)</li>
+                    <li>6 làmines de gelatina (opcional)</li>
+                    <li>1 pot de melmelada de maduixa</li>
+                    <li>Fruits vermells per decorar</li>
+                </ul>
+            </div>
+            <div class="steps">
+                <h3>Passos:</h3>
+                <ol>
+                    <li>Deixar la nata líquida a la nevera durant 24 hores.</li>
+                    <li>Fondre la mantega i triturar les galetes.</li>
+                    <li>Barrejar la mantega amb les galetes per fer la base al motlle.</li>
+                    <li>En un bol, muntar la nata.</li>
+                    <li>Batre el formatge amb el sucre fins que quedi suau.</li>
+                    <li>Afegir la gelatina hidratada (segons el paquet) al formatge.</li>
+                    <li>Afegir la nata muntada amb una espàtula i barrejar suaument.</li>
+                    <li>Posar-ho tot al motlle i deixar a la nevera mínim 5 hores.</li>
+                    <li>Decorar amb melmelada i fruits vermells abans de servir.</li>
+                </ol>
+            </div>
         </div>
     </div>
 
-    <script src="script/languageLinks.js"></script>
-    <script src="script/styleLinks.js"></script>
-    <!--este esta en test aun-->
-    <script src="script/activeMenu.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const alergenos = document.querySelectorAll(".alergeno");
+            const recipes = document.querySelectorAll(".recipe");
+            let activeTooltip = null;
 
+            alergenos.forEach(alergeno => {
+                alergeno.addEventListener("click", function () {
+                    // Toggle 'active' class to mark allergen as selected
+                    alergeno.classList.toggle("active");
+
+                    // Get the allergen data attribute (e.g., 'gluten')
+                    const alergenoName = alergeno.getAttribute("data-alergeno");
+
+                    // Hide or show recipes based on selected allergens
+                    recipes.forEach(recipe => {
+                        if (recipe.classList.contains(alergenoName)) {
+                            if (alergeno.classList.contains("active")) {
+                                // Ocultar receta con animación
+                                recipe.classList.add("hidden");
+                                recipe.classList.remove("appearing");
+                            } else {
+                                // Mostrar receta con animación
+                                recipe.classList.remove("hidden");
+                                recipe.classList.add("appearing");
+                            }
+                        }
+                    });
+
+                    // Mostrar el tooltip en móvil/desktop
+                    if (activeTooltip) {
+                        activeTooltip.remove(); // Elimina cualquier tooltip existente
+                    }
+
+                    const tooltip = document.createElement("div");
+                    tooltip.className = "tooltip";
+                    tooltip.innerText = alergeno.getAttribute("title");
+                    document.body.appendChild(tooltip);
+
+                    // Posicionar el tooltip cerca del alérgeno
+                    const rect = alergeno.getBoundingClientRect();
+                    tooltip.style.left = `${rect.left + window.scrollX + 10}px`;
+                    tooltip.style.top = `${rect.top + window.scrollY - 30}px`;
+
+                    activeTooltip = tooltip; // Guardar el tooltip activo
+
+                    // Añadir un evento para cerrar el tooltip cuando se hace clic en cualquier parte del documento
+                    document.addEventListener("click", function handleDocumentClick(event) {
+                        if (!alergeno.contains(event.target) && !tooltip.contains(event.target)) {
+                            if (activeTooltip) {
+                                activeTooltip.remove();
+                                activeTooltip = null;
+                            }
+                            document.removeEventListener("click", handleDocumentClick);
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Seleccionar los elementos necesarios
+            const infoContainer = document.querySelector('.info');
+            const infoTab = document.querySelector('.info-tab');
+            const alergiaContainer = document.querySelector('#alergia-container');
+
+            // Variable para almacenar el estado actual del contenedor
+            let isInfoVisible = false;
+
+            // Añadir evento de clic a la lengüeta
+            infoTab.addEventListener('click', function () {
+                if (isInfoVisible) {
+                    // Ocultar el contenedor .info
+                    infoContainer.style.transform = "translateX(-100%)";
+                    infoContainer.style.marginLeft = "-50px";
+                    infoTab.style.right = "-150px";
+
+                    alergiaContainer.style.transform = "translateX(100%)";
+
+                    isInfoVisible = false;
+                } else {
+                    // Mostrar el contenedor .info
+                    infoContainer.style.transform = "translateX(0)";
+                    infoTab.style.right = "-30px";
+
+                    alergiaContainer.style.transform = "translateX(0)";
+
+                    isInfoVisible = true;
+                }
+            });
+        });
+    </script>
 
 </body>
 
