@@ -193,7 +193,6 @@ body {
 .menu-links {
     position: fixed;
     display: flex;
-    gap: 10px;
     bottom: 10px;
     right: 20px;
     font-weight: bold;
@@ -302,3 +301,112 @@ a.link-con-href:hover {
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+
+/*SERVEIS (NEW: 23/07/25*/
+
+
+#serveis {
+  display: flex;
+  flex-direction: column;  
+  justify-content: center;  
+  min-height: 100vh;        
+}
+
+#serveis h3, #serveis p, #serveis li {
+    text-align: center;
+    margin: 0;
+}
+
+#serveis ul{
+    list-style: none;
+    padding: 0;
+}
+
+/* FadeInOut secuencial para los <li> de #serveis */
+#serveis ul li {
+  opacity: 0;                         /* invisibles al inicio */
+  animation: fadeInOut 15s linear infinite;
+  /* 15s = 5 ítems × 3s cada uno */
+}
+
+/* Retrasos para que salgan uno a uno cada 3s */
+#serveis ul li:nth-child(1) { animation-delay: 0s;  }
+#serveis ul li:nth-child(2) { animation-delay: 3s;  }
+#serveis ul li:nth-child(3) { animation-delay: 6s;  }
+#serveis ul li:nth-child(4) { animation-delay: 9s;  }
+#serveis ul li:nth-child(5) { animation-delay: 12s; }
+
+/* Keyframes: aparece, permanece y desaparece */
+@keyframes fadeInOut {
+  0%   { opacity: 0; transform: translateY(10px); }
+  10%  { opacity: 1; transform: translateY(0);    }
+  30%  { opacity: 1; }
+  40%  { opacity: 0; }
+  100% { opacity: 0; }
+}
+
+.serveis-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Secció Serveis 
+.serveis-section {
+  padding: 4rem 1rem;
+  background-color: #fafafa;
+}
+.serveis-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+.servei-card {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.servei-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+.servei-card h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+.servei-card p {
+  flex-grow: 1;
+  margin-bottom: 0;
+  color: #555;
+}
+.servei-card ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+  color: #555;
+}
+@media (max-width: 600px) {
+  .serveis-title { font-size: 1.75rem; }
+  .servei-card { padding: 1rem; }
+}
+*/
