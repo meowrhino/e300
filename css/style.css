@@ -2,8 +2,8 @@
 
 html {
     scroll-behavior: smooth;
-  }
-  
+}
+
 
 h1 {
     font-family: "Saira Extra Condensed", sans-serif;
@@ -72,14 +72,17 @@ body {
 /* Estilos para cada proyecto */
 .project-item {
     display: flex;
-    flex-direction: column; /* Alinear elementos verticalmente */
-    justify-content: space-between; /* Distribuir espacio entre los elementos */
+    flex-direction: column;
+    /* Alinear elementos verticalmente */
+    justify-content: space-between;
+    /* Distribuir espacio entre los elementos */
     height: 100%;
     transition: transform 0.3s;
 }
 
 .project-item:hover {
-    transform: translateY(-5px); /* Efecto de hover */
+    transform: translateY(-5px);
+    /* Efecto de hover */
 }
 
 /* Estilos para la imagen del proyecto */
@@ -96,23 +99,27 @@ body {
 
 /* Estilos para el enlace "Click para ver más" */
 .projecte-veure-mes {
-    margin-top: auto; /* Empujar el enlace hacia la parte inferior del contenedor */
+    margin-top: auto;
+    /* Empujar el enlace hacia la parte inferior del contenedor */
     transition: background-color 0.3s ease;
 }
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     .project-item {
-        width: 100%; /* Una sola columna en pantallas pequeñas */
+        width: 100%;
+        /* Una sola columna en pantallas pequeñas */
     }
 
     .project-item img {
-        filter: none; /* Mostrar imágenes en color siempre en móviles */
+        filter: none;
+        /* Mostrar imágenes en color siempre en móviles */
     }
 }
 
 #membres {
-    margin: 2em 0em;
+    margin-top: 10em;
+    /* margin: 2em 0em; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2em;
@@ -123,7 +130,8 @@ body {
     color: gray;
     /* transform: scale(1.05); Aumenta el tamaño un 5% */
     /*z-index: 10; Asegúrate de que esté por encima de otros elementos si pones el scale */
-    transition: transform 0.3s ease, z-index 0.3s; /* Añadir una transición suave */
+    transition: transform 0.3s ease, z-index 0.3s;
+    /* Añadir una transición suave */
 }
 
 .pronoms {
@@ -151,10 +159,11 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 5em
 }
 
 #estatuts h3 {
-    margin-top: 5em;
+    margin-top: 1em;
     font-size: 24px;
 }
 
@@ -172,12 +181,14 @@ body {
 @media (min-width: 768px) {
     .container {
         margin: 30px 200px;
+        padding: 30px;
     }
 }
 
 @media (max-width: 767px) {
     .container {
-        margin: 30px 20px;
+        margin: 30px auto;
+        padding: 30px;
     }
 }
 
@@ -253,7 +264,8 @@ a.link-con-href:hover {
     margin-bottom: 20px;
 }
 
-#container-projecte h1, #container-projecte p {
+#container-projecte h1,
+#container-projecte p {
     text-align: left;
 
 }
@@ -308,43 +320,76 @@ a.link-con-href:hover {
 
 
 #serveis {
-  display: flex;
-  flex-direction: column;  
-  justify-content: center;  
-  min-height: 100vh;        
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
 }
 
-#serveis h3, #serveis p, #serveis li {
+#serveis h3,
+#serveis p,
+#serveis li {
     text-align: center;
     margin: 0;
 }
 
-#serveis ul{
+#serveis ul {
     list-style: none;
     padding: 0;
 }
 
 /* FadeInOut secuencial para los <li> de #serveis */
 #serveis ul li {
-  opacity: 0;                         /* invisibles al inicio */
-  animation: fadeInOut 15s linear infinite;
-  /* 15s = 5 ítems × 3s cada uno */
+    opacity: 0;
+    /* invisibles al inicio */
+    animation: fadeInOut 15s linear infinite;
+    /* 15s = 5 ítems × 3s cada uno */
 }
 
 /* Retrasos para que salgan uno a uno cada 3s */
-#serveis ul li:nth-child(1) { animation-delay: 0s;  }
-#serveis ul li:nth-child(2) { animation-delay: 3s;  }
-#serveis ul li:nth-child(3) { animation-delay: 6s;  }
-#serveis ul li:nth-child(4) { animation-delay: 9s;  }
-#serveis ul li:nth-child(5) { animation-delay: 12s; }
+#serveis ul li:nth-child(1) {
+    animation-delay: 0s;
+}
+
+#serveis ul li:nth-child(2) {
+    animation-delay: 3s;
+}
+
+#serveis ul li:nth-child(3) {
+    animation-delay: 6s;
+}
+
+#serveis ul li:nth-child(4) {
+    animation-delay: 9s;
+}
+
+#serveis ul li:nth-child(5) {
+    animation-delay: 12s;
+}
 
 /* Keyframes: aparece, permanece y desaparece */
 @keyframes fadeInOut {
-  0%   { opacity: 0; transform: translateY(10px); }
-  10%  { opacity: 1; transform: translateY(0);    }
-  30%  { opacity: 1; }
-  40%  { opacity: 0; }
-  100% { opacity: 0; }
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .serveis-grid {
