@@ -1,0 +1,44 @@
+{
+  "slug": "seminari",
+  "titulo": {
+    "ca": "seminari d'artistes",
+    "es": "seminario de artistas",
+    "en": "artists seminar"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Seminari d'artistes - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "seminari d'artistes",
+      "es": "seminario de artistas",
+      "en": "artists seminar"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Realització de conferències performatives entorn la pràctica artística col·lectiva a la Facultat de Belles Arts. Durant els seminaris es qüestionen temes d'individualització del sector artístic i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística."
+      ],
+      "es": [
+        "Realización de conferencias performativas en torno a la práctica artística colectiva en la Facultad de Bellas Artes. Durante los seminarios se cuestionan temas de individualización del sector artístico y se presentan diferentes maneras de hacer, organizarse y concebir la práctica artística."
+      ],
+      "en": [
+        "Performance conferences around collective artistic practice at the Faculty of Fine Arts. During the seminars, issues of individualization of the artistic sector are questioned and different ways of doing, organizing and conceiving artistic practice are presented."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Realització de conferències performatives entorn la pràctica artística col·lectiva a la Facultat de Belles Arts. Durant els seminaris es qüestionen temes d'individualització del sector artístic i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística.",
+    "es": "Realización de conferencias performativas en torno a la práctica artística colectiva en la Facultad de Bellas Artes. Durante los seminarios se cuestionan temas de individualización del sector artístico y se presentan diferentes maneras de hacer, organizarse y concebir la práctica artística.",
+    "en": "Performance conferences around collective artistic practice at the Faculty of Fine Arts. During the seminars, issues of individualization of the artistic sector are questioned and different ways of doing, organizing and conceiving artistic practice are presented."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp",
+    "./img/06.webp",
+    "./img/07.webp"
+  ]
+}

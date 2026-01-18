@@ -1,0 +1,54 @@
+{
+  "slug": "caixa",
+  "titulo": {
+    "ca": "Caixa Sorpresa Grup d'Estudi",
+    "es": "Caja Sorpresa Grup d'Estudi",
+    "en": "Surprise Box Grup d'Estudi"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Caixa Sorpresa - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "Caixa Sorpresa Grup d'Estudi",
+      "es": "Caja Sorpresa Grup d'Estudi",
+      "en": "Surprise Box Grup d'Estudi"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "El projecte sorgeix de l'encàrrec de <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a> per dissenyar i construir el dispositiu museogràfic que acolliria el projecte curatorial que presentaven a BCN producció a <a href=\"https://www.lacapella.barcelona/es/programacion/exposiciones/caja-sorpresa-grup-destudi\">La Capella</a>.",
+        "Aquest dispositiu havia de poder contenir, amagar i revelar un seguit d'exposicions que s'anirien revelant al llarg del transcurs del projecte. En resposta a aquesta demanda, Estructuras 3000 va proposar una caixa gegant, que jugava amb els imaginaris de la capsa de regal, la sorpresa i l'excitació del moment de rebre un present.",
+        "La caixa estava formada per tres parets abatibles, una fixa i una tapa, que s'elevava per permetre'n l'obertura. Aquesta es presentava al públic embolicada de paper i amb un llaç en les mateixes proporcions que la capsa, desnaturalitzant l'objecte quotidià i convertint-la en quelcom extravagant. En el paper i en la cinta del llaç es van incloure missatges que convidaven a reflexionar sobre la cultura de la selecció, l'exclusivitat, l'accés i la individualitat en el món artístic, jugant amb el discurs curatorial de la proposta.",
+        "La Caixa Sorpresa Grup d'Estudi es va obrir en quatre ocasions, revelant quatre exposicions diferents, ubicades entre l'octubre del 2025 i el gener de 2026.",
+        "Fotografies de l'exposició de Pep Herrero."
+      ],
+      "es": [
+        "El proyecto surge del encargo de <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a> para diseñar y construir el dispositivo museográfico que acogería el proyecto curatorial que presentaban en BCN producció en <a href=\"https://www.lacapella.barcelona/es/programacion/exposiciones/caja-sorpresa-grup-destudi\">La Capella</a>.",
+        "Este dispositivo debía poder contener, esconder y revelar una serie de exposiciones que se irían revelando a lo largo del transcurso del proyecto. En respuesta a esta demanda, Estructuras 3000 propuso una caja gigante, que jugaba con los imaginarios de la caja de regalo, la sorpresa y la excitación del momento de recibir un presente.",
+        "La caja estaba formada por tres paredes abatibles, una fija y una tapa, que se elevaba para permitir su apertura. Esta se presentaba al público envuelta en papel y con un lazo en las mismas proporciones que la caja, desnaturalizando el objeto cotidiano y convirtiéndola en algo extravagante. En el papel y en la cinta del lazo se incluyeron mensajes que invitaban a reflexionar sobre la cultura de la selección, la exclusividad, el acceso y la individualidad en el mundo artístico, jugando con el discurso curatorial de la propuesta.",
+        "La Caja Sorpresa Grup d'Estudi se abrió en cuatro ocasiones, revelando cuatro exposiciones diferentes, ubicadas entre octubre de 2025 y enero de 2026.",
+        "Fotografías de la exposición de Pep Herrero."
+      ],
+      "en": [
+        "The project arises from a commission by <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a> to design and build the museographic device that would host the curatorial project they presented in BCN producció at <a href=\"https://www.lacapella.barcelona/es/programacion/exposiciones/caja-sorpresa-grup-destudi\">La Capella</a>.",
+        "This device had to be able to contain, hide, and reveal a series of exhibitions that would be unveiled throughout the project. In response to this demand, Estructuras 3000 proposed a giant box, playing with the imaginaries of the gift box, the surprise and excitement of receiving a present.",
+        "The box was formed by three folding walls, one fixed wall and a lid that lifted to allow opening. It was presented to the public wrapped in paper and with a bow in the same proportions as the box, denaturalizing the everyday object and turning it into something extravagant. Messages were included on the paper and ribbon inviting reflection on the culture of selection, exclusivity, access, and individuality in the art world, playing with the curatorial discourse of the proposal.",
+        "The Caixa Sorpresa Grup d'Estudi was opened on four occasions, revealing four different exhibitions, located between October 2025 and January 2026.",
+        "Photographs from the Pep Herrero exhibition."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Dispositiu museogràfic en forma de caixa gegant per al projecte curatorial de Grup d'Estudi a BCN producció / La Capella, pensat per contenir i revelar exposicions successives.",
+    "es": "Dispositivo museográfico en forma de caja gigante para el proyecto curatorial de Grup d'Estudi en BCN producció / La Capella, pensado para contener y revelar exposiciones sucesivas.",
+    "en": "Museographic device in the form of a giant box for Grup d'Estudi's curatorial project at BCN producció / La Capella, designed to contain and reveal successive exhibitions."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp"
+  ]
+}

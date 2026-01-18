@@ -1,0 +1,50 @@
+{
+  "slug": "thereis",
+  "titulo": {
+    "ca": "TINSTAMTMMOTTMR",
+    "es": "TINSTAMTMMOTTMR",
+    "en": "TINSTAMTMMOTTMR"
+  },
+  "primera_imatge": {
+    "src": "./img/thereis.webp",
+    "alt": "TINSTAMTMMOTTMR - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "TINSTAMTMMOTTMR",
+      "es": "TINSTAMTMMOTTMR",
+      "en": "TINSTAMTMMOTTMR"
+    },
+    "subtitle": {
+      "ca": "there is no such thing as making too much money or taking too many risks",
+      "es": "there is no such thing as making too much money or taking too many risks",
+      "en": "there is no such thing as making too much money or taking too many risks"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Què passa quan portes a artistes reconeguts per exposar en el marc d'un cicle de creació jove i emergent? A partir de la creació d'un <i>white cube</i> inscrit dins d'Estructures 3000, l'espai comú queda anul·lat per tal d'acollir una obra diferent cada dia. ¿Quines respostes es poden donar a les condicions de precarització del sector artístic jove?"
+      ],
+      "es": [
+        "¿Qué pasa cuando llevas a artistas reconocidos para exponer en el marco de un ciclo de creación joven y emergente? A partir de la creación de un <i>white cube</i> inscrito dentro de Estructuras 3000, el espacio común queda anulado para acoger una obra diferente cada día. ¿Qué respuestas se pueden dar a las condiciones de precarización del sector artístico joven?"
+      ],
+      "en": [
+        "What happens when you bring recognized artists to exhibit within the framework of a young and emerging creation cycle? From the creation of a <i>white cube</i> inscribed within Estructures 3000, the common space is canceled to host a different work each day. What answers can be given to the precarious conditions of the young artistic sector?"
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Què passa quan portes a artistes reconeguts per exposar en el marc d'un cicle de creació jove i emergent? A partir de la creació d'un white cube inscrit dins d'Estructures 3000, l'espai comú queda anul·lat per tal d'acollir una obra diferent cada dia. ¿Quines respostes es poden donar a les condicions de precarització del sector artístic jove?",
+    "es": "¿Qué pasa cuando llevas a artistas reconocidos para exponer en el marco de un ciclo de creación joven y emergente? A partir de la creación de un white cube inscrito dentro de Estructuras 3000, el espacio común queda anulado para acoger una obra diferente cada día. ¿Qué respuestas se pueden dar a las condiciones de precarización del sector artístico joven?",
+    "en": "What happens when you bring recognized artists to exhibit within the framework of a young and emerging creation cycle? From the creation of a white cube inscribed within Estructures 3000, the common space is canceled to host a different work each day. What answers can be given to the precarious conditions of the young artistic sector?"
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp",
+    "./img/06.webp",
+    "./img/thereis.webp",
+    "./img/08.webp"
+  ]
+}

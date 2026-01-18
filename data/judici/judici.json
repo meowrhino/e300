@@ -1,0 +1,45 @@
+{
+  "slug": "judici",
+  "titulo": {
+    "ca": "judici",
+    "es": "Juicio",
+    "en": "Trial"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Judici - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "judici",
+      "es": "Juicio",
+      "en": "Trial"
+    },
+    "link": "http://angelsbarcelona.com/",
+    "link_text": {
+      "ca": "galería dels àngels",
+      "es": "galería dels àngels",
+      "en": "galería dels àngels"
+    },
+    "texto": {
+      "ca": [
+        "Després de la invitació a participar en el programa d'<a href=\"https://artnou.net/\">ArtNou</a> 2021 a la <a href=\"http://angelsbarcelona.com/\">Galeria dels Àngels</a>, es crea una divisió interna al col·lectiu: una part a favor d'exposar, l'altra en contra. Aquest conflicte, exacerbat per l'acceptació unilateral de la invitació, no pot ser resolt fora de l'espai artístic. Per això, es decideix exposar el conflicte mateix: <strong>Estructuras 3000 s'enfronta judicialment a ella mateixa</strong>, qüestionant participació, status quo i individualismes. L'acció es va presentar com a clausura del projecte de curadoria de <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a>."
+      ],
+      "es": [
+        "Después de la invitación a participar en el programa de <a href=\"https://artnou.net/\">ArtNou</a> 2021 en la <a href=\"http://angelsbarcelona.com/\">Galeria dels Àngels</a>, se crea una división interna al colectivo: una parte a favor de exponer, la otra en contra. Este conflicto, exacerbado por la aceptación unilateral de la invitación, no puede ser resuelto fuera del espacio artístico. Por eso, se decide exponer el conflicto mismo: <strong>Estructuras 3000 se enfrenta judicialmente a ella misma</strong>, cuestionando participación, statu quo e individualismos. La acción se presentó como clausura del proyecto de curaduría de <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a>."
+      ],
+      "en": [
+        "After the invitation to participate in the <a href=\"https://artnou.net/\">ArtNou</a> 2021 program at <a href=\"http://angelsbarcelona.com/\">Galeria dels Àngels</a>, an internal division is created in the collective: one part in favor of exhibiting, the other against. This conflict, exacerbated by the unilateral acceptance of the invitation, cannot be resolved outside the artistic space. Therefore, it is decided to expose the conflict itself: <strong>Estructuras 3000 confronts itself judicially</strong>, questioning participation, status quo and individualisms. The action was presented as the closing of the curatorial project of <a href=\"https://www.instagram.com/grupdestudi/\">Grup d'Estudi</a>."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Una part d'Estructuras 3000 denuncia a l'altra per haver actuat de manera unilateral. Estructuras 3000 s'enfronta judicialment a ella mateixa, qüestionant participació, status quo i individualismes.",
+    "es": "Una parte de Estructuras 3000 denuncia a la otra por haber actuado de manera unilateral. Estructuras 3000 se enfrenta judicialmente a sí misma, cuestionando participación, statu quo e individualismos.",
+    "en": "One part of Estructuras 3000 denounces the other for having acted unilaterally. Estructuras 3000 confronts itself judicially, questioning participation, status quo and individualisms."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp"
+  ]
+}

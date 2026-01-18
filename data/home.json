@@ -1,0 +1,335 @@
+{
+  "meta": {
+    "title": "e3000",
+    "description": {
+      "ca": "Estructuras 3000: Asociació sense ànim de lucre per la col·lectivització de l'art i la cultura a Catalunya.",
+      "es": "Estructuras 3000: Asociación sin ánimo de lucro para la colectivización del arte y la cultura en Cataluña",
+      "en": "Estructuras 3000: Non-profit association for the collectivization of art and culture in Catalonia"
+    },
+    "keywords": "Estructuras 3000, art col·lectiu, cultura catalana, pràctiques col·laboratives, associacions culturals"
+  },
+  "descripcio": {
+    "ca": [
+      "<strong>Estructures 3000</strong> és una associació sense ànim de lucre que té com a objectiu <strong>realitzar, vetllar i divulgar les pràctiques col·lectives i col·laboratives en el context artístic i cultural català.</strong> L'acció de l'entitat vol donar resposta a les dinàmiques habituals cap a un individualisme que atempta contra l'organització del col·lectiu artístic i l'accés democràtics als drets culturals, és per això que l'associació vetlla per la producció d'infraestructures, investigacions, tallers i accions en institucions del territori català per la col·lectivització del sector i les pràctiques artístiques.",
+      "L'entitat també <strong>produeix <a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?usp=sharing\">fons bibliogràfic</a> com a patrimoni amb accés públic</strong> que treballen al voltant de les pràctiques col·lectives i col·laboratives de l'art i <strong>un mapatge dels col·lectius o agrupacions artístiques que han incidit en el territori català.</strong>",
+      "Estructures 3000 treballa per generar oportunitats per a altres col·lectius, contribuir a la defensa d'una remuneració justa, els drets culturals i a la professionalització de les pràctiques col·lectives contemporànies."
+    ],
+    "es": [
+      "<strong>Estructuras 3000</strong> es un colectivo artístico en forma de asociación sin ánimo de lucro que tiene como objetivo <strong>realizar, velar y divulgar las prácticas colectivas y colaborativas en el contexto artístico y cultural catalán.</strong> La acción de la entidad quiere dar respuesta a las dinámicas habituales hacia un individualismo que atenta contra la organización del colectivo artístico y el acceso democráticos a los derechos culturales, es por eso que la asociación vela por la producción de infraestructuras, investigaciones, talleres y acciones en instituciones del territorio catalán por la colectivización del sector y las prácticas artísticas.",
+      "La entidad también <strong>produce <a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?usp=sharing\">un fondo bibliográfico</a> como patrimonio con acceso público</strong> que trabaja alrededor de las prácticas colectivas y colaborativas del arte y <strong>un mapeo de los colectivos o agrupaciones artísticas que han incidido en el territorio catalán.</strong>",
+      "Estructuras 3000 trabaja para generar oportunidades para otros colectivos, contribuir a la defensa de una remuneración justa, los derechos culturales y a la profesionalización de las prácticas colectivas contemporáneas."
+    ],
+    "en": [
+      "<strong>Estructures 3000</strong> is a non-profit association that aims to <strong>carry out, oversee and disseminate collective and collaborative practices in the Catalan artistic and cultural context.</strong> The entity's action aims to respond to the usual dynamics towards individualism that threatens the organization of the artistic collective and democratic access to cultural rights, which is why the association oversees the production of infrastructures, research, workshops and actions in institutions of the Catalan territory for the collectivization of the sector and artistic practices.",
+      "The entity also <strong>produces a <a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?usp=sharing\">bibliographic fund</a> as publicly accessible heritage</strong> that works around collective and collaborative practices of art and <strong>a mapping of collectives or artistic groups that have influenced the Catalan territory.</strong>",
+      "Estructures 3000 works to generate opportunities for other collectives, contribute to the defense of fair remuneration, cultural rights and the professionalization of contemporary collective practices."
+    ]
+  },
+  "serveis": {
+    "ca": [
+      "Mediació al voltant de les pràctiques col·lectives",
+      "Comissariat d'exposicions",
+      "Formacions educatives i tallers sobre:|Pràctiques col·lectives en el context artístic|Happening|Performance|Construcció d'estructures|Tercer sector i associacionisme",
+      "Construcció de dispositius, escultures i estructures de fusta",
+      "Accions artístiques pròximes a la performance i el happening",
+      "Recerca i experimentació artística i cultural",
+      "Dispositius per a eventualitats culinàries"
+    ],
+    "es": [
+      "Mediación alrededor de las prácticas colectivas",
+      "Comisariado de exposiciones",
+      "Formaciones educativas y talleres sobre|Prácticas colectivas en el contexto artístico|Happening|Performance|Construcción de estructuras|Tercer sector y asociacionismo",
+      "Construcción de dispositivos, esculturas y estructuras de madera",
+      "Acciones artísticas próximas a la performance y el happening",
+      "Investigación y experimentación artística y cultural",
+      "Dispositivos para eventos culinarios"
+    ],
+    "en": [
+      "Mediation around collective practices",
+      "Exhibition curating",
+      "Educational training and workshops on|Collective practices in the artistic context|Happening|Performance|Structure construction|Third sector and associationism",
+      "Construction of devices, sculptures and wooden structures",
+      "Artistic actions close to performance and happening",
+      "Artistic and cultural research and experimentation",
+      "Devices for culinary events"
+    ]
+  },
+  "projectes_visibles": [
+    {
+      "slug": "judici",
+      "name": "judici",
+      "thumbnail": "judici.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Una part d'Estructuras 3000 denuncia a l'altra per haver actuat de manera unilateral. Estructuras 3000 s'enfronta judicialment a ella mateixa, qüestionant participació, status quo i individualismes.",
+        "es": "Una parte de Estructuras 3000 denuncia a la otra por haber actuado de manera unilateral. Estructuras 3000 se enfrenta judicialmente a sí misma, cuestionando participación, statu quo e individualismos.",
+        "en": "One part of Estructuras 3000 denounces the other for having acted unilaterally. Estructuras 3000 confronts itself judicially, questioning participation, status quo and individualisms."
+      }
+    },
+    {
+      "slug": "escola3000",
+      "name": "escola 3000",
+      "thumbnail": "escola.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "L'Escola 3000 proposa un espai de reflexió col·lectiva als centres educatius. Com modulen i intervenen l'arquitectura i el seu disseny en les dinàmiques de poder? Es proposen nous dissenys que són testats a partir de la pràctica teatral.",
+        "es": "La Escola 3000 propone un espacio de reflexión colectiva en los centros educativos. ¿Cómo modulan e intervienen la arquitectura y su diseño en las dinámicas de poder? Se proponen nuevos diseños que son testados a partir de la práctica teatral.",
+        "en": "Escola 3000 proposes a space for collective reflection in educational centers. How do architecture and its design modulate and intervene in power dynamics? New designs are proposed that are tested through theatrical practice."
+      }
+    },
+    {
+      "slug": "peepshow",
+      "name": "peepshow",
+      "thumbnail": "peepshow.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "El <i>peepshow</i> és un dispositiu escènic que explora l'experiència expositiva individualitzant la mirada i fent-la anònima. Amb una estructura que permetia ser modificada diversos artistes van performar al llarg de la mostra.",
+        "es": "El <i>peepshow</i> es un dispositivo escénico que explora la experiencia expositiva individualizando la mirada y haciéndola anónima. Con una estructura que permitía ser modificada varios artistas performaron a lo largo de la muestra.",
+        "en": "The <i>peepshow</i> is a scenic device that explores the exhibition experience by individualizing the gaze and making it anonymous. With a structure that could be modified, several artists performed throughout the exhibition."
+      }
+    },
+    {
+      "slug": "seminari",
+      "name": "seminari d'artistes",
+      "thumbnail": "seminari.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Realització de conferències performatives entorn la pràctica artística col·lectiva a la Facultat de Belles Arts. Durant els seminaris es qüestionen temes d'individualització del sector artístic i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística.",
+        "es": "Realización de conferencias performativas en torno a la práctica artística colectiva en la Facultad de Bellas Artes. Durante los seminarios se cuestionan temas de individualización del sector artístico y se presentan diferentes maneras de hacer, organizarse y concebir la práctica artística.",
+        "en": "Performance conferences around collective artistic practice at the Faculty of Fine Arts. During the seminars, issues of individualization of the artistic sector are questioned and different ways of doing, organizing and conceiving artistic practice are presented."
+      }
+    },
+    {
+      "slug": "conferencies",
+      "name": "conferències",
+      "thumbnail": "conferencies.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Tant l'espai com els objectes que l'habiten quedan pintats de pissarra per ser l'unic support de diferents conferències al llarg de tres dies. Les condicions com assistents eren tres: no es poden enregistrar las xerrades, tothom ha de participar i no es pot esborrar allò ja escrit.",
+        "es": "Tanto el espacio como los objetos que lo habitan quedan pintados de pizarra para ser el único soporte de diferentes conferencias a lo largo de tres días. Las condiciones como asistentes eran tres: no se pueden grabar las charlas, todos deben participar y no se puede borrar lo ya escrito.",
+        "en": "Both the space and the objects that inhabit it are painted with blackboard to be the only support for different conferences over three days. The conditions as attendees were three: talks cannot be recorded, everyone must participate and what has already been written cannot be erased."
+      }
+    },
+    {
+      "slug": "thereis",
+      "name": "TINSTAMTMMOTTMR",
+      "thumbnail": "thereis.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Què passa quan portes a artistes reconeguts per exposar en el marc d'un cicle de creació jove i emergent? A partir de la creació d'un <i>white cube</i> inscrit dins d'Estructures 3000, l'espai comú queda anul·lat per tal d'acollir una obra diferent cada dia. ¿Quines respostes es poden donar a les condicions de precarització del sector artístic jove?",
+        "es": "¿Qué pasa cuando llevas a artistas reconocidos para exponer en el marco de un ciclo de creación joven y emergente? A partir de la creación de un <i>white cube</i> inscrito dentro de Estructuras 3000, el espacio común queda anulado para acoger una obra diferente cada día. ¿Qué respuestas se pueden dar a las condiciones de precarización del sector artístico joven?",
+        "en": "What happens when you bring recognized artists to exhibit within the framework of a young and emerging creation cycle? From the creation of a <i>white cube</i> inscribed within Estructures 3000, the common space is canceled to host a different work each day. What answers can be given to the precarious conditions of the young artistic sector?"
+      }
+    },
+    {
+      "slug": "exposicio-pintura",
+      "name": "Exposició per exposar pintura (?)",
+      "thumbnail": "data/exposicio-pintura/img/01.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Exposició de pintura clàssica amb un <i>white cube</i> pintat amb guix i una convocatòria oberta on tothom podia penjar una pintura a la paret.",
+        "es": "Exposición de pintura clásica con un <i>white cube</i> pintado con tiza y una convocatoria abierta donde cualquiera podía colgar una pintura en la pared.",
+        "en": "A classic painting exhibition with a chalk-painted <i>white cube</i> and an open call where anyone could hang a painting on the wall."
+      }
+    },
+    {
+      "slug": "detectiu3000",
+      "name": "Detectiu 3000",
+      "thumbnail": "data/detectiu3000/img/01.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Artefacte creat per Estructuras 3000 que, a partir de la participació a les xarxes de la PAAC, va investigar pràctiques col·lectives detectant casos misteriosos.",
+        "es": "Artefacto creado por Estructuras 3000 que, a partir de la participación en las redes de la PAAC, investigó prácticas colectivas detectando casos misteriosos.",
+        "en": "An artifact created by Estructuras 3000 that, through participation on PAAC's networks, investigated collective practices by detecting mysterious cases."
+      }
+    },
+    {
+      "slug": "llisto-tauler",
+      "name": "Què pot un llistó i un tauler?",
+      "thumbnail": "data/llisto-tauler/img/01.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Pràctica col·lectiva de transformació d'un llistó i un tauler que va activar múltiples usos i artefactes durant la jornada.",
+        "es": "Práctica colectiva de transformación de un listón y un tablero que activó múltiples usos y artefactos durante la jornada.",
+        "en": "Collective practice of transforming a plank and a board that activated multiple uses and artifacts throughout the day."
+      }
+    },
+    {
+      "slug": "flama-no-crema",
+      "name": "Li pots dir foc a una flama que no crema?",
+      "thumbnail": "data/flama-no-crema/img/01.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Projecte curatorial sobre el foc i les noves institucionalitats, amb pintures cremades i una conferència incendiària.",
+        "es": "Proyecto curatorial sobre el fuego y las nuevas institucionalidades, con pinturas quemadas y una conferencia incendiaria.",
+        "en": "A curatorial project about fire and new institutionalities, with burned paintings and an incendiary lecture."
+      }
+    },
+    {
+      "slug": "poder-sobre-poder",
+      "name": "Del poder sobre el poder",
+      "thumbnail": "data/poder-sobre-poder/img/01.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Exposició col·lectiva que analitza els mecanismes de representació del poder a través de la mimesi, la paròdia i la descontextualització.",
+        "es": "Exposición colectiva que analiza los mecanismos de representación del poder a través de la mímesis, la parodia y la descontextualización.",
+        "en": "Collective exhibition analyzing mechanisms of power representation through mimesis, parody, and decontextualization."
+      }
+    },
+    {
+      "slug": "caixa",
+      "name": "Caixa Sorpresa Grup d'Estudi",
+      "thumbnail": "caixa.webp",
+      "visible": true,
+      "resumen": {
+        "ca": "Dispositiu museogràfic en forma de caixa gegant per al projecte curatorial de Grup d'Estudi a BCN producció / La Capella, pensat per contenir i revelar exposicions successives.",
+        "es": "Dispositivo museográfico en forma de caja gigante para el proyecto curatorial de Grup d'Estudi en BCN producció / La Capella, pensado para contener y revelar exposiciones sucesivas.",
+        "en": "Museographic device in the form of a giant box for Grup d'Estudi's curatorial project at BCN producció / La Capella, designed to contain and reveal successive exhibitions."
+      }
+    }
+  ],
+  "contacte": {
+    "email": "estructuras3000info@gmail.com",
+    "address": "C/ Pere Galvany, 28, local, 08950",
+    "maps_url": "https://www.google.com/maps?q=Pere+Galvany+28+08950"
+  },
+  "membres": [
+    {
+      "carrec": {
+        "ca": "Presidència",
+        "es": "Presidencia",
+        "en": "Presidency"
+      },
+      "nom": "Joan Boix",
+      "pronoms": "ell",
+      "bio": {
+        "ca": "Artista, docent i fuster. El seu camp d'interès són els espais i la seva formalització i alteració en relació als usuaris, espectadors i objectes. Graduat en Belles Arts a la Universitat de Barcelona, CFGS Disseny i Moblament i Màster de formació del professorat.",
+        "es": "Artista, docente y carpintero. Su campo de interés son los espacios y su formalización y alteración en relación a los usuarios, espectadores y objetos. Graduado en Bellas Artes en la Universidad de Barcelona, CFGS Diseño y Mobiliario y Máster de formación del profesorado.",
+        "en": "Artist, teacher and carpenter. His field of interest is spaces and their formalization and alteration in relation to users, spectators and objects. Graduated in Fine Arts at the University of Barcelona, CFGS Design and Furniture and Master's degree in teacher training."
+      },
+      "lloc_any": "Palamós, 1996"
+    },
+    {
+      "carrec": {
+        "ca": "Vicepresidència",
+        "es": "Vicepresidencia",
+        "en": "Vice-presidency"
+      },
+      "nom": "Bet Pahissa",
+      "pronoms": "ella",
+      "bio": {
+        "ca": "Artista i tècnica de polítiques culturals. Graduada en Global Studies per la UPF, també en Belles Arts i un posterior Màster en Disseny de Polítiques Públiques a la Universitat de Barcelona. La seva pràctica treballa entorn la participació i la democratització del sector artístic.",
+        "es": "Artista y técnica de políticas culturales. Graduada en Global Studies por la UPF, también en Bellas Artes y un posterior Máster en Diseño de Políticas Públicas en la Universidad de Barcelona. Su práctica trabaja en torno a la participación y la democratización del sector artístico.",
+        "en": "Artist and cultural policy technician. Graduated in Global Studies from UPF, also in Fine Arts and a subsequent Master's in Public Policy Design at the University of Barcelona. Her practice works around participation and democratization of the artistic sector."
+      },
+      "lloc_any": "Sant Just, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Secretariat",
+        "es": "Secretaría",
+        "en": "Secretary"
+      },
+      "nom": "Celine Lurac",
+      "pronoms": "ella",
+      "bio": {
+        "ca": "Artista gràfica i politòloga. Centrada en estudis i polítiques de gènere. Graduada a la Science Po de París i posterior màster en polítiques d'inclusió i gènere. Explora aspectes polítics que atravessen el gènere, la identitat, la violència i la feminització de les cures.",
+        "es": "Artista gráfica y politóloga. Centrada en estudios y políticas de género. Graduada en Science Po de París y posterior máster en políticas de inclusión y género. Explora aspectos políticos que atraviesan el género, la identidad, la violencia y la feminización de los cuidados.",
+        "en": "Graphic artist and political scientist. Focused on gender studies and policies. Graduated from Science Po Paris and subsequent master's degree in inclusion and gender policies. Explores political aspects that cross gender, identity, violence and the feminization of care."
+      },
+      "lloc_any": "Ciutat de Mèxic, 2000"
+    },
+    {
+      "carrec": {
+        "ca": "Tresoreria",
+        "es": "Tesorería",
+        "en": "Treasury"
+      },
+      "nom": "pepe",
+      "pronoms": "el",
+      "link": "https://www.youtube.com/watch?v=nkgg1W5zyNA",
+      "bio": {
+        "ca": "Recol•lector, dissenyador i artista. Treballa amb objectes. Cerca les seves possibilitats i els acompanya mitjançant arranjaments. Graduat en Belles Arts a la UB i Cultura del Disseny a Eina.",
+        "es": "Recolector, diseñador y artista. Trabaja con objetos. Busca sus posibilidades y los acompaña mediante arreglos. Graduado en Bellas Artes en la UB y Cultura del Diseño en Eina.",
+        "en": "Collector, designer and artist. Works with objects. Seeks their possibilities and accompanies them through arrangements. Graduated in Fine Arts at UB and Design Culture at Eina."
+      },
+      "lloc_any": "Barcelona, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Jordi Bretcha",
+      "pronoms": "ell/elli",
+      "bio": {
+        "ca": "Artista, docent i investigador. Treballa en la producció de contextos col·lectius, burocracia alternativa i happenings. Graduat en Belles arts, Màster en Teoria de la Literatura i Literatura Comparada, i Màster en Producció i Investigació artística a la Universitat de Barcelona i Màster de formació del professorat.",
+        "es": "Artista, docente e investigador. Trabaja en la producción de contextos colectivos, burocracia alternativa y happenings. Graduado en Bellas artes, Máster en Teoría de la Literatura y Literatura Comparada, y Máster en Producción e Investigación artística en la Universidad de Barcelona y Máster de formación del profesorado.",
+        "en": "Artist, teacher and researcher. Works in the production of collective contexts, alternative bureaucracy and happenings. Graduated in Fine Arts, Master's in Theory of Literature and Comparative Literature, and Master's in Artistic Production and Research at the University of Barcelona and Master's in teacher training."
+      },
+      "lloc_any": "Esplugues de Llobregat, 1995"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Didac Humà",
+      "pronoms": "ell",
+      "bio": {
+        "ca": "Artista i fotògraf, es centra en la imatge i el videoart experimental. Graduat en Belles Arts a la UB i posterior màster al LAV de Madrid, la seva pràctica parteix de la imatge, però s'expandeix en l'espai comú.",
+        "es": "Artista y fotógrafo, se centra en la imagen y el videoarte experimental. Graduado en Bellas Artes en la UB y posterior máster en el LAV de Madrid, su práctica parte de la imagen, pero se expande en el espacio común.",
+        "en": "Artist and photographer, focuses on image and experimental video art. Graduated in Fine Arts at UB and subsequent master's degree at LAV in Madrid, his practice starts from the image, but expands in the common space."
+      },
+      "lloc_any": "Manlleu, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Jordi Carmona i Maura",
+      "pronoms": "ell",
+      "bio": {
+        "ca": "Fabricant, cuiner i artista. Treballa amb mètodes constructius diversos des de la pràctica col·lectiva. Interessat en els vincles que es generen entre el públic i l'artefacte a través d'activacions. Graduat en Belles Arts a la UB, Màster en Contemporary Design a l'ETSAB.",
+        "es": "Fabricante, cocinero y artista. Trabaja con métodos constructivos diversos desde la práctica colectiva. Interesado en los vínculos que se generan entre el público y el artefacto a través de activaciones. Graduado en Bellas Artes en la UB, Máster en Contemporary Design en la ETSAB.",
+        "en": "Manufacturer, cook and artist. Works with diverse construction methods from collective practice. Interested in the links that are generated between the public and the artifact through activations. Graduated in Fine Arts at UB, Master's in Contemporary Design at ETSAB."
+      },
+      "lloc_any": "Barcelona, 1998"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Aurembiaix Montardit",
+      "pronoms": "ella/elli",
+      "bio": {
+        "ca": "Graduada en arts escèniques a ERAM - UDG i escenografia a Elisava amb la beca Diariodesign. El seu eix de treball parteix de les arts en viu com a performer, alhora que des de la producció, la direcció i el disseny escenogràfic i de vídeo.",
+        "es": "Graduada en artes escénicas en ERAM - UDG y escenografía en Elisava con la beca Diariodesign. Su eje de trabajo parte de las artes en vivo como performer, a la vez que desde la producción, la dirección y el diseño escenográfico y de vídeo.",
+        "en": "Graduated in performing arts at ERAM - UDG and scenography at Elisava with the Diariodesign scholarship. Her work axis starts from the performing arts as a performer, as well as from production, direction and scenographic and video design."
+      },
+      "lloc_any": "Lleida, 1996"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "manu",
+      "pronoms": "elli/ella/ell",
+      "bio": {
+        "ca": "Artista i dissenyador UX/UI. Graduat en Arts i Disseny, manu crea narratives multimèdia que són petites, consistents i honestes. La seva obra integra lo digital i lo matèric per explorar interaccions i emocions. Manté una presència activa a la seva <a href=\"https://meowrhino.neocities.org/\">web</a>.",
+        "es": "Artista y diseñador UX/UI. Graduado en Artes y Diseño, manu crea narrativas multimedia que son pequeñas, consistentes y honestas. Su obra integra lo digital y lo matérico para explorar interacciones y emociones. Mantiene una presencia activa en su <a href=\"https://meowrhino.neocities.org/\">web</a>.",
+        "en": "Artist and UX/UI designer. Graduated in Arts and Design, manu creates multimedia narratives that are small, consistent and honest. His work integrates the digital and the material to explore interactions and emotions. Maintains an active presence on his <a href=\"https://meowrhino.neocities.org/\">website</a>."
+      },
+      "lloc_any": "El Puerto de Santa María, 1997"
+    }
+  ],
+  "estatuts_link": "estatuts.html"
+}

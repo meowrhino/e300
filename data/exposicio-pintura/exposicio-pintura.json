@@ -1,0 +1,43 @@
+{
+  "slug": "exposicio-pintura",
+  "titulo": {
+    "ca": "Exposició per exposar pintura (?)",
+    "es": "Exposición para exponer pintura (?)",
+    "en": "Exhibition for Showing Paintings (?)"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Exposició per exposar pintura - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "Exposició per exposar pintura (?)",
+      "es": "Exposición para exponer pintura (?)",
+      "en": "Exhibition for Showing Paintings (?)"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Tenint encara l'espai pintat en negre pissarra, restes de les conferències, es va decidir dur a terme una exposició de pintura. Una exposició clàssica, <i>white cube</i>, pintura a paret, res d'expansions ni <i>mixed media</i>, pintura de paper i tela.",
+        "L'espai que no era blanc es va haver de transformar per donar pas a una exposició de pintura. No hi havia la intenció de tapar permanentment el negre de pissarra, per tant es va acordar pintar tota la zona comuna del local amb guix, dur a terme un acte de pintura a la paret, tot blanc.",
+        "Aquesta va ser la proposta comissarial d'E3000 per a l'exposició: pintar un <i>white cube</i> per acollir la resta de pintures. Amb el local transformat es va fer una invitació oberta a tothom qui volgués participar en l'exposició, oferint una sala per a qui portés una pintura, sense importar-ne la qualitat, professionalitat o trajectòria. S'hi va poder presentar qui volgués i, durant una tarda, es va exposar la seva peça (sempre que complís els requisits de ser una pintura per col·locar a la paret). A mesura que la gent anava arribant, en no trobar-se definit qui participaria, cadascú va haver de buscar un lloc dins la sala per instal·lar la pintura, creant un espai de col·lectivitat, conversa i dinàmiques inesperades de forma autònoma."
+      ],
+      "es": [
+        "Con el espacio todavía pintado de negro pizarra, restos de las conferencias, se decidió llevar a cabo una exposición de pintura. Una exposición clásica, <i>white cube</i>, pintura en pared, nada de expansiones ni <i>mixed media</i>, pintura sobre papel y tela.",
+        "El espacio que no era blanco se tuvo que transformar para dar paso a una exposición de pintura. No había intención de tapar permanentemente el negro de pizarra, por tanto se acordó pintar toda la zona común del local con tiza, llevar a cabo un acto de pintura en la pared, todo blanco.",
+        "Esta fue la propuesta curatorial de E3000 para la exposición: pintar un <i>white cube</i> para acoger el resto de pinturas. Con el local transformado se hizo una invitación abierta a todo el que quisiera participar en la exposición, ofreciendo una sala para quien trajera una pintura, sin importar su calidad, profesionalidad o trayectoria. Se pudo presentar quien quisiera y, durante una tarde, se expuso su pieza (siempre que cumpliera el requisito de ser una pintura para colgar en la pared). A medida que la gente iba llegando, al no estar definido quién participaría, cada cual tuvo que buscar un lugar dentro de la sala para instalar la pintura, creando un espacio de colectividad, conversación y dinámicas inesperadas de forma autónoma."
+      ],
+      "en": [
+        "With the space still painted in blackboard black, remnants of the conferences, it was decided to carry out a painting exhibition. A classic exhibition, a <i>white cube</i>, wall painting, no expansions or <i>mixed media</i>, painting on paper and canvas.",
+        "The space that was not white had to be transformed to make way for a painting exhibition. There was no intention to permanently cover the blackboard black, therefore it was agreed to paint the entire common area of the venue with chalk, carrying out a painting act on the wall, all white.",
+        "This was E3000's curatorial proposal for the exhibition: to paint a <i>white cube</i> to host the rest of the paintings. With the space transformed, an open invitation was made to anyone who wanted to participate in the exhibition, offering a room to whoever brought a painting, regardless of quality, professionalism or career. Anyone could present themselves and, over the course of an afternoon, their piece was displayed (as long as it met the requirement of being a painting to hang on the wall). As people arrived, since it was not defined who would participate, each person had to find a place in the room to install the painting, creating a space of collectivity, conversation and unexpected dynamics in an autonomous way."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Exposició de pintura clàssica amb un <i>white cube</i> pintat amb guix i una convocatòria oberta on tothom podia penjar una pintura a la paret.",
+    "es": "Exposición de pintura clásica con un <i>white cube</i> pintado con tiza y una convocatoria abierta donde cualquiera podía colgar una pintura en la pared.",
+    "en": "A classic painting exhibition with a chalk-painted <i>white cube</i> and an open call where anyone could hang a painting on the wall."
+  },
+  "imatges": []
+}

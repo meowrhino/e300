@@ -1,0 +1,43 @@
+{
+  "slug": "flama-no-crema",
+  "titulo": {
+    "ca": "Li pots dir foc a una flama que no crema?",
+    "es": "¿Puedes llamar fuego a una llama que no quema?",
+    "en": "Can You Call Fire a Flame That Doesn't Burn?"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Li pots dir foc a una flama que no crema - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "Li pots dir foc a una flama que no crema?",
+      "es": "¿Puedes llamar fuego a una llama que no quema?",
+      "en": "Can You Call Fire a Flame That Doesn't Burn?"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Li pots dir foc a una flama que no crema? va ser un projecte curatorial que es va acabar materialitzant en una exposició conjunta entre Silvia Calzada i Max Azemar al voltant de reflexió crítica sobre les noves institucionalitats, les quals es proclamen com a &quot;revolucionàries&quot;, defensores del &quot;pensament crític&quot; i de &quot;l'art emergent&quot;. Paraules que han anat perdent el sentit i la capacitat d'encendre, és a dir, han esdevingut mots buits. És aquí des d'on l'exposició es va articular, partint del foc, de com aquest és un acte en si mateix que es desborda, que fricciona.",
+        "Dins l'exposició es van presentar les pintures de Silvia Calzada, obres cremades per un incendi passat, i que ens situaven dins d'una nova gramàtica visual envers el que queda fora del discurs: la destrucció, el rastre, el silenci. En el mateix espai es va dur a terme la conferència incendiària de Max Azemar, qui va generar un espai amb (i sobre) el foc, una conferència on la paraula es va encendre, on es va generar un foc, no simbòlic sinó real.",
+        "L'espai en el qual es va desenvolupar l'exposició va patir una activació a partir de l'encesa i els efectes d'un foc (l'espai ja havia estat prèviament preparat), un foc localitzat, però que posa en tensió els formats, els llenguatges, les estratègies de reconeixement i exclusió de les suposades &quot;noves institucionalitats revolucionàries&quot;. Era a través d'aquest foc que es van generar preguntes com: &quot;Què significa que una institució validi un incendi?&quot;; &quot;Pot l'emergència institucional contenir la veritable emergència de la dissidència?&quot; Arribant a la conclusió que aquesta flama és una condició de pensament, de pràctica i de dubte."
+      ],
+      "es": [
+        "¿Puedes llamar fuego a una llama que no quema? fue un proyecto curatorial que se acabó materializando en una exposición conjunta entre Silvia Calzada y Max Azemar alrededor de una reflexión crítica sobre las nuevas institucionalidades, las cuales se proclaman como &quot;revolucionarias&quot;, defensoras del &quot;pensamiento crítico&quot; y del &quot;arte emergente&quot;. Palabras que han ido perdiendo el sentido y la capacidad de encender, es decir, se han convertido en términos vacíos. Es aquí desde donde se articuló la exposición, partiendo del fuego, de cómo este es un acto en sí mismo que se desborda, que fricciona.",
+        "Dentro de la exposición se presentaron las pinturas de Silvia Calzada, obras quemadas por un incendio pasado, y que nos situaban dentro de una nueva gramática visual respecto a lo que queda fuera del discurso: la destrucción, el rastro, el silencio. En el mismo espacio se llevó a cabo la conferencia incendiaria de Max Azemar, quien generó un espacio con (y sobre) el fuego, una conferencia donde la palabra se encendió, donde se generó un fuego, no simbólico sino real.",
+        "El espacio en el cual se desarrolló la exposición sufrió una activación a partir del encendido y los efectos de un fuego (el espacio ya había sido previamente preparado), un fuego localizado, pero que pone en tensión los formatos, los lenguajes, las estrategias de reconocimiento y exclusión de las supuestas &quot;nuevas institucionalidades revolucionarias&quot;. Fue a través de este fuego que se generaron preguntas como: &quot;¿Qué significa que una institución valide un incendio?&quot;; &quot;¿Puede la emergencia institucional contener la verdadera emergencia de la disidencia?&quot; Llegando a la conclusión de que esta llama es una condición de pensamiento, de práctica y de duda."
+      ],
+      "en": [
+        "Can You Call Fire a Flame That Doesn't Burn? was a curatorial project that ended up materializing in a joint exhibition between Silvia Calzada and Max Azemar around a critical reflection on the new institutionalities, which proclaim themselves &quot;revolutionary&quot;, defenders of &quot;critical thinking&quot; and &quot;emerging art&quot;. Words that have lost their meaning and their capacity to ignite, that is, they have become empty terms. It is from here that the exhibition was articulated, starting from fire, from how it is an act in itself that overflows, that rubs against.",
+        "Within the exhibition, Silvia Calzada's paintings were presented, works burned by a past fire, and which placed us within a new visual grammar toward what remains outside the discourse: destruction, trace, silence. In the same space, Max Azemar's incendiary lecture took place, generating a space with (and about) fire, a lecture where the word ignited, where a fire was generated, not symbolic but real.",
+        "The space in which the exhibition took place underwent an activation from the lighting and effects of a fire (the space had already been prepared), a localized fire that nevertheless puts in tension the formats, languages, and strategies of recognition and exclusion of the supposed &quot;new revolutionary institutionalities&quot;. It was through this fire that questions were generated such as: &quot;What does it mean for an institution to validate a fire?&quot;; &quot;Can institutional emergency contain the true emergency of dissent?&quot; Reaching the conclusion that this flame is a condition of thought, practice, and doubt."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Projecte curatorial sobre el foc i les noves institucionalitats, amb pintures cremades i una conferència incendiària.",
+    "es": "Proyecto curatorial sobre el fuego y las nuevas institucionalidades, con pinturas quemadas y una conferencia incendiaria.",
+    "en": "A curatorial project about fire and new institutionalities, with burned paintings and an incendiary lecture."
+  },
+  "imatges": []
+}

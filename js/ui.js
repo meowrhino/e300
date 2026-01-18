@@ -1,0 +1,115 @@
+// ============================================================================
+// UI.JS - Funcionalidades de interfaz de usuario
+// ============================================================================
+
+// ============================================================================
+// APLICAR ESTILOS A ENLACES
+// ============================================================================
+// Aplica clase .link-con-href a todos los enlaces con href
+// y configura target="_blank" para enlaces externos
+export function applyLinkStyles() {
+  const links = document.querySelectorAll('a');
+  
+  links.forEach(link => {
+    if (link.hasAttribute('href') && link.getAttribute('href') !== '') {
+      // Añadir clase para estilo visual
+      link.classList.add('link-con-href');
+      
+      // Abrir en nueva pestaña solo si no es un enlace de menú o idioma
+      const isMenuLink = link.closest('.menu-links') !== null;
+      const isLanguageLink = link.closest('.language-links') !== null;
+      const isInternalLink = link.getAttribute('href').startsWith('#');
+      
+      if (!isMenuLink && !isLanguageLink && !isInternalLink) {
+        link.setAttribute('target', '_blank');
+      }
+    }
+  });
+}
+
+// ============================================================================
+// INICIALIZAR POPUP DE IMÁGENES
+// ============================================================================
+// Crea un popup para visualizar imágenes en tamaño completo
+export function initImagePopup() {
+  // Crear estructura del popup si no existe
+  if (!document.querySelector('.image-popup')) {
+    const popup = document.createElement('div');
+    popup.className = 'image-popup';
+    popup.innerHTML = `
+      <div class="image-popup-overlay"></div>
+      <div class="image-popup-content">
+        <img src="" alt="">
+        <button class="image-popup-close">&times;</button>
+      </div>
+    `;
+    document.body.appendChild(popup);
+    
+    // Event listeners para cerrar el popup
+    const overlay = popup.querySelector('.image-popup-overlay');
+    const closeBtn = popup.querySelector('.image-popup-close');
+    
+    overlay.addEventListener('click', closeImagePopup);
+    closeBtn.addEventListener('click', closeImagePopup);
+    
+    // Cerrar con tecla ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeImagePopup();
+      }
+    });
+  }
+}
+
+// ============================================================================
+// ABRIR POPUP DE IMAGEN
+// ============================================================================
+export function openImagePopup(imageSrc, imageAlt = '') {
+  const popup = document.querySelector('.image-popup');
+  const img = popup.querySelector('img');
+  
+  img.src = imageSrc;
+  img.alt = imageAlt;
+  popup.classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+// ============================================================================
+// CERRAR POPUP DE IMAGEN
+// ============================================================================
+export function closeImagePopup() {
+  const popup = document.querySelector('.image-popup');
+  popup.classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+// ============================================================================
+// HACER IMÁGENES CLICKEABLES
+// ============================================================================
+// Añade event listeners a imágenes para abrir popup
+export function makeImagesClickable(selector = '.project-item img, .galeria img') {
+  const images = document.querySelectorAll(selector);
+  
+  images.forEach(img => {
+    // Evitar duplicar event listeners
+    if (img.dataset.clickable === 'true') return;
+    
+    img.style.cursor = 'pointer';
+    img.dataset.clickable = 'true';
+    
+    img.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      openImagePopup(img.src, img.alt);
+    });
+  });
+}
+
+// ============================================================================
+// INICIALIZAR TODAS LAS FUNCIONALIDADES DE UI
+// ============================================================================
+export function initUI() {
+  applyLinkStyles();
+  initImagePopup();
+  makeImagesClickable();
+}

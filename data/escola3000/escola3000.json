@@ -1,0 +1,64 @@
+{
+  "slug": "escola3000",
+  "titulo": {
+    "ca": "escola 3000",
+    "es": "escola 3000",
+    "en": "escola 3000"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Escola 3000 - Estructuras 3000"
+  },
+  "video": {
+    "src": "https://drive.google.com/file/d/1efxwNJojCjSStVdS_3KbuAHRwlkRsBVb/preview",
+    "width": "640",
+    "height": "480"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "escola 3000",
+      "es": "escola 3000",
+      "en": "escola 3000"
+    },
+    "link": "https://www.mataroartcontemporani.cat/posts_projectes/zona-intrusa/",
+    "link_text": {
+      "ca": "zona intrusa M|A|C",
+      "es": "zona intrusa M|A|C",
+      "en": "zona intrusa M|A|C"
+    },
+    "texto": {
+      "ca": [
+        "Des de l'<strong>Escola 3000</strong>, es proposa un espai de <strong>reflexió col·lectiva als centres educatius</strong> sobre com l'arquitectura i el seu disseny modulen i intervenen en les dinàmiques de poder (gènere, classe, raça…) a través de recursos del teatre comunitari.",
+        "Amb l'arribada d'una caixa de transport de peces artístiques a l'aula, que es descobreix en realitat com un conjunt d'elements gràfics i de suport per a l'activitat, es convida a l'alumnat a experimentar i imaginar alternatives d'arquitectura de l'edifici escolar. Per grups, <strong>es qüestionen i redissenyen els espais de l'escola</strong> (pati, aula, menjador, direcció, banys…), fent una posada en comú de la nova escola alternativa.",
+        "El procés creatiu grupal s'acompanya de dinàmiques i exercicis de <strong>teatre de l'oprimit</strong>. Aquest mètode basat en pràctiques d'Augusto Boal es basa en la representació de conceptes i narratives per part de l'alumnat, <strong>utilitzant els seus cossos</strong> i moviments en lloc de paraules. Es proposen escenes de \"<strong>conflicte</strong>\" amb les quals l'alumnat explora i analitza imatges corporals que reflecteixen els conflictes habituals de la seva escola i s'usa la nova escola projectada per a intentar trobar desenllaços alternatius afectats pel nou disseny de l'espai.",
+        "Aquest taller va ser proposat i dut a terme durant el cusr 2024 en diversos instituts de Matarò (IES laia l'Arquera: 1r de Batxillerat, Escola Freta: 1r de CFGS en educació infantil, IES Miquel Biada: 4t de l'ESO), en el marc de la convocatòria Zona Intrusa 17\" del MAC de Mataró."
+      ],
+      "es": [
+        "Desde la <strong>escola 3000</strong>, se propone un espacio de <strong>reflexión colectiva en los centros educativos</strong> sobre cómo la arquitectura y su diseño modulan e intervienen en las dinámicas de poder (género, clase, raza…) a través de recursos del teatro comunitario.",
+        "Con la llegada de una caja de transporte de piezas artísticas al aula, con la cual se descubre que en realidad es un conjunto de elementos gráficos y de apoyo para la actividad, se invita al alumnado a experimentar e imaginar alternativas de arquitectura del edificio escolar. Por grupos, <strong>se cuestionan y rediseñan los espacios de la escuela</strong> (patio, aula, comedor, dirección, baños…), haciendo una puesta en común de la nueva escuela alternativa.",
+        "El proceso creativo grupal se acompaña de dinámicas y ejercicios de <strong>teatro del oprimido</strong>. Este método basado en prácticas de Augusto Boal se basa en la representación de conceptos y narrativas por parte del alumnado, <strong>utilizando sus cuerpos</strong> y movimientos en lugar de palabras. Se proponen escenas de \"<strong>conflicto</strong>\" con las cuales el alumnado explora y analiza imágenes corporales que reflejan los conflictos habituales de su escuela y se usa la nueva escuela proyectada para intentar encontrar desenlaces alternativos afectados por el nuevo diseño del espacio.",
+        "Este taller fue propuesto y llevado a cabo durante el curso 2024 en varios institutos de Mataró (IES laia la Arquera: 1.º de Bachillerato, Escuela Freta: 1.º de CFGS en educación infantil, IES Miquel Biada: 4.º de la ESO), en el marco de la convocatoria Zona Intrusa 17\" del MAC de Mataró."
+      ],
+      "en": [
+        "From <strong>escola 3000</strong>, a space for <strong>collective reflection in educational centers</strong> is proposed on how architecture and its design modulate and intervene in power dynamics (gender, class, race...) through community theater resources.",
+        "With the arrival of a transport box of artistic pieces to the classroom, which is discovered to actually be a set of graphic and support elements for the activity, students are invited to experiment and imagine alternatives to the school building's architecture. In groups, <strong>school spaces are questioned and redesigned</strong> (playground, classroom, cafeteria, management, bathrooms...), making a common presentation of the new alternative school.",
+        "The group creative process is accompanied by dynamics and exercises of <strong>theater of the oppressed</strong>. This method based on Augusto Boal's practices is based on the representation of concepts and narratives by students, <strong>using their bodies</strong> and movements instead of words. \"<strong>Conflict</strong>\" scenes are proposed with which students explore and analyze body images that reflect the usual conflicts of their school and the new projected school is used to try to find alternative outcomes affected by the new space design.",
+        "This workshop was proposed and carried out during the 2024 course in several high schools in Mataró (IES laia l'Arquera: 1st year of Baccalaureate, Escola Freta: 1st year of CFGS in early childhood education, IES Miquel Biada: 4th year of ESO), within the framework of the Zona Intrusa 17\" call of the MAC of Mataró."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "L'Escola 3000 proposa un espai de reflexió col·lectiva als centres educatius. Com modulen i intervenen l'arquitectura i el seu disseny en les dinàmiques de poder? Es proposen nous dissenys que són testats a partir de la pràctica teatral.",
+    "es": "La Escola 3000 propone un espacio de reflexión colectiva en los centros educativos. ¿Cómo modulan e intervienen la arquitectura y su diseño en las dinámicas de poder? Se proponen nuevos diseños que son testados a partir de la práctica teatral.",
+    "en": "Escola 3000 proposes a space for collective reflection in educational centers. How do architecture and its design modulate and intervene in power dynamics? New designs are proposed that are tested through theatrical practice."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/05.webp",
+    "./img/06.webp",
+    "./img/07.webp",
+    "./img/08.webp",
+    "./img/03.webp",
+    "./img/04.webp"
+  ]
+}

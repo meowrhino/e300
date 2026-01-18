@@ -1,20 +1,39 @@
+/* ============================================================================
+   STYLE.CSS - e3000 Modernizado
+   ============================================================================ */
+
+/* ============================================================================
+   TIPOGRAFÍAS
+   ============================================================================ */
 @import url('https://fonts.googleapis.com/css2?family=Saira+Extra+Condensed:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+/* ============================================================================
+   RESET Y CONFIGURACIÓN GLOBAL
+   ============================================================================ */
 html {
     scroll-behavior: smooth;
 }
 
+body {
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 0;
+}
 
+/* ============================================================================
+   TIPOGRAFÍA - ENCABEZADOS
+   ============================================================================ */
 h1 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-weight: 600;
-    font-size: 40px
+    font-size: 40px;
 }
 
 h2 {
     font-family: "Saira Extra Condensed", sans-serif;
     font-weight: 600;
-    font-size: 32px
+    font-size: 32px;
 }
 
 h3 {
@@ -25,18 +44,46 @@ h3 {
 }
 
 h4 {
-    /*font-family: "Saira Extra Condensed", sans-serif;
-    font-weight: 300;*/
     font-size: 16px;
 }
 
-body {
-    font-family: 'Courier New', monospace;
-    font-size: 16px;
-    line-height: 30px;
-    margin: 0px;
+/* ============================================================================
+   ENLACES
+   ============================================================================ */
+a {
+    text-decoration: none;
 }
 
+a.link-con-href {
+    color: DimGray;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a.link-con-href:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+/* ============================================================================
+   LAYOUT - CONTENEDOR PRINCIPAL
+   ============================================================================ */
+@media (min-width: 768px) {
+    .container {
+        margin: 30px 200px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        margin: 30px auto;
+        padding: 30px;
+    }
+}
+
+/* ============================================================================
+   SECCIÓN - LOGO
+   ============================================================================ */
 #logo-container {
     display: flex;
     justify-content: center;
@@ -52,6 +99,16 @@ body {
     min-height: 100vh;
 }
 
+#logoe3000 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+/* ============================================================================
+   SECCIÓN - DESCRIPCIÓN
+   ============================================================================ */
 #descripcio {
     display: flex;
     flex-direction: column;
@@ -60,265 +117,9 @@ body {
     min-height: 100vh;
 }
 
-/* Estilos para el contenedor de proyectos */
-#projectes {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-    justify-content: center;
-    min-height: 100vh;
-}
-
-/* Estilos para cada proyecto */
-.project-item {
-    display: flex;
-    flex-direction: column;
-    /* Alinear elementos verticalmente */
-    justify-content: space-between;
-    /* Distribuir espacio entre los elementos */
-    height: 100%;
-    transition: transform 0.3s;
-}
-
-.project-item:hover {
-    transform: translateY(-5px);
-    /* Efecto de hover */
-}
-
-/* Estilos para la imagen del proyecto */
-.project-item img {
-    width: 100%;
-    height: auto;
-    filter: grayscale(100%);
-    transition: filter 0.5s ease;
-}
-
-.project-item:hover img {
-    filter: grayscale(0%);
-}
-
-/* Estilos para el enlace "Click para ver más" */
-.projecte-veure-mes {
-    margin-top: auto;
-    /* Empujar el enlace hacia la parte inferior del contenedor */
-    transition: background-color 0.3s ease;
-}
-
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-    .project-item {
-        width: 100%;
-        /* Una sola columna en pantallas pequeñas */
-    }
-
-    .project-item img {
-        filter: none;
-        /* Mostrar imágenes en color siempre en móviles */
-    }
-}
-
-#membres {
-    margin-top: 10em;
-    /* margin: 2em 0em; */
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2em;
-    min-height: 100vh;
-}
-
-.membre:hover {
-    color: gray;
-    /* transform: scale(1.05); Aumenta el tamaño un 5% */
-    /*z-index: 10; Asegúrate de que esté por encima de otros elementos si pones el scale */
-    transition: transform 0.3s ease, z-index 0.3s;
-    /* Añadir una transición suave */
-}
-
-.pronoms {
-    color: darkgray;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-#contacte {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-#logoe3000 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 60%;
-}
-
-#estatuts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 5em
-}
-
-#estatuts h3 {
-    margin-top: 1em;
-    font-size: 24px;
-}
-
-#estatuts h4 {
-    font-size: 24px;
-    margin-top: 2em;
-    font-family: "Saira Extra Condensed", sans-serif;
-    margin-bottom: 0px;
-}
-
-#estatuts q {
-    margin-top: 20px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        margin: 30px 200px;
-        padding: 30px;
-    }
-}
-
-@media (max-width: 767px) {
-    .container {
-        margin: 30px auto;
-        padding: 30px;
-    }
-}
-
-.language-links {
-    position: fixed;
-    display: flex;
-    gap: 10px;
-    top: 10px;
-    right: 20px;
-    font-weight: bold;
-}
-
-.menu-links {
-    position: fixed;
-    display: flex;
-    bottom: 10px;
-    right: 20px;
-    font-weight: bold;
-    flex-direction: column;
-    text-align: right;
-    transition: max-height 0.5s ease;
-    /* Animación para abrir y cerrar */
-}
-
-@media (max-width: 767px) {
-    .menu-links {
-        line-height: 1;
-        /* Ajusta el valor según el espacio que necesites */
-    }
-}
-
-.menu-links a.active {
-    color: LightGray;
-}
-
-a {
-    text-decoration: none;
-}
-
-a.link-con-href {
-    color: DimGray;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-a.link-con-href:hover {
-    color: black;
-    text-decoration: underline;
-}
-
-@media (hover: none) {
-    .menu-links a:hover {
-        background-color: none;
-        /* Quita o ajusta lo que necesites */
-    }
-}
-
-/*https://es.wikipedia.org/wiki/Colores_web*/
-
-/* Estilos para la sección de detalles del proyecto */
-#container-projecte {
-    display: block;
-    margin: 0 auto;
-    max-width: 800px;
-    box-sizing: border-box;
-    margin-top: 35vh;
-    margin-bottom: 35vh;
-}
-
-#container-projecte img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-#container-projecte h1,
-#container-projecte p {
-    text-align: left;
-
-}
-
-#container-projecte p {
-    margin-bottom: 20px;
-    line-height: 1.8;
-}
-
-/* Estilos para la galería de imágenes */
-#container-projecte .galeria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
-}
-
-#container-projecte .galeria img {
-    width: 100%;
-    height: auto;
-}
-
-
-/* Estilos para el popup de imagen */
-.popup-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
-.popup-overlay.active {
-    display: flex;
-}
-
-.popup-image {
-    max-width: 90%;
-    max-height: 90%;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-
-/*SERVEIS (NEW: 23/07/25*/
-
-
+/* ============================================================================
+   SECCIÓN - SERVICIOS
+   ============================================================================ */
 #serveis {
     display: flex;
     flex-direction: column;
@@ -338,15 +139,18 @@ a.link-con-href:hover {
     padding: 0;
 }
 
-/* FadeInOut secuencial para los <li> de #serveis */
-#serveis ul li {
-    opacity: 0;
-    /* invisibles al inicio */
-    animation: fadeInOut 15s linear infinite;
-    /* 15s = 5 ítems × 3s cada uno */
+.serveis-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-/* Retrasos para que salgan uno a uno cada 3s */
+/* Animación fadeInOut secuencial para los <li> de #serveis */
+#serveis ul li {
+    opacity: 0;
+    animation: fadeInOut 15s linear infinite;
+}
+
 #serveis ul li:nth-child(1) {
     animation-delay: 0s;
 }
@@ -367,91 +171,338 @@ a.link-con-href:hover {
     animation-delay: 12s;
 }
 
-/* Keyframes: aparece, permanece y desaparece */
 @keyframes fadeInOut {
     0% {
         opacity: 0;
         transform: translateY(10px);
     }
-
     10% {
         opacity: 1;
         transform: translateY(0);
     }
-
     30% {
         opacity: 1;
     }
-
     40% {
         opacity: 0;
     }
-
     100% {
         opacity: 0;
     }
 }
 
-.serveis-grid {
+/* ============================================================================
+   SECCIÓN - PROYECTOS
+   ============================================================================ */
+#projectes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.project-item {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    justify-content: space-between;
+    height: 100%;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-
-
-
-
-
-
-
-
-
-
-/* Secció Serveis 
-.serveis-section {
-  padding: 4rem 1rem;
-  background-color: #fafafa;
-}
-.serveis-title {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #333;
+.project-item:hover {
+    transform: translateY(-5px);
 }
 
-.servei-card {
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 1.5rem;
+.project-item img {
+    width: 100%;
+    height: auto;
+    filter: grayscale(100%);
+    transition: filter 0.5s ease;
+}
+
+.project-item:hover img {
+    filter: grayscale(0%);
+}
+
+.projecte-veure-mes {
+    margin-top: auto;
+    transition: background-color 0.3s ease;
+}
+
+/* Responsive - Proyectos en móviles */
+@media (max-width: 768px) {
+    .project-item {
+        width: 100%;
+    }
+    
+    .project-item img {
+        filter: none;
+    }
+}
+
+/* ============================================================================
+   SECCIÓN - CONTACTO
+   ============================================================================ */
+#contacte {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* ============================================================================
+   SECCIÓN - MIEMBROS
+   ============================================================================ */
+#membres {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+    min-height: 100vh;
+}
+
+.membre:hover {
+    color: gray;
+    transition: transform 0.3s ease, z-index 0.3s;
+}
+
+.pronoms {
+    color: darkgray;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ============================================================================
+   SECCIÓN - ESTATUTOS
+   ============================================================================ */
+#estatuts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+#estatuts h3 {
+    margin-top: 1em;
+    font-size: 24px;
+}
+
+#estatuts h4 {
+    font-size: 24px;
+    margin-top: 2em;
+    font-family: "Saira Extra Condensed", sans-serif;
+    margin-bottom: 0;
+}
+
+#estatuts q {
+    margin-top: 20px;
+}
+
+/* ============================================================================
+   NAVEGACIÓN - ENLACES DE IDIOMA
+   ============================================================================ */
+.language-links {
+    position: fixed;
+    display: flex;
+    gap: 10px;
+    top: 10px;
+    right: 20px;
+    font-weight: bold;
+}
+
+.language-links a {
+    color: DimGray;
+    transition: color 0.3s ease;
+}
+
+.language-links a.active {
+    color: LightGray;
+}
+
+.language-links a:hover {
+    color: black;
+}
+
+@media (hover: none) {
+    .language-links a:hover {
+        background-color: none;
+    }
+}
+
+/* ============================================================================
+   NAVEGACIÓN - ENLACES DE MENÚ
+   ============================================================================ */
+.menu-links {
+    position: fixed;
+    display: flex;
+    bottom: 10px;
+    right: 20px;
+    font-weight: bold;
+    flex-direction: column;
+    text-align: right;
+    transition: max-height 0.5s ease;
+}
+
+.menu-links a.active {
+    color: LightGray;
+}
+
+@media (max-width: 767px) {
+    .menu-links {
+        line-height: 1;
+    }
+}
+
+@media (hover: none) {
+    .menu-links a:hover {
+        background-color: none;
+    }
+}
+
+/* ============================================================================
+   PÁGINA DE PROYECTO - CONTENEDOR PRINCIPAL
+   ============================================================================ */
+#container-projecte {
+    display: block;
+    margin: 0 auto;
+    max-width: 800px;
+    box-sizing: border-box;
+    margin-top: 35vh;
+    margin-bottom: 35vh;
+}
+
+#container-projecte img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#container-projecte h1,
+#container-projecte p {
+    text-align: left;
+}
+
+#container-projecte p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Imágenes clickeables */
+#container-projecte img.clickable-image {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+#container-projecte img.clickable-image:hover {
+    opacity: 0.8;
+}
+
+/* ============================================================================
+   PÁGINA DE PROYECTO - GALERÍA
+   ============================================================================ */
+#container-projecte .galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+#container-projecte .galeria img {
+    width: 100%;
+    height: auto;
+}
+
+/* ============================================================================
+   POPUP DE IMAGEN
+   ============================================================================ */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.popup-overlay.active {
+    display: flex;
+}
+
+.popup-image {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* ============================================================================
+   POPUP DE IMÁGENES
+   ============================================================================ */
+
+.image-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+}
+
+.image-popup.active {
+  display: block;
+}
+
+.image-popup-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  cursor: pointer;
+}
+
+.image-popup-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
-.servei-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+
+.image-popup-content img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: contain;
+  z-index: 10000;
 }
-.servei-card h3 {
-  font-size: 1.25rem;
-  margin-bottom: 0.75rem;
-  color: #222;
+
+.image-popup-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 10001;
+  line-height: 1;
+  padding: 0.5rem 1rem;
 }
-.servei-card p {
-  flex-grow: 1;
-  margin-bottom: 0;
-  color: #555;
+
+.image-popup-close:hover {
+  opacity: 0.7;
 }
-.servei-card ul {
-  list-style: disc inside;
-  margin: 0;
-  padding: 0;
-  color: #555;
-}
-@media (max-width: 600px) {
-  .serveis-title { font-size: 1.75rem; }
-  .servei-card { padding: 1rem; }
-}
-*/

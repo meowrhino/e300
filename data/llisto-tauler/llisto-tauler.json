@@ -1,0 +1,46 @@
+{
+  "slug": "llisto-tauler",
+  "titulo": {
+    "ca": "Què pot un llistó i un tauler?",
+    "es": "¿Qué puede un listón y un tablero?",
+    "en": "What Can a Plank and a Board Do?"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Què pot un llistó i un tauler - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "Què pot un llistó i un tauler?",
+      "es": "¿Qué puede un listón y un tablero?",
+      "en": "What Can a Plank and a Board Do?"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Partint del material en brut: un llistó i un tauler, i tal com el títol diu, es proposava una pràctica de transformació, reutilització i activació del material al llarg de la jornada. Aquests elements es van anar activant a partir de situacions que s'articulaven amb la pràctica i la creació col·lectiva.",
+        "Tant E3000 com el públic van participar en les diferents modificacions que va patir el material per desenvolupar multitud d'artefactes que s'inscrivien en la situació concreta del moment. D'aquesta manera, la proposta va generar una conversa amb els participants de la jornada, oferint una diversitat de propostes que en el transcurs de la mateixa peça van anar heretant les transformacions de l'activació anterior.",
+        "Des de la diversitat de funcions: servint de tarima, un micròfon llarg, un cartell, una font d'aigua, un banc centpeus, una barra de sucar pa amb tomàquet, una gran bandera i finalment tamborets; se li va atorgar a la fusta una actitud teatral que es va anar desenvolupant a partir de les possibilitats que aquesta oferia: transformació del propi material i com aquest també arxivava els processos i reconfiguracions que va suportar.",
+        "El projecte es va desenvolupar dins del Cicle d'Art Contemporani Si no vols pols no vinguis a l'era el juny del 2025 al Mas Nyamnyam. Projecte dins el cicle d'art contemporani."
+      ],
+      "es": [
+        "Partiendo del material en bruto: un listón y un tablero, y tal como dice el título, se proponía una práctica de transformación, reutilización y activación del material a lo largo de la jornada. Estos elementos se fueron activando a partir de situaciones que se articulaban con la práctica y la creación colectiva.",
+        "Tanto E3000 como el público participaron en las diferentes modificaciones que sufrió el material para desarrollar multitud de artefactos que se inscribían en la situación concreta del momento. De esta manera, la propuesta generó una conversación con los participantes de la jornada, ofreciendo una diversidad de propuestas que, en el transcurso de la misma pieza, fueron heredando las transformaciones de la activación anterior.",
+        "Desde la diversidad de funciones: sirviendo de tarima, un micrófono largo, un cartel, una fuente de agua, un banco ciempiés, una barra de pan con tomate para mojar, una gran bandera y finalmente taburetes; se le otorgó a la madera una actitud teatral que se fue desarrollando a partir de las posibilidades que esta ofrecía: transformación del propio material y cómo este también archivaba los procesos y reconfiguraciones que soportó.",
+        "El proyecto se desarrolló dentro del Cicle d'Art Contemporani Si no vols pols no vinguis a l'era en junio de 2025 en el Mas Nyamnyam. Proyecto dentro del ciclo de arte contemporáneo."
+      ],
+      "en": [
+        "Starting from the raw material - a plank and a board - and as the title says, a practice of transformation, reuse and activation of the material was proposed throughout the day. These elements were activated through situations articulated with collective practice and creation.",
+        "Both E3000 and the public took part in the different modifications the material underwent to develop a multitude of artifacts that inscribed themselves in the specific situation of the moment. In this way, the proposal generated a conversation with the participants of the day, offering a diversity of proposals that, over the course of the same piece, inherited the transformations of the previous activation.",
+        "From the diversity of functions - serving as a platform, a long microphone, a sign, a water fountain, a centipede bench, a bar for bread with tomato, a large flag and finally stools - the wood was given a theatrical attitude that developed from the possibilities it offered: transformation of the material itself and how it also archived the processes and reconfigurations it endured.",
+        "The project was developed within the Cicle d'Art Contemporani Si no vols pols no vinguis a l'era in June 2025 at Mas Nyamnyam. Project within the contemporary art cycle."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Pràctica col·lectiva de transformació d'un llistó i un tauler que va activar múltiples usos i artefactes durant la jornada.",
+    "es": "Práctica colectiva de transformación de un listón y un tablero que activó múltiples usos y artefactos durante la jornada.",
+    "en": "Collective practice of transforming a plank and a board that activated multiple uses and artifacts throughout the day."
+  },
+  "imatges": []
+}

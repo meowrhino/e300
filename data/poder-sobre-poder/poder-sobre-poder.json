@@ -1,0 +1,43 @@
+{
+  "slug": "poder-sobre-poder",
+  "titulo": {
+    "ca": "Del poder sobre el poder",
+    "es": "Del poder sobre el poder",
+    "en": "On Power Over Power"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Del poder sobre el poder - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "Del poder sobre el poder",
+      "es": "Del poder sobre el poder",
+      "en": "On Power Over Power"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "Va ser una exposició conjunta d'Unfunny_Curator amb el projecte &quot;The curator's project&quot; (fotografies de Sofía Montecinos), una activació del &quot;Parlamalament del poder&quot; de Jordi Bretcha, i un diàleg performatiu &quot;No tens les cartes&quot; d'Ainara Elejalde i Bet Pahissa.",
+        "A través d'exploracions sobre els mecanismes de representació del poder, es va articular una exposició que posava la mirada en la crítica institucional a través de la mimesi, la paròdia i la descontextualització. Passant per àmbits com el circuit artístic, en el cas d'Unfunny_Curator, es va presentar una peça que buscava inscriure's dins l'imaginari dels comissaris d'art, fent de còpia a través de la seva imatge pública. Per altra banda, el &quot;Parlamalament&quot; va presentar una caricatura de l'orador i demagog, a través del dispositiu d'enunciació del púlpit: un objecte que projectava el poder per sobre de l'audiència, per sobre del missatge, que a la vegada servia com a objecte que atorgava veu a qui l'emprava. Finalment, &quot;No tens les cartes&quot; descontextualitzava una conversa retransmesa en els mitjans entre líders polítics de l'actualitat, evidenciant-ne les absurditats, discursos i intencions subjacents amb la teatralització de diàleg tret de context.",
+        "La mostra va disseccionar com es construeix l'autoritat cultural: quins gestos, codis i escenografies la sostenen, i com es perpetua dins dels circuits artístics. Es va posar en tensió el desig de formar part d'aquest sistema amb la necessitat de qüestionar-lo, subvertir-lo o, fins i tot, de teatralitzar-lo fins a l'absurd."
+      ],
+      "es": [
+        "Fue una exposición conjunta de Unfunny_Curator con el proyecto &quot;The curator's project&quot; (fotografías de Sofía Montecinos), una activación del &quot;Parlamalament del poder&quot; de Jordi Bretcha, y un diálogo performativo &quot;No tens les cartes&quot; de Ainara Elejalde y Bet Pahissa.",
+        "A través de exploraciones sobre los mecanismos de representación del poder, se articuló una exposición que ponía la mirada en la crítica institucional a través de la mímesis, la parodia y la descontextualización. Pasando por ámbitos como el circuito artístico, en el caso de Unfunny_Curator, se presentó una pieza que buscaba inscribirse dentro del imaginario de los comisarios de arte, haciendo de copia a través de su imagen pública. Por otra parte, el &quot;Parlamalament&quot; presentó una caricatura del orador y demagogo, a través del dispositivo de enunciación del púlpito: un objeto que proyectaba el poder por encima de la audiencia, por encima del mensaje, que a la vez servía como objeto que otorgaba voz a quien lo empleaba. Finalmente, &quot;No tens les cartes&quot; descontextualizaba una conversación retransmitida en los medios entre líderes políticos de la actualidad, evidenciando sus absurdidades, discursos e intenciones subyacentes con la teatralización de un diálogo sacado de contexto.",
+        "La muestra diseccionó cómo se construye la autoridad cultural: qué gestos, códigos y escenografías la sostienen, y cómo se perpetúa dentro de los circuitos artísticos. Se puso en tensión el deseo de formar parte de este sistema con la necesidad de cuestionarlo, subvertirlo o, incluso, teatralizarlo hasta el absurdo."
+      ],
+      "en": [
+        "It was a joint exhibition by Unfunny_Curator with the project &quot;The curator's project&quot; (photographs by Sofía Montecinos), an activation of Jordi Bretcha's &quot;Parlamalament del poder&quot;, and a performative dialogue &quot;No tens les cartes&quot; by Ainara Elejalde and Bet Pahissa.",
+        "Through explorations of the mechanisms of the representation of power, an exhibition was articulated that focused on institutional critique through mimesis, parody, and decontextualization. Moving through areas such as the artistic circuit, in the case of Unfunny_Curator a piece was presented that sought to inscribe itself within the imaginary of art curators, making a copy through their public image. On the other hand, the &quot;Parlamalament&quot; presented a caricature of the speaker and demagogue through the enunciative device of the pulpit: an object that projected power above the audience, above the message, which at the same time served as an object that granted voice to whoever used it. Finally, &quot;No tens les cartes&quot; decontextualized a conversation broadcast in the media between current political leaders, revealing its absurdities, speeches, and underlying intentions through the theatricalization of a dialogue taken out of context.",
+        "The exhibition dissected how cultural authority is constructed: what gestures, codes, and scenographies sustain it, and how it is perpetuated within artistic circuits. It put in tension the desire to be part of this system with the need to question it, subvert it, or even theatricalize it to the point of absurdity."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Exposició col·lectiva que analitza els mecanismes de representació del poder a través de la mimesi, la paròdia i la descontextualització.",
+    "es": "Exposición colectiva que analiza los mecanismos de representación del poder a través de la mímesis, la parodia y la descontextualización.",
+    "en": "Collective exhibition analyzing mechanisms of power representation through mimesis, parody, and decontextualization."
+  },
+  "imatges": []
+}

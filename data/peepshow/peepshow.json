@@ -1,0 +1,44 @@
+{
+  "slug": "peepshow",
+  "titulo": {
+    "ca": "peepshow",
+    "es": "peepshow",
+    "en": "peepshow"
+  },
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Peepshow - Estructuras 3000"
+  },
+  "descripcion": {
+    "titulo": {
+      "ca": "peepshow",
+      "es": "peepshow",
+      "en": "peepshow"
+    },
+    "link": "",
+    "texto": {
+      "ca": [
+        "El <i>peepshow</i> és un dispositiu escènic que explora l'experiència expositiva individualitzant la mirada i fent-la anònima. Amb una estructura que permetia ser modificada diversos artistes van performar al llarg de la mostra."
+      ],
+      "es": [
+        "El <i>peepshow</i> es un dispositivo escénico que explora la experiencia expositiva individualizando la mirada y haciéndola anónima. Con una estructura que permitía ser modificada varios artistas performaron a lo largo de la muestra."
+      ],
+      "en": [
+        "The <i>peepshow</i> is a scenic device that explores the exhibition experience by individualizing the gaze and making it anonymous. With a structure that could be modified, several artists performed throughout the exhibition."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "El peepshow és un dispositiu escènic que explora l'experiència expositiva individualitzant la mirada i fent-la anònima. Amb una estructura que permetia ser modificada diversos artistes van performar al llarg de la mostra.",
+    "es": "El peepshow es un dispositivo escénico que explora la experiencia expositiva individualizando la mirada y haciéndola anónima. Con una estructura que permitía ser modificada varios artistas performaron a lo largo de la muestra.",
+    "en": "The peepshow is a scenic device that explores the exhibition experience by individualizing the gaze and making it anonymous. With a structure that could be modified, several artists performed throughout the exhibition."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp",
+    "./img/06.webp",
+    "./img/07.webp"
+  ]
+}
