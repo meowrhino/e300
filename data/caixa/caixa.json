@@ -2,7 +2,7 @@
   "slug": "caixa",
   "titulo": "Caixa Sorpresa Grup d'Estudi",
   "primera_imatge": {
-    "src": "./img/01.webp",
+    "src": "img/caixa.webp",
     "alt": "Caixa Sorpresa - Estructuras 3000"
   },
   "descripcion": {
@@ -37,9 +37,6 @@
     "en": "Museographic device in the form of a giant box for Grup d'Estudi's curatorial project at BCN producció / La Capella, designed to contain and reveal successive exhibitions."
   },
   "imatges": [
-    "./img/02.webp",
-    "./img/03.webp",
-    "./img/04.webp",
-    "./img/05.webp"
+    "./img/01.webp"
   ]
 }

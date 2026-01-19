@@ -74,7 +74,7 @@ function renderProjectContent(projectData, lang) {
   // Imagen principal
   if (projectData.primera_imatge) {
     const img = document.createElement('img');
-    img.src = `data/${projectData.slug}/${projectData.primera_imatge.src}`;
+    img.src = resolveProjectImagePath(projectData.slug, projectData.primera_imatge.src);
     img.alt = projectData.primera_imatge.alt || titulo;
     img.classList.add('clickable-image');
     container.appendChild(img);
@@ -97,7 +97,7 @@ function renderProjectContent(projectData, lang) {
     
     projectData.imatges.forEach(imgPath => {
       const img = document.createElement('img');
-      img.src = `data/${projectData.slug}/${imgPath}`;
+      img.src = resolveProjectImagePath(projectData.slug, imgPath);
       img.alt = `Imatge del projecte ${titulo}`;
       img.classList.add('clickable-image');
       galeria.appendChild(img);
@@ -105,4 +105,12 @@ function renderProjectContent(projectData, lang) {
     
     container.appendChild(galeria);
   }
+}
+
+function resolveProjectImagePath(slug, imgPath) {
+  if (!imgPath) return '';
+  const isFullPath = /^(https?:)?\/\//.test(imgPath)
+    || imgPath.startsWith('data/')
+    || imgPath.startsWith('img/');
+  return isFullPath ? imgPath : `data/${slug}/${imgPath}`;
 }

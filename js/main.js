@@ -6,7 +6,7 @@ import { renderHome } from './home.js';
 import { renderProject } from './project.js';
 import { initLanguageSelector, getCurrentLang, getTranslation } from './i18n.js';
 import { initMenu, updateMenuLanguage } from './menu.js';
-import { initUI, applyLinkStyles } from './ui.js';
+import { initUI } from './ui.js';
 
 // Detectar tipo de página
 const pageType = document.body.dataset.pageType;
@@ -43,7 +43,7 @@ async function initHome() {
     initLanguageSelector(() => {
       renderHome(homeData);
       updateMenuLanguage();
-      applyLinkStyles();
+      initUI();
     });
     
   } catch (error) {

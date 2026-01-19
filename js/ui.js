@@ -2,6 +2,8 @@
 // UI.JS - Funcionalidades de interfaz de usuario
 // ============================================================================
 
+import { getCurrentLang } from './i18n.js';
+
 // ============================================================================
 // APLICAR ESTILOS A ENLACES
 // ============================================================================
@@ -40,6 +42,82 @@ export function applyLinkStyles() {
       link.removeAttribute('target');
       link.removeAttribute('rel');
     }
+  });
+}
+
+// ============================================================================
+// ENLAZAR "ESTRUCTURAS 3000" A HOME
+// ============================================================================
+const ESTRUCTURAS_TEXT = 'Estructuras 3000';
+
+function getHomeHref() {
+  const lang = getCurrentLang();
+  return `index.html?lang=${lang}`;
+}
+
+function linkifyEstructuras() {
+  if (!document.body) return;
+
+  const homeHref = getHomeHref();
+  const walker = document.createTreeWalker(
+    document.body,
+    NodeFilter.SHOW_TEXT,
+    {
+      acceptNode(node) {
+        const text = node.nodeValue;
+        if (!text || !text.includes(ESTRUCTURAS_TEXT)) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        const parent = node.parentNode;
+        if (!parent || parent.nodeType !== Node.ELEMENT_NODE) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        const parentEl = parent;
+        if (parentEl.closest && parentEl.closest('a')) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        const tagName = parentEl.tagName;
+        if (
+          tagName === 'SCRIPT'
+          || tagName === 'STYLE'
+          || tagName === 'NOSCRIPT'
+          || tagName === 'TEXTAREA'
+        ) {
+          return NodeFilter.FILTER_REJECT;
+        }
+
+        return NodeFilter.FILTER_ACCEPT;
+      }
+    }
+  );
+
+  const nodes = [];
+  while (walker.nextNode()) {
+    nodes.push(walker.currentNode);
+  }
+
+  nodes.forEach(node => {
+    const parts = node.nodeValue.split(ESTRUCTURAS_TEXT);
+    if (parts.length < 2) return;
+
+    const fragment = document.createDocumentFragment();
+    parts.forEach((part, index) => {
+      if (part) {
+        fragment.appendChild(document.createTextNode(part));
+      }
+
+      if (index < parts.length - 1) {
+        const link = document.createElement('a');
+        link.href = homeHref;
+        link.textContent = ESTRUCTURAS_TEXT;
+        fragment.appendChild(link);
+      }
+    });
+
+    node.parentNode.replaceChild(fragment, node);
   });
 }
 
@@ -125,6 +203,7 @@ export function makeImagesClickable(selector = '.clickable-image') {
 // INICIALIZAR TODAS LAS FUNCIONALIDADES DE UI
 // ============================================================================
 export function initUI() {
+  linkifyEstructuras();
   applyLinkStyles();
   initImagePopup();
   makeImagesClickable();
