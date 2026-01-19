@@ -11,18 +11,34 @@ export function applyLinkStyles() {
   const links = document.querySelectorAll('a');
   
   links.forEach(link => {
-    if (link.hasAttribute('href') && link.getAttribute('href') !== '') {
-      // Añadir clase para estilo visual
-      link.classList.add('link-con-href');
-      
-      // Abrir en nueva pestaña solo si no es un enlace de menú o idioma
-      const isMenuLink = link.closest('.menu-links') !== null;
-      const isLanguageLink = link.closest('.language-links') !== null;
-      const isInternalLink = link.getAttribute('href').startsWith('#');
-      
-      if (!isMenuLink && !isLanguageLink && !isInternalLink) {
-        link.setAttribute('target', '_blank');
-      }
+    const href = link.getAttribute('href');
+    if (!href) return;
+
+    // Añadir clase para estilo visual
+    link.classList.add('link-con-href');
+
+    // Ignorar enlaces de menú o idioma
+    const isMenuLink = link.closest('.menu-links') !== null;
+    const isLanguageLink = link.closest('.language-links') !== null;
+    if (isMenuLink || isLanguageLink) return;
+
+    const isHashLink = href.startsWith('#');
+    const isMailOrTel = href.startsWith('mailto:') || href.startsWith('tel:');
+    let isExternal = false;
+
+    try {
+      const url = new URL(href, window.location.href);
+      isExternal = url.origin !== window.location.origin;
+    } catch {
+      isExternal = false;
+    }
+
+    if (!isHashLink && !isMailOrTel && isExternal) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    } else {
+      link.removeAttribute('target');
+      link.removeAttribute('rel');
     }
   });
 }

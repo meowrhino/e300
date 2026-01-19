@@ -82,7 +82,7 @@ async function initProject() {
     // Inicializar selector de idiomas
     initLanguageSelector(() => {
       renderProject(projectData);
-      applyLinkStyles();
+      initUI();
     });
     
     // Actualizar el enlace de "casa" según el idioma

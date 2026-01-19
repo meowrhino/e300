@@ -15,9 +15,6 @@ export function renderProject(projectData) {
   
   // Renderizar contenido del proyecto
   renderProjectContent(projectData, lang);
-  
-  // Inicializar popup de imágenes
-  initImagePopup();
 }
 
 // ============================================================================
@@ -108,28 +105,4 @@ function renderProjectContent(projectData, lang) {
     
     container.appendChild(galeria);
   }
-}
-
-// ============================================================================
-// INICIALIZAR POPUP DE IMÁGENES
-// ============================================================================
-function initImagePopup() {
-  const overlay = document.getElementById('popup-overlay');
-  const popupImage = document.getElementById('popup-image');
-  
-  if (!overlay || !popupImage) return;
-  
-  // Añadir evento click a todas las imágenes clickeables
-  document.querySelectorAll('.clickable-image').forEach(img => {
-    img.addEventListener('click', () => {
-      popupImage.src = img.src;
-      overlay.classList.add('active');
-    });
-  });
-  
-  // Cerrar popup al hacer click en el overlay
-  overlay.addEventListener('click', () => {
-    overlay.classList.remove('active');
-    popupImage.src = '';
-  });
 }
