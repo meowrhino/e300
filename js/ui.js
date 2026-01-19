@@ -87,7 +87,7 @@ export function closeImagePopup() {
 // HACER IMÁGENES CLICKEABLES
 // ============================================================================
 // Añade event listeners a imágenes para abrir popup
-export function makeImagesClickable(selector = '.project-item img, .galeria img') {
+export function makeImagesClickable(selector = '.clickable-image') {
   const images = document.querySelectorAll(selector);
   
   images.forEach(img => {

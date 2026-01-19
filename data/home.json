@@ -123,7 +123,7 @@
     },
     {
       "slug": "exposicio-pintura",
-      "name": "Exposició per exposar pintura (?)",
+      "name": "Exposició per exposar pintura",
       "thumbnail": "data/exposicio-pintura/img/01.webp",
       "visible": true,
       "resumen": {
@@ -171,9 +171,9 @@
       "thumbnail": "data/poder-sobre-poder/img/01.webp",
       "visible": true,
       "resumen": {
-        "ca": "Exposició col·lectiva que analitza els mecanismes de representació del poder a través de la mimesi, la paròdia i la descontextualització.",
-        "es": "Exposición colectiva que analiza los mecanismos de representación del poder a través de la mímesis, la parodia y la descontextualización.",
-        "en": "Collective exhibition analyzing mechanisms of power representation through mimesis, parody, and decontextualization."
+        "ca": "Mostra que disseccionava com es construeix l’autoritat cultural: quins gestos, codis i escenografies la sostenen, i com es perpetua dins dels circuits artístics. Es va posar en tensió el desig de formar part d’aquest sistema amb la necessitat de qüestionar-lo, subvertir-lo o, fins i tot, de teatralitzar-lo fins a l’absurd.",
+        "es": "Muestra que diseccionaba cómo se construye la autoridad cultural: qué gestos, códigos y escenografías la sostienen, y cómo se perpetúa dentro de los circuitos artísticos. Se puso en tensión el deseo de formar parte de este sistema con la necesidad de cuestionarlo, subvertirlo o, incluso, de teatralizarlo hasta el absurdo.",
+        "en": "An exhibition that dissected how cultural authority is constructed: which gestures, codes, and scenographies sustain it, and how it is perpetuated within artistic circuits. It set in tension the desire to belong to this system with the need to question it, subvert it, or even theatricalize it to the point of absurdity."
       }
     },
     {

@@ -1,9 +1,9 @@
 {
   "slug": "exposicio-pintura",
   "titulo": {
-    "ca": "Exposició per exposar pintura (?)",
-    "es": "Exposición para exponer pintura (?)",
-    "en": "Exhibition for Showing Paintings (?)"
+    "ca": "Exposició per exposar pintura",
+    "es": "Exposición para exponer pintura",
+    "en": "Exhibition for Showing Paintings"
   },
   "primera_imatge": {
     "src": "./img/01.webp",
@@ -11,9 +11,9 @@
   },
   "descripcion": {
     "titulo": {
-      "ca": "Exposició per exposar pintura (?)",
-      "es": "Exposición para exponer pintura (?)",
-      "en": "Exhibition for Showing Paintings (?)"
+      "ca": "Exposició per exposar pintura",
+      "es": "Exposición para exponer pintura",
+      "en": "Exhibition for Showing Paintings"
     },
     "link": "",
     "texto": {
