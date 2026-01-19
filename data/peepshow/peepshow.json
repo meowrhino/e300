@@ -1,20 +1,11 @@
 {
   "slug": "peepshow",
-  "titulo": {
-    "ca": "peepshow",
-    "es": "peepshow",
-    "en": "peepshow"
-  },
+  "titulo": "peepshow",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Peepshow - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "peepshow",
-      "es": "peepshow",
-      "en": "peepshow"
-    },
     "link": "",
     "texto": {
       "ca": [

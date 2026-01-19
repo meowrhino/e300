@@ -1,20 +1,11 @@
 {
   "slug": "flama-no-crema",
-  "titulo": {
-    "ca": "Li pots dir foc a una flama que no crema?",
-    "es": "¿Puedes llamar fuego a una llama que no quema?",
-    "en": "Can You Call Fire a Flame That Doesn't Burn?"
-  },
+  "titulo": "Li pots dir foc a una flama que no crema?",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Li pots dir foc a una flama que no crema - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Li pots dir foc a una flama que no crema?",
-      "es": "¿Puedes llamar fuego a una llama que no quema?",
-      "en": "Can You Call Fire a Flame That Doesn't Burn?"
-    },
     "link": "",
     "texto": {
       "ca": [

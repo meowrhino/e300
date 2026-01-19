@@ -1,20 +1,11 @@
 {
   "slug": "thereis",
-  "titulo": {
-    "ca": "TINSTAMTMMOTTMR",
-    "es": "TINSTAMTMMOTTMR",
-    "en": "TINSTAMTMMOTTMR"
-  },
+  "titulo": "TINSTAMTMMOTTMR",
   "primera_imatge": {
     "src": "./img/thereis.webp",
     "alt": "TINSTAMTMMOTTMR - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "TINSTAMTMMOTTMR",
-      "es": "TINSTAMTMMOTTMR",
-      "en": "TINSTAMTMMOTTMR"
-    },
     "subtitle": {
       "ca": "there is no such thing as making too much money or taking too many risks",
       "es": "there is no such thing as making too much money or taking too many risks",

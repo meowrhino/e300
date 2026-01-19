@@ -1,20 +1,11 @@
 {
   "slug": "seminari",
-  "titulo": {
-    "ca": "seminari d'artistes",
-    "es": "seminario de artistas",
-    "en": "artists seminar"
-  },
+  "titulo": "seminari d'artistes",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Seminari d'artistes - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "seminari d'artistes",
-      "es": "seminario de artistas",
-      "en": "artists seminar"
-    },
     "link": "",
     "texto": {
       "ca": [

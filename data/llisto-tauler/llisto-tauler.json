@@ -1,20 +1,11 @@
 {
   "slug": "llisto-tauler",
-  "titulo": {
-    "ca": "Què pot un llistó i un tauler?",
-    "es": "¿Qué puede un listón y un tablero?",
-    "en": "What Can a Plank and a Board Do?"
-  },
+  "titulo": "Què pot un llistó i un tauler?",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Què pot un llistó i un tauler - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Què pot un llistó i un tauler?",
-      "es": "¿Qué puede un listón y un tablero?",
-      "en": "What Can a Plank and a Board Do?"
-    },
     "link": "",
     "texto": {
       "ca": [

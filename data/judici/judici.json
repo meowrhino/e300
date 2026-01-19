@@ -1,20 +1,11 @@
 {
   "slug": "judici",
-  "titulo": {
-    "ca": "judici",
-    "es": "Juicio",
-    "en": "Trial"
-  },
+  "titulo": "judici",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Judici - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "judici",
-      "es": "Juicio",
-      "en": "Trial"
-    },
     "link": "http://angelsbarcelona.com/",
     "link_text": {
       "ca": "galería dels àngels",

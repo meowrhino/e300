@@ -1,10 +1,6 @@
 {
   "slug": "escola3000",
-  "titulo": {
-    "ca": "escola 3000",
-    "es": "escola 3000",
-    "en": "escola 3000"
-  },
+  "titulo": "escola 3000",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Escola 3000 - Estructuras 3000"
@@ -15,11 +11,6 @@
     "height": "480"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "escola 3000",
-      "es": "escola 3000",
-      "en": "escola 3000"
-    },
     "link": "https://www.mataroartcontemporani.cat/posts_projectes/zona-intrusa/",
     "link_text": {
       "ca": "zona intrusa M|A|C",

@@ -1,20 +1,11 @@
 {
   "slug": "caixa",
-  "titulo": {
-    "ca": "Caixa Sorpresa Grup d'Estudi",
-    "es": "Caja Sorpresa Grup d'Estudi",
-    "en": "Surprise Box Grup d'Estudi"
-  },
+  "titulo": "Caixa Sorpresa Grup d'Estudi",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Caixa Sorpresa - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Caixa Sorpresa Grup d'Estudi",
-      "es": "Caja Sorpresa Grup d'Estudi",
-      "en": "Surprise Box Grup d'Estudi"
-    },
     "link": "",
     "texto": {
       "ca": [

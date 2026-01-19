@@ -1,20 +1,11 @@
 {
   "slug": "exposicio-pintura",
-  "titulo": {
-    "ca": "Exposició per exposar pintura",
-    "es": "Exposición para exponer pintura",
-    "en": "Exhibition for Showing Paintings"
-  },
+  "titulo": "Exposició per exposar pintura",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Exposició per exposar pintura - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Exposició per exposar pintura",
-      "es": "Exposición para exponer pintura",
-      "en": "Exhibition for Showing Paintings"
-    },
     "link": "",
     "texto": {
       "ca": [

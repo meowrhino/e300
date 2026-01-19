@@ -1,20 +1,11 @@
 {
   "slug": "poder-sobre-poder",
-  "titulo": {
-    "ca": "Del poder sobre el poder",
-    "es": "Del poder sobre el poder",
-    "en": "On Power Over Power"
-  },
+  "titulo": "Del poder sobre el poder",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Del poder sobre el poder - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Del poder sobre el poder",
-      "es": "Del poder sobre el poder",
-      "en": "On Power Over Power"
-    },
     "link": "",
     "texto": {
       "ca": [

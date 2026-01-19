@@ -1,20 +1,11 @@
 {
   "slug": "detectiu3000",
-  "titulo": {
-    "ca": "Detectiu 3000",
-    "es": "Detectiu 3000",
-    "en": "Detectiu 3000"
-  },
+  "titulo": "Detectiu 3000",
   "primera_imatge": {
     "src": "./img/01.webp",
     "alt": "Detectiu 3000 - Estructuras 3000"
   },
   "descripcion": {
-    "titulo": {
-      "ca": "Detectiu 3000",
-      "es": "Detectiu 3000",
-      "en": "Detectiu 3000"
-    },
     "link": "",
     "texto": {
       "ca": [
