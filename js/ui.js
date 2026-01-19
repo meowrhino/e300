@@ -122,6 +122,60 @@ function linkifyEstructuras() {
 }
 
 // ============================================================================
+// TRANSICIONES DE PÁGINA
+// ============================================================================
+let pageTransitionsInitialized = false;
+let isNavigating = false;
+
+export function navigateWithFade(url) {
+  if (!url || isNavigating) return;
+  isNavigating = true;
+  document.body.classList.add('page-leaving');
+  window.setTimeout(() => {
+    window.location.href = url;
+  }, 240);
+}
+
+function handlePageTransitionClick(event) {
+  if (event.defaultPrevented) return;
+  if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) {
+    return;
+  }
+
+  const link = event.target.closest('a');
+  if (!link) return;
+  if (link.target === '_blank' || link.hasAttribute('download')) return;
+
+  const href = link.getAttribute('href');
+  if (!href) return;
+  if (href.startsWith('#')) return;
+  if (href.startsWith('mailto:') || href.startsWith('tel:') || href.startsWith('javascript:')) {
+    return;
+  }
+
+  let url;
+  try {
+    url = new URL(href, window.location.href);
+  } catch {
+    return;
+  }
+
+  if (url.origin !== window.location.origin) return;
+  if (url.pathname === window.location.pathname && url.search === window.location.search && url.hash) {
+    return;
+  }
+
+  event.preventDefault();
+  navigateWithFade(url.toString());
+}
+
+export function initPageTransitions() {
+  if (pageTransitionsInitialized) return;
+  pageTransitionsInitialized = true;
+  document.addEventListener('click', handlePageTransitionClick, true);
+}
+
+// ============================================================================
 // INICIALIZAR POPUP DE IMÁGENES
 // ============================================================================
 // Crea un popup para visualizar imágenes en tamaño completo
@@ -142,9 +196,15 @@ export function initImagePopup() {
     // Event listeners para cerrar el popup
     const overlay = popup.querySelector('.image-popup-overlay');
     const closeBtn = popup.querySelector('.image-popup-close');
+    const content = popup.querySelector('.image-popup-content');
     
     overlay.addEventListener('click', closeImagePopup);
     closeBtn.addEventListener('click', closeImagePopup);
+    content.addEventListener('click', (event) => {
+      if (event.target === content) {
+        closeImagePopup();
+      }
+    });
     
     // Cerrar con tecla ESC
     document.addEventListener('keydown', (e) => {
@@ -205,6 +265,7 @@ export function makeImagesClickable(selector = '.clickable-image') {
 export function initUI() {
   linkifyEstructuras();
   applyLinkStyles();
+  initPageTransitions();
   initImagePopup();
   makeImagesClickable();
 }

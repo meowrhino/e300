@@ -11,6 +11,34 @@ import { initUI } from './ui.js';
 // Detectar tipo de página
 const pageType = document.body.dataset.pageType;
 
+function withLangTransition(updateFn) {
+  const body = document.body;
+  if (!body) {
+    updateFn();
+    return;
+  }
+
+  let done = false;
+  const finish = () => {
+    if (done) return;
+    done = true;
+    body.removeEventListener('transitionend', onTransitionEnd);
+    updateFn();
+    requestAnimationFrame(() => {
+      body.classList.remove('lang-switching');
+    });
+  };
+
+  const onTransitionEnd = (event) => {
+    if (event.target !== body || event.propertyName !== 'opacity') return;
+    finish();
+  };
+
+  body.classList.add('lang-switching');
+  body.addEventListener('transitionend', onTransitionEnd);
+  window.setTimeout(finish, 260);
+}
+
 // Inicializar según el tipo de página
 if (pageType === 'home') {
   initHome();
@@ -41,9 +69,11 @@ async function initHome() {
     
     // Inicializar selector de idiomas
     initLanguageSelector(() => {
-      renderHome(homeData);
-      updateMenuLanguage();
-      initUI();
+      withLangTransition(() => {
+        renderHome(homeData);
+        updateMenuLanguage();
+        initUI();
+      });
     });
     
   } catch (error) {
@@ -81,8 +111,10 @@ async function initProject() {
     
     // Inicializar selector de idiomas
     initLanguageSelector(() => {
-      renderProject(projectData);
-      initUI();
+      withLangTransition(() => {
+        renderProject(projectData);
+        initUI();
+      });
     });
     
     // Actualizar el enlace de "casa" según el idioma

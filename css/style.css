@@ -1,5 +1,5 @@
 /* ============================================================================
-   STYLE.CSS - e3000 Modernizado
+   STYLE.CSS - e3000 
    ============================================================================ */
 
 /* ============================================================================
@@ -19,8 +19,14 @@ body {
     font-size: 16px;
     line-height: 30px;
     margin: 0;
+    opacity: 1;
+    transition: opacity 220ms ease;
 }
 
+body.lang-switching,
+body.page-leaving {
+    opacity: 0;
+}
 i, em {
     font-family: inherit;
     font-style: italic;
@@ -72,17 +78,23 @@ a.link-con-href:hover {
 /* ============================================================================
    LAYOUT - CONTENEDOR PRINCIPAL
    ============================================================================ */
-@media (min-width: 768px) {
+@media (min-width: 769px) {
     .container {
         margin: 30px 200px;
         padding: 30px;
     }
 }
 
-@media (max-width: 767px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .container {
+        margin: 30px 120px;
+    }
+}
+
+@media (max-width: 768px) {
     .container {
         margin: 30px auto;
-        padding: 30px;
+        padding: 24px;
     }
 }
 
@@ -109,6 +121,12 @@ a.link-con-href:hover {
     margin-left: auto;
     margin-right: auto;
     width: 60%;
+}
+
+@media (max-width: 768px) {
+    #logoe3000 {
+        width: 70%;
+    }
 }
 
 /* ============================================================================
@@ -149,7 +167,8 @@ a.link-con-href:hover {
     list-style: none;
     text-align: left;
     padding-left: 10%;
-    transition: padding-left 240ms ease;
+    padding-right: 10%;
+    transition: padding-left 240ms ease, padding-right 240ms ease;
     display: block;
 }
 
@@ -158,8 +177,9 @@ a.link-con-href:hover {
 }
 
 .servei-accordion[open] summary {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.6rem;
     padding-left: 0;
+    padding-right: 0;
 }
 
 .servei-accordion-title {
@@ -182,6 +202,21 @@ a.link-con-href:hover {
     text-align: left;
     font-size: 0.9rem;
     line-height: 1.55;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-4px);
+    transition: max-height 240ms ease, opacity 200ms ease, transform 200ms ease;
+}
+
+.servei-accordion > .servei-accordion-content {
+    display: block;
+}
+
+.servei-accordion[open] .servei-accordion-content {
+    max-height: 3000px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .servei-accordion-content p {
@@ -189,7 +224,7 @@ a.link-con-href:hover {
 }
 
 .servei-accordion-content p:first-child {
-    margin-top: 0.25rem;
+    margin-top: 0.8rem;
 }
 
 .servei-accordion-content ul {
@@ -264,6 +299,15 @@ a.link-con-href:hover {
     position: relative;
 }
 
+#contacte p {
+    text-align: center;
+}
+
+#contacte p a {
+    display: inline-block;
+    text-align: center;
+}
+
 #contacte .contacte-web {
     position: absolute;
     bottom: 10dvh;
@@ -294,7 +338,11 @@ a.link-con-href:hover {
 
 .membre:hover {
     color: gray;
-    transition: transform 0.3s ease, z-index 0.3s;
+    transform: scale(1.02);
+}
+
+.membre {
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .pronoms {
@@ -366,19 +414,24 @@ a.link-con-href:hover {
 .menu-links {
     position: fixed;
     display: flex;
-    bottom: 10px;
+    bottom: 18px;
     right: 20px;
     font-weight: bold;
     flex-direction: column;
     text-align: right;
     transition: max-height 0.5s ease;
+    gap: 0.7rem;
+}
+
+.menu-links a {
+    transition: color 0.3s ease;
 }
 
 .menu-links a.active {
     color: LightGray;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .menu-links {
         line-height: 1;
     }
@@ -444,22 +497,83 @@ a.link-con-href:hover {
     height: auto;
 }
 
+@media (max-width: 768px) {
+    #container-projecte {
+        margin-top: 18vh;
+        margin-bottom: 18vh;
+    }
+
+    #container-projecte h1 {
+        font-size: 32px;
+    }
+
+    #container-projecte p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    #container-projecte .galeria {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    #descripcio,
+    #serveis,
+    #membres {
+        margin-bottom: 35dvh;
+    }
+
+    #descripcio p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .servei-accordion summary {
+        font-size: clamp(16px, 4.6vw, 22px);
+    }
+
+    .servei-accordion-content {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+
+    #membres h2 {
+        font-size: 28px;
+    }
+
+    #membres h3 {
+        font-size: 18px;
+    }
+
+    #membres p {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
 /* ============================================================================
    POPUP DE IMÁGENES
    ============================================================================ */
 
 .image-popup {
-  display: none;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 200ms ease;
 }
 
 .image-popup.active {
-  display: block;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .image-popup-overlay {
@@ -480,6 +594,14 @@ a.link-con-href:hover {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  opacity: 0;
+  transform: scale(0.98);
+  transition: opacity 200ms ease, transform 200ms ease;
+}
+
+.image-popup.active .image-popup-content {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .image-popup-content img {
@@ -496,13 +618,22 @@ a.link-con-href:hover {
   background: none;
   border: none;
   color: white;
-  font-size: 3rem;
+  font-size: 2rem;
   cursor: pointer;
   z-index: 10001;
   line-height: 1;
-  padding: 0.5rem 1rem;
+  width: 2.6rem;
+  height: 2.6rem;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-popup-close:hover {
-  opacity: 0.7;
+  background-color: rgba(0, 0, 0, 0.9);
 }

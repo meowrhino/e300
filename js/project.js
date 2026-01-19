@@ -64,7 +64,13 @@ function renderProjectContent(projectData, lang) {
   // Video opcional (para escola3000)
   if (projectData.video) {
     const iframe = document.createElement('iframe');
+    const videoTitle = getTranslation({
+      ca: 'Video del projecte',
+      es: 'Video del proyecto',
+      en: 'Project video'
+    }, lang);
     iframe.src = projectData.video.src;
+    iframe.title = `${videoTitle}: ${titulo}`;
     iframe.width = projectData.video.width || '640';
     iframe.height = projectData.video.height || '480';
     iframe.allow = 'autoplay';

@@ -3,6 +3,7 @@
 // ============================================================================
 
 import { getCurrentLang, getTranslation } from './i18n.js';
+import { navigateWithFade } from './ui.js';
 
 // ============================================================================
 // RENDERIZAR HOME
@@ -71,18 +72,49 @@ function renderServeis(serveis, lang) {
   if (!Array.isArray(serveisList)) return;
 
   const accordions = [];
+  const scrollBehavior = () => {
+    const prefersReducedMotion = window.matchMedia
+      && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    return prefersReducedMotion ? 'auto' : 'smooth';
+  };
+  const scrollToAccordion = (details) => {
+    if (!details || typeof details.scrollIntoView !== 'function') return;
+    details.scrollIntoView({
+      behavior: scrollBehavior(),
+      block: 'start'
+    });
+  };
+  const scrollToSection = () => {
+    if (!section || typeof section.scrollIntoView !== 'function') return;
+    section.scrollIntoView({
+      behavior: scrollBehavior(),
+      block: 'start'
+    });
+  };
+
   serveisList.forEach(servei => {
     if (!servei || !servei.title) return;
 
     const details = document.createElement('details');
     details.className = 'servei-accordion';
     details.addEventListener('toggle', () => {
-      if (!details.open) return;
-      accordions.forEach(other => {
-        if (other !== details) {
-          other.open = false;
-        }
-      });
+      if (details.dataset.skipScroll === 'true') {
+        details.dataset.skipScroll = '';
+        return;
+      }
+      if (details.open) {
+        accordions.forEach(other => {
+          if (other !== details) {
+            if (other.open) {
+              other.dataset.skipScroll = 'true';
+            }
+            other.open = false;
+          }
+        });
+        requestAnimationFrame(() => scrollToAccordion(details));
+        return;
+      }
+      requestAnimationFrame(scrollToSection);
     });
 
     const summary = document.createElement('summary');
@@ -137,12 +169,12 @@ function renderProjectes(projectes, lang) {
       projectItem.setAttribute('tabindex', '0');
       projectItem.addEventListener('click', (event) => {
         if (event.target.closest('a')) return;
-        window.location.href = projectUrl;
+        navigateWithFade(projectUrl);
       });
       projectItem.addEventListener('keydown', (event) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();
-          window.location.href = projectUrl;
+          navigateWithFade(projectUrl);
         }
       });
       
