@@ -1,0 +1,71 @@
+/* SECCIÓN - SERVICIOS (estilos anteriores) */
+#serveis {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+#serveis h3,
+#serveis p,
+#serveis li {
+  text-align: center;
+  margin: 0;
+}
+
+#serveis ul {
+  list-style: none;
+  padding: 0;
+}
+
+.serveis-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Animación fadeInOut secuencial para los <li> de #serveis */
+#serveis ul li {
+  opacity: 0;
+  animation: fadeInOut 15s linear infinite;
+}
+
+#serveis ul li:nth-child(1) {
+  animation-delay: 0s;
+}
+
+#serveis ul li:nth-child(2) {
+  animation-delay: 3s;
+}
+
+#serveis ul li:nth-child(3) {
+  animation-delay: 6s;
+}
+
+#serveis ul li:nth-child(4) {
+  animation-delay: 9s;
+}
+
+#serveis ul li:nth-child(5) {
+  animation-delay: 12s;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}

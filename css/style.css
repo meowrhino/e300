@@ -128,72 +128,77 @@ a.link-con-href:hover {
 #serveis {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 100dvh;
+    width: 100dvw;
+    margin-left: calc(50% - 50dvw);
+    margin-right: calc(50% - 50dvw);
+    gap: 3rem;
 }
 
-#serveis h3,
-#serveis p,
-#serveis li {
-    text-align: center;
-    margin: 0;
+.servei-accordion {
+    width: min(900px, 90vw);
 }
 
-#serveis ul {
+.servei-accordion summary {
+    cursor: pointer;
+    font-weight: 700;
+    font-size: clamp(18px, 2.2vw, 28px);
+    letter-spacing: 0.01em;
     list-style: none;
+    text-align: left;
+    padding-left: 10%;
+    transition: padding-left 240ms ease;
+    display: block;
+}
+
+.servei-accordion summary::-webkit-details-marker {
+    display: none;
+}
+
+.servei-accordion[open] summary {
+    margin-bottom: 0.5rem;
+    padding-left: 0;
+}
+
+.servei-accordion-title {
+    font-weight: 700;
+}
+
+.servei-accordion-link {
+    color: DimGray;
+    font-size: 0.9em;
+    font-weight: 400;
+    transition: color 200ms ease;
+}
+
+.servei-accordion summary:hover .servei-accordion-link {
+    color: black;
+    text-decoration: underline;
+}
+
+.servei-accordion-content {
+    text-align: left;
+    font-size: 0.9rem;
+    line-height: 1.55;
+}
+
+.servei-accordion-content p {
+    margin: 0 0 0.75rem;
+}
+
+.servei-accordion-content p:first-child {
+    margin-top: 0.25rem;
+}
+
+.servei-accordion-content ul {
+    margin: 0 0 0.75rem 1.5rem;
     padding: 0;
 }
 
-.serveis-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-}
-
-/* Animación fadeInOut secuencial para los <li> de #serveis */
-#serveis ul li {
-    opacity: 0;
-    animation: fadeInOut 15s linear infinite;
-}
-
-#serveis ul li:nth-child(1) {
-    animation-delay: 0s;
-}
-
-#serveis ul li:nth-child(2) {
-    animation-delay: 3s;
-}
-
-#serveis ul li:nth-child(3) {
-    animation-delay: 6s;
-}
-
-#serveis ul li:nth-child(4) {
-    animation-delay: 9s;
-}
-
-#serveis ul li:nth-child(5) {
-    animation-delay: 12s;
-}
-
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    10% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    30% {
-        opacity: 1;
-    }
-    40% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 0;
-    }
+.servei-accordion-content li {
+    margin: 0 0 0.35rem;
 }
 
 /* ============================================================================
@@ -256,6 +261,24 @@ a.link-con-href:hover {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+}
+
+#contacte .contacte-web {
+    position: absolute;
+    bottom: 10dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    color: #d9d9d9;
+}
+
+#contacte .contacte-web a {
+    color: #f0f0f0;
+}
+
+#contacte .contacte-web a:hover {
+    color: #cfcfcf;
 }
 
 /* ============================================================================

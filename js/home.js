@@ -66,41 +66,55 @@ function renderServeis(serveis, lang) {
   const section = document.getElementById('serveis');
   if (!section) return;
   
+  section.innerHTML = '';
   const serveisList = getTranslation(serveis, lang);
-  const grid = section.querySelector('.serveis-grid');
-  grid.innerHTML = '';
-  
-  if (Array.isArray(serveisList)) {
-    serveisList.forEach(servei => {
-      const card = document.createElement('div');
-      card.className = 'servei-card';
-      
-      // Si el servicio tiene lista (separado por |)
-      if (servei.includes('|')) {
-        const parts = servei.split('|');
-        const title = parts[0];
-        const items = parts.slice(1);
-        
-        const h3 = document.createElement('h3');
-        h3.textContent = title;
-        card.appendChild(h3);
-        
-        const ul = document.createElement('ul');
-        items.forEach(item => {
-          const li = document.createElement('li');
-          li.textContent = item;
-          ul.appendChild(li);
-        });
-        card.appendChild(ul);
-      } else {
-        const h3 = document.createElement('h3');
-        h3.textContent = servei;
-        card.appendChild(h3);
-      }
-      
-      grid.appendChild(card);
+  if (!Array.isArray(serveisList)) return;
+
+  const accordions = [];
+  serveisList.forEach(servei => {
+    if (!servei || !servei.title) return;
+
+    const details = document.createElement('details');
+    details.className = 'servei-accordion';
+    details.addEventListener('toggle', () => {
+      if (!details.open) return;
+      accordions.forEach(other => {
+        if (other !== details) {
+          other.open = false;
+        }
+      });
     });
-  }
+
+    const summary = document.createElement('summary');
+    const titleText = String(servei.title).trim();
+    const colonIndex = titleText.indexOf(':');
+    if (colonIndex !== -1) {
+      const prefix = titleText.slice(0, colonIndex).trim();
+      const suffix = titleText.slice(colonIndex + 1).trim();
+
+      const prefixSpan = document.createElement('span');
+      prefixSpan.className = 'servei-accordion-title';
+      prefixSpan.textContent = prefix;
+
+      const suffixSpan = document.createElement('span');
+      suffixSpan.className = 'servei-accordion-link';
+      suffixSpan.textContent = `: ${suffix}`;
+
+      summary.appendChild(prefixSpan);
+      summary.appendChild(suffixSpan);
+    } else {
+      summary.textContent = titleText;
+    }
+    details.appendChild(summary);
+
+    const content = document.createElement('div');
+    content.className = 'servei-accordion-content';
+    content.innerHTML = servei.content_html || '';
+    details.appendChild(content);
+
+    accordions.push(details);
+    section.appendChild(details);
+  });
 }
 
 // ============================================================================
@@ -207,6 +221,14 @@ function renderContacte(contacte, lang) {
   addressLink.textContent = contacte.address;
   pAddress.appendChild(addressLink);
   section.appendChild(pAddress);
+
+  const pWeb = document.createElement('p');
+  pWeb.className = 'contacte-web';
+  const webLink = document.createElement('a');
+  webLink.href = 'https://meowrhino.studio';
+  webLink.textContent = 'web: meowrhino.studio';
+  pWeb.appendChild(webLink);
+  section.appendChild(pWeb);
 }
 
 // ============================================================================
