@@ -10,11 +10,16 @@ import { initUI } from './ui.js';
 
 // Detectar tipo de página
 const pageType = document.body.dataset.pageType;
+let popstateInitialized = false;
 
 function withLangTransition(updateFn) {
   const body = document.body;
   if (!body) {
-    updateFn();
+    Promise.resolve()
+      .then(updateFn)
+      .catch((error) => {
+        console.error('[main] Error actualizando idioma:', error);
+      });
     return;
   }
 
@@ -23,10 +28,22 @@ function withLangTransition(updateFn) {
     if (done) return;
     done = true;
     body.removeEventListener('transitionend', onTransitionEnd);
-    updateFn();
-    requestAnimationFrame(() => {
-      body.classList.remove('lang-switching');
-    });
+    let updatePromise;
+    try {
+      updatePromise = Promise.resolve(updateFn());
+    } catch (error) {
+      console.error('[main] Error actualizando idioma:', error);
+      updatePromise = Promise.resolve();
+    }
+    updatePromise
+      .catch((error) => {
+        console.error('[main] Error actualizando idioma:', error);
+      })
+      .finally(() => {
+        requestAnimationFrame(() => {
+          body.classList.remove('lang-switching');
+        });
+      });
   };
 
   const onTransitionEnd = (event) => {
@@ -37,6 +54,46 @@ function withLangTransition(updateFn) {
   body.classList.add('lang-switching');
   body.addEventListener('transitionend', onTransitionEnd);
   window.setTimeout(finish, 260);
+}
+
+function initLangPopstate(handler) {
+  if (popstateInitialized) return;
+  popstateInitialized = true;
+  window.addEventListener('popstate', () => {
+    Promise.resolve()
+      .then(handler)
+      .catch((error) => {
+        console.error('[main] Error actualizando idioma:', error);
+      });
+  });
+}
+
+async function refreshHomeContent(homeData, { updateMenu = false } = {}) {
+  await renderHome(homeData);
+  if (updateMenu) {
+    updateMenuLanguage();
+  } else {
+    initMenu();
+  }
+  initUI();
+}
+
+async function refreshProjectContent(projectData) {
+  renderProject(projectData);
+  initUI();
+  updateHomeLink();
+}
+
+function updateHomeLink() {
+  const homeLink = document.getElementById('home-link');
+  if (!homeLink) return;
+  const lang = getCurrentLang();
+  homeLink.textContent = getTranslation({
+    ca: 'casa',
+    es: 'casa',
+    en: 'home'
+  }, lang);
+  homeLink.href = `index.html?lang=${lang}`;
 }
 
 // Inicializar según el tipo de página
@@ -59,20 +116,18 @@ async function initHome() {
     const homeData = await response.json();
     
     // Renderizar el home
-    renderHome(homeData);
+    await refreshHomeContent(homeData);
     
-    // Inicializar menú de navegación
-    initMenu();
-    
-    // Inicializar funcionalidades de UI
-    initUI();
+    const handleLanguageChange = () => {
+      withLangTransition(() => refreshHomeContent(homeData, { updateMenu: true }));
+    };
     
     // Inicializar selector de idiomas
-    initLanguageSelector(() => {
-      withLangTransition(() => {
-        renderHome(homeData);
-        updateMenuLanguage();
-        initUI();
+    initLanguageSelector(handleLanguageChange);
+    
+    initLangPopstate(() => {
+      return refreshHomeContent(homeData, { updateMenu: true }).then(() => {
+        initLanguageSelector(handleLanguageChange);
       });
     });
     
@@ -103,30 +158,20 @@ async function initProject() {
     }
     const projectData = await response.json();
     
-    // Renderizar el proyecto
-    renderProject(projectData);
+    await refreshProjectContent(projectData);
     
-    // Inicializar funcionalidades de UI
-    initUI();
+    const handleLanguageChange = () => {
+      withLangTransition(() => refreshProjectContent(projectData));
+    };
     
     // Inicializar selector de idiomas
-    initLanguageSelector(() => {
-      withLangTransition(() => {
-        renderProject(projectData);
-        initUI();
+    initLanguageSelector(handleLanguageChange);
+    
+    initLangPopstate(() => {
+      return refreshProjectContent(projectData).then(() => {
+        initLanguageSelector(handleLanguageChange);
       });
     });
-    
-    // Actualizar el enlace de "casa" según el idioma
-    const homeLink = document.getElementById('home-link');
-    if (homeLink) {
-      const lang = getCurrentLang();
-      homeLink.textContent = getTranslation({
-        ca: 'casa',
-        es: 'casa',
-        en: 'home'
-      }, lang);
-    }
     
   } catch (error) {
     console.error('[main] Error cargando proyecto:', error);

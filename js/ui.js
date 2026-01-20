@@ -16,13 +16,13 @@ export function applyLinkStyles() {
     const href = link.getAttribute('href');
     if (!href) return;
 
-    // Añadir clase para estilo visual
-    link.classList.add('link-con-href');
-
     // Ignorar enlaces de menú o idioma
     const isMenuLink = link.closest('.menu-links') !== null;
     const isLanguageLink = link.closest('.language-links') !== null;
     if (isMenuLink || isLanguageLink) return;
+
+    // Añadir clase para estilo visual
+    link.classList.add('link-con-href');
 
     const isHashLink = href.startsWith('#');
     const isMailOrTel = href.startsWith('mailto:') || href.startsWith('tel:');
