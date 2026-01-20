@@ -228,7 +228,11 @@
         "en": "Presidency"
       },
       "nom": "Joan Boix",
-      "pronoms": "ell",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
       "bio": {
         "ca": "Artista, docent i fuster. El seu camp d'interès són els espais i la seva formalització i alteració en relació als usuaris, espectadors i objectes. Graduat en Belles Arts a la Universitat de Barcelona, CFGS Disseny i Moblament i Màster de formació del professorat.",
         "es": "Artista, docente y carpintero. Su campo de interés son los espacios y su formalización y alteración en relación a los usuarios, espectadores y objetos. Graduado en Bellas Artes en la Universidad de Barcelona, CFGS Diseño y Mobiliario y Máster de formación del profesorado.",
@@ -243,7 +247,11 @@
         "en": "Vice-presidency"
       },
       "nom": "Bet Pahissa",
-      "pronoms": "ella",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
       "bio": {
         "ca": "Artista i tècnica de polítiques culturals. Graduada en Global Studies per la UPF, també en Belles Arts i un posterior Màster en Disseny de Polítiques Públiques a la Universitat de Barcelona. La seva pràctica treballa entorn la participació i la democratització del sector artístic.",
         "es": "Artista y técnica de políticas culturales. Graduada en Global Studies por la UPF, también en Bellas Artes y un posterior Máster en Diseño de Políticas Públicas en la Universidad de Barcelona. Su práctica trabaja en torno a la participación y la democratización del sector artístico.",
@@ -258,7 +266,11 @@
         "en": "Secretary"
       },
       "nom": "Celine Lurac",
-      "pronoms": "ella",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
       "bio": {
         "ca": "Artista gràfica i politòloga. Centrada en estudis i polítiques de gènere. Graduada a la Science Po de París i posterior màster en polítiques d'inclusió i gènere. Explora aspectes polítics que atravessen el gènere, la identitat, la violència i la feminització de les cures.",
         "es": "Artista gráfica y politóloga. Centrada en estudios y políticas de género. Graduada en Science Po de París y posterior máster en políticas de inclusión y género. Explora aspectos políticos que atraviesan el género, la identidad, la violencia y la feminización de los cuidados.",
@@ -273,7 +285,11 @@
         "en": "Treasury"
       },
       "nom": "pepe",
-      "pronoms": "el",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
       "link": "https://www.youtube.com/watch?v=nkgg1W5zyNA",
       "bio": {
         "ca": "Recol•lector, dissenyador i artista. Treballa amb objectes. Cerca les seves possibilitats i els acompanya mitjançant arranjaments. Graduat en Belles Arts a la UB i Cultura del Disseny a Eina.",
@@ -289,7 +305,11 @@
         "en": "Board Member"
       },
       "nom": "Jordi Bretcha",
-      "pronoms": "ell/elli",
+      "pronoms": {
+        "ca": "ell/elle",
+        "es": "él/elle",
+        "en": "he/they"
+      },
       "bio": {
         "ca": "Artista, docent i investigador. Treballa en la producció de contextos col·lectius, burocracia alternativa i happenings. Graduat en Belles arts, Màster en Teoria de la Literatura i Literatura Comparada, i Màster en Producció i Investigació artística a la Universitat de Barcelona i Màster de formació del professorat.",
         "es": "Artista, docente e investigador. Trabaja en la producción de contextos colectivos, burocracia alternativa y happenings. Graduado en Bellas artes, Máster en Teoría de la Literatura y Literatura Comparada, y Máster en Producción e Investigación artística en la Universidad de Barcelona y Máster de formación del profesorado.",
@@ -304,7 +324,11 @@
         "en": "Board Member"
       },
       "nom": "Didac Humà",
-      "pronoms": "ell",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
       "bio": {
         "ca": "Artista i fotògraf, es centra en la imatge i el videoart experimental. Graduat en Belles Arts a la UB i posterior màster al LAV de Madrid, la seva pràctica parteix de la imatge, però s'expandeix en l'espai comú.",
         "es": "Artista y fotógrafo, se centra en la imagen y el videoarte experimental. Graduado en Bellas Artes en la UB y posterior máster en el LAV de Madrid, su práctica parte de la imagen, pero se expande en el espacio común.",
@@ -319,7 +343,11 @@
         "en": "Board Member"
       },
       "nom": "Jordi Carmona i Maura",
-      "pronoms": "ell",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
       "bio": {
         "ca": "Fabricant, cuiner i artista. Treballa amb mètodes constructius diversos des de la pràctica col·lectiva. Interessat en els vincles que es generen entre el públic i l'artefacte a través d'activacions. Graduat en Belles Arts a la UB, Màster en Contemporary Design a l'ETSAB.",
         "es": "Fabricante, cocinero y artista. Trabaja con métodos constructivos diversos desde la práctica colectiva. Interesado en los vínculos que se generan entre el público y el artefacto a través de activaciones. Graduado en Bellas Artes en la UB, Máster en Contemporary Design en la ETSAB.",
@@ -334,7 +362,11 @@
         "en": "Board Member"
       },
       "nom": "Aurembiaix Montardit",
-      "pronoms": "ella/elli",
+      "pronoms": {
+        "ca": "ella/elle",
+        "es": "ella/elle",
+        "en": "she/they"
+      },
       "bio": {
         "ca": "Graduada en arts escèniques a ERAM - UDG i escenografia a Elisava amb la beca Diariodesign. El seu eix de treball parteix de les arts en viu com a performer, alhora que des de la producció, la direcció i el disseny escenogràfic i de vídeo.",
         "es": "Graduada en artes escénicas en ERAM - UDG y escenografía en Elisava con la beca Diariodesign. Su eje de trabajo parte de las artes en vivo como performer, a la vez que desde la producción, la dirección y el diseño escenográfico y de vídeo.",
@@ -349,7 +381,11 @@
         "en": "Board Member"
       },
       "nom": "manu",
-      "pronoms": "elli/ella/ell",
+      "pronoms": {
+        "ca": "elle/ella/ell",
+        "es": "elle/ella/él",
+        "en": "they/she/he"
+      },
       "bio": {
         "ca": "Artista i dissenyador UX/UI. Graduat en Arts i Disseny, manu crea narratives multimèdia que són petites, consistents i honestes. La seva obra integra lo digital i lo matèric per explorar interaccions i emocions. Manté una presència activa a la seva <a href=\"https://meowrhino.neocities.org/\">web</a>.",
         "es": "Artista y diseñador UX/UI. Graduado en Artes y Diseño, manu crea narrativas multimedia que son pequeñas, consistentes y honestas. Su obra integra lo digital y lo matérico para explorar interacciones y emociones. Mantiene una presencia activa en su <a href=\"https://meowrhino.neocities.org/\">web</a>.",

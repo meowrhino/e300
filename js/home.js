@@ -286,7 +286,7 @@ function renderMembres(membres, lang) {
       const h3 = document.createElement('h3');
       const pronomsSpan = document.createElement('span');
       pronomsSpan.className = 'pronoms';
-      pronomsSpan.textContent = membre.pronoms;
+      pronomsSpan.textContent = getTranslation(membre.pronoms, lang);
       h3.appendChild(pronomsSpan);
       h3.appendChild(document.createTextNode(' '));
       
