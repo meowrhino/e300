@@ -428,7 +428,13 @@ a.link-con-href:hover {
     flex-direction: column;
     text-align: right;
     transition: max-height 0.5s ease;
-    gap: 0.7rem;
+    gap: 0.5rem;
+}
+
+@media (min-width: 769px) {
+    .menu-links {
+        gap: 0rem;
+    }
 }
 
 .menu-links a {
@@ -527,10 +533,8 @@ a.link-con-href:hover {
 }
 
 @media (max-width: 768px) {
-    #descripcio,
-    #serveis,
-    #membres {
-        margin-bottom: 35dvh;
+    .container > section:not(:last-child) {
+        margin-bottom: 50dvh;
     }
 
     #descripcio p {

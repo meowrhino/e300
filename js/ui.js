@@ -127,6 +127,12 @@ function linkifyEstructuras() {
 let pageTransitionsInitialized = false;
 let isNavigating = false;
 
+function resetPageTransitionState() {
+  isNavigating = false;
+  if (!document.body) return;
+  document.body.classList.remove('page-leaving', 'lang-switching');
+}
+
 export function navigateWithFade(url) {
   if (!url || isNavigating) return;
   isNavigating = true;
@@ -173,6 +179,7 @@ export function initPageTransitions() {
   if (pageTransitionsInitialized) return;
   pageTransitionsInitialized = true;
   document.addEventListener('click', handlePageTransitionClick, true);
+  window.addEventListener('pageshow', resetPageTransitionState);
 }
 
 // ============================================================================
