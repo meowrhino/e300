@@ -15,7 +15,27 @@ html {
 }
 
 :root {
-    --scroll-offset: 10dvh;
+    --scroll-offset: 10vh;
+    --section-gap: 33vh;
+}
+
+@supports (height: 1dvh) {
+    :root {
+        --scroll-offset: 10dvh;
+        --section-gap: 33dvh;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-gap: 50vh;
+    }
+
+    @supports (height: 1dvh) {
+        :root {
+            --section-gap: 50dvh;
+        }
+    }
 }
 
 body {
@@ -534,14 +554,19 @@ a.link-con-href:hover {
 }
 
 .container > section:not(:last-child) {
-    margin-bottom: 33dvh;
+    margin-bottom: var(--section-gap);
+}
+
+.container.use-spacers > section:not(:last-child) {
+    margin-bottom: 0;
+}
+
+.section-spacer {
+    height: var(--section-gap);
+    width: 100%;
 }
 
 @media (max-width: 768px) {
-    .container > section:not(:last-child) {
-        margin-bottom: 50dvh;
-    }
-
     #descripcio p {
         font-size: 15px;
         line-height: 1.6;

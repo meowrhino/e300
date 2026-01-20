@@ -267,6 +267,41 @@ export function makeImagesClickable(selector = '.clickable-image') {
 }
 
 // ============================================================================
+// INSERTAR ESPACIADORES ENTRE SECCIONES
+// ============================================================================
+function ensureSectionSpacers() {
+  const container = document.querySelector('.container');
+  if (!container) return;
+
+  const children = Array.from(container.children);
+  const sections = children.filter(child => child.tagName === 'SECTION');
+  if (sections.length <= 1) return;
+
+  container.classList.add('use-spacers');
+
+  const existingSpacers = children.filter(child => child.classList.contains('section-spacer'));
+  existingSpacers.forEach(spacer => {
+    const prev = spacer.previousElementSibling;
+    const next = spacer.nextElementSibling;
+    const isValid = prev && next && prev.tagName === 'SECTION' && next.tagName === 'SECTION';
+    if (!isValid) {
+      spacer.remove();
+    }
+  });
+
+  sections.forEach((section, index) => {
+    if (index === sections.length - 1) return;
+    const next = section.nextElementSibling;
+    if (next && next.classList.contains('section-spacer')) return;
+
+    const spacer = document.createElement('div');
+    spacer.className = 'section-spacer';
+    spacer.setAttribute('aria-hidden', 'true');
+    section.insertAdjacentElement('afterend', spacer);
+  });
+}
+
+// ============================================================================
 // INICIALIZAR TODAS LAS FUNCIONALIDADES DE UI
 // ============================================================================
 export function initUI() {
@@ -275,4 +310,5 @@ export function initUI() {
   initPageTransitions();
   initImagePopup();
   makeImagesClickable();
+  ensureSectionSpacers();
 }
