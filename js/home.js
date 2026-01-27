@@ -141,7 +141,21 @@ function renderServeis(serveis, lang) {
 
     const content = document.createElement('div');
     content.className = 'servei-accordion-content';
-    content.innerHTML = servei.content_html || '';
+    if (Array.isArray(servei.content)) {
+      servei.content
+        .filter(item => typeof item === 'string' && item.trim().length > 0)
+        .forEach(item => {
+          const p = document.createElement('p');
+          p.innerHTML = item;
+          content.appendChild(p);
+        });
+    } else if (typeof servei.content === 'string') {
+      const p = document.createElement('p');
+      p.innerHTML = servei.content;
+      content.appendChild(p);
+    } else {
+      content.innerHTML = servei.content_html || '';
+    }
     details.appendChild(content);
 
     accordions.push(details);
