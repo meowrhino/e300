@@ -29,7 +29,7 @@
     "ca": [
       {
         "title": "FONS INFRAESTRUCTURES: Arxiu de pràctiques artístiques en col·lectivitat i col·laboratives de Catalunya.",
-        "content_html": "<p>Què és INFRAESTRUCTURES? Som un fons documental i bibliogràfic sobre pràctiques d’organització col·lectiva i creació artística col·laborativa a Catalunya.</p><p>El fons està constituït per un conjunt coherent i especialitzat de textos, documents, llibres, fanzins, publicacions independents i materials autoeditats, així com documentació complementària vinculada a propostes catalanes d’organització col·lectiva, autoorganització cultural i pràctiques artístiques col·laboratives.</p><p>La finalitat del fons és preservar la memòria de les pràctiques col·lectives i artístiques contemporànies de Catalunya, facilitar la recerca i la divulgació cultural i garantir la transmissió de coneixement productiu de col·lectivitat.</p><ul><li>Fons sostingut amb l’acompanyament de les arxiveres.</li><li>Catàleg digital del fons.</li><li>Funcions: recerca, demana informació sobre publicació, descripció de la publicació.</li></ul>"
+        "content_html": "<p>Què és INFRAESTRUCTURES? És un fons documental i bibliogràfic sobre pràctiques d’organització col·lectiva i creació artística col·laborativa a Catalunya.</p><p>El fons està constituït per un conjunt coherent i especialitzat de textos, documents, llibres, fanzins, publicacions independents i materials autoeditats, així com documentació complementària vinculada a propostes catalanes d’organització col·lectiva, autoorganització cultural i pràctiques artístiques col·laboratives.</p><p>La finalitat del fons és preservar la memòria de les pràctiques col·lectives i artístiques contemporànies de Catalunya, facilitar la recerca i la divulgació cultural i garantir la transmissió de coneixement productiu de col·lectivitat.</p><ul><li>Aquest fons bibliogràfic està supervisat sota la cura d'una arxivera.</li><li>Catàleg digital del fons.</li><li>Funcions: recerca, demana informació sobre publicació, descripció de la publicació.</li></ul>"
       },
       {
         "title": "PASSAPORT DE FUSTES: Programa de recuperació i reutilització de materials per la producció artística.",
@@ -47,7 +47,7 @@
     "es": [
       {
         "title": "FONS INFRAESTRUCTURES: Archivo de prácticas artísticas colectivas y colaborativas de Cataluña.",
-        "content_html": "<p>¿Qué es INFRAESTRUCTURES? Somos un fondo documental y bibliográfico sobre prácticas de organización colectiva y creación artística colaborativa en Cataluña.</p><p>El fondo está constituido por un conjunto coherente y especializado de textos, documentos, libros, fanzines, publicaciones independientes y materiales autoeditados, así como documentación complementaria vinculada a propuestas catalanas de organización colectiva, autoorganización cultural y prácticas artísticas colaborativas.</p><p>La finalidad del fondo es preservar la memoria de las prácticas colectivas y artísticas contemporáneas de Cataluña, facilitar la investigación y la divulgación cultural y garantizar la transmisión de conocimiento productivo de la colectividad.</p><ul><li>Fondo sostenido con el acompañamiento de las archiveras.</li><li>Catálogo digital del fondo.</li><li>Funciones: investigación, solicitud de información sobre publicación, descripción de la publicación.</li></ul>"
+        "content_html": "<p>¿Qué es INFRAESTRUCTURES? Es un fondo documental y bibliográfico sobre prácticas de organización colectiva y creación artística colaborativa en Cataluña.</p><p>El fondo está constituido por un conjunto coherente y especializado de textos, documentos, libros, fanzines, publicaciones independientes y materiales autoeditados, así como documentación complementaria vinculada a propuestas catalanas de organización colectiva, autoorganización cultural y prácticas artísticas colaborativas.</p><p>La finalidad del fondo es preservar la memoria de las prácticas colectivas y artísticas contemporáneas de Cataluña, facilitar la investigación y la divulgación cultural y garantizar la transmisión de conocimiento productivo de la colectividad.</p><ul><li>Fondo sostenido con el acompañamiento de las archiveras.</li><li>Catálogo digital del fondo.</li><li>Funciones: investigación, solicitud de información sobre publicación, descripción de la publicación.</li></ul>"
       },
       {
         "title": "PASSAPORT DE FUSTES: Programa de recuperación y reutilización de materiales para la producción artística.",
@@ -65,7 +65,7 @@
     "en": [
       {
         "title": "FONS INFRAESTRUCTURES: Archive of collective and collaborative artistic practices in Catalonia.",
-        "content_html": "<p>What is INFRAESTRUCTURES? We are a documentary and bibliographic fund on practices of collective organization and collaborative artistic creation in Catalonia.</p><p>The fund is made up of a coherent and specialized set of texts, documents, books, zines, independent publications, and self-published materials, as well as complementary documentation linked to Catalan proposals of collective organization, cultural self-organization, and collaborative artistic practices.</p><p>The purpose of the fund is to preserve the memory of contemporary collective and artistic practices in Catalonia, facilitate research and cultural dissemination, and guarantee the transmission of productive collective knowledge.</p><ul><li>Fund sustained with the accompaniment of archivists.</li><li>Digital catalog of the fund.</li><li>Functions: research, request information on publications, publication description.</li></ul>"
+        "content_html": "<p>What is INFRAESTRUCTURES? It's a documentary and bibliographic fund on practices of collective organization and collaborative artistic creation in Catalonia.</p><p>The fund is made up of a coherent and specialized set of texts, documents, books, zines, independent publications, and self-published materials, as well as complementary documentation linked to Catalan proposals of collective organization, cultural self-organization, and collaborative artistic practices.</p><p>The purpose of the fund is to preserve the memory of contemporary collective and artistic practices in Catalonia, facilitate research and cultural dissemination, and guarantee the transmission of productive collective knowledge.</p><ul><li>Fund sustained with the accompaniment of archivists.</li><li>Digital catalog of the fund.</li><li>Functions: research, request information on publications, publication description.</li></ul>"
       },
       {
         "title": "PASSAPORT DE FUSTES: Program for the recovery and reuse of materials for artistic production.",
@@ -151,7 +151,7 @@
     {
       "slug": "exposicio-pintura",
       "name": "Exposició per exposar pintura",
-      "thumbnail": "data/exposicio-pintura/img/01.webp",
+      "thumbnail": "pintura.webp",
       "visible": true,
       "resumen": {
         "ca": "Exposició de pintura clàssica amb un <i>white cube</i> pintat amb guix i una convocatòria oberta on tothom podia penjar una pintura a la paret.",
@@ -162,7 +162,7 @@
     {
       "slug": "detectiu3000",
       "name": "Detectiu 3000",
-      "thumbnail": "data/detectiu3000/img/01.webp",
+      "thumbnail": "detectiu.webp",
       "visible": true,
       "resumen": {
         "ca": "Artefacte creat per Estructuras 3000 que, a partir de la participació a les xarxes de la PAAC, va investigar pràctiques col·lectives detectant casos misteriosos.",
@@ -184,7 +184,7 @@
     {
       "slug": "flama-no-crema",
       "name": "Li pots dir foc a una flama que no crema?",
-      "thumbnail": "data/flama-no-crema/img/01.webp",
+      "thumbnail": "foc.webp",
       "visible": true,
       "resumen": {
         "ca": "Projecte curatorial sobre el foc i les noves institucionalitats, amb pintures cremades i una conferència incendiària.",
@@ -195,7 +195,7 @@
     {
       "slug": "poder-sobre-poder",
       "name": "Del poder sobre el poder",
-      "thumbnail": "data/poder-sobre-poder/img/01.webp",
+      "thumbnail": "poder.webp",
       "visible": true,
       "resumen": {
         "ca": "Mostra que disseccionava com es construeix l’autoritat cultural: quins gestos, codis i escenografies la sostenen, i com es perpetua dins dels circuits artístics. Es va posar en tensió el desig de formar part d’aquest sistema amb la necessitat de qüestionar-lo, subvertir-lo o, fins i tot, de teatralitzar-lo fins a l’absurd.",
