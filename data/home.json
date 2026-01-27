@@ -53,7 +53,7 @@
         ]
       },
       {
-        "title": "MEMBRESIA AMISTAT: quota anual per donar suport al col·lectiu que inclou una peça artística cada any.",
+        "title": "MEMBRESIA AMISTAT: Quota anual per donar suport al col·lectiu que inclou una peça artística cada any.",
         "content": [
           "Què és MEMBRESIA AMISTAT? A Estructuras 3000 activem una nova quota de membresia pensada per donar suport directe a la nostra feina activista en la promoció i reproducció d’un model alternatiu de producció, basat en les pràctiques artístiques col·lectives.",
           "Fer-te membre és apostar per:",
@@ -96,7 +96,7 @@
         ]
       },
       {
-        "title": "MEMBRESIA AMISTAT: cuota anual para apoyar al colectivo que incluye una pieza artística cada año.",
+        "title": "MEMBRESIA AMISTAT: Cuota anual para apoyar al colectivo que incluye una pieza artística cada año.",
         "content": [
           "¿Qué es MEMBRESIA AMISTAT? En Estructuras 3000 activamos una nueva cuota de membresía pensada para dar apoyo directo a nuestra labor activista en la promoción y reproducción de un modelo alternativo de producción, basado en las prácticas artísticas colectivas.",
           "Hacerte miembro es apostar por:",
@@ -139,7 +139,7 @@
         ]
       },
       {
-        "title": "MEMBRESIA AMISTAT: annual fee to support the collective that includes an artistic piece each year.",
+        "title": "MEMBRESIA AMISTAT: Annual fee to support the collective that includes an artistic piece each year.",
         "content": [
           "What is MEMBRESIA AMISTAT? At Estructuras 3000 we are launching a new membership fee designed to directly support our activist work in promoting and reproducing an alternative model of production based on collective artistic practices.",
           "Becoming a member means supporting:",
@@ -225,7 +225,7 @@
     },
     {
       "slug": "sant-josep",
-      "name": "Sant Josep",
+      "name": "sant josep",
       "thumbnail": "santJosep.webp",
       "visible": true,
       "resumen": {
@@ -236,7 +236,7 @@
     },
     {
       "slug": "detectiu3000",
-      "name": "Detectiu 3000",
+      "name": "detectiu 3000",
       "thumbnail": "detectiu.webp",
       "visible": true,
       "resumen": {
@@ -247,7 +247,7 @@
     },
     {
       "slug": "llisto-tauler",
-      "name": "Què pot un llistó i un tauler?",
+      "name": "què pot un llistó i un tauler?",
       "thumbnail": "quePot.webp",
       "visible": true,
       "resumen": {
@@ -258,7 +258,7 @@
     },
     {
       "slug": "flama-no-crema",
-      "name": "És foc una flama que no crema?",
+      "name": "és foc una flama que no crema?",
       "thumbnail": "foc.webp",
       "visible": true,
       "resumen": {
@@ -269,7 +269,7 @@
     },
     {
       "slug": "poder-sobre-poder",
-      "name": "Del poder sobre el poder",
+      "name": "del poder sobre el poder",
       "thumbnail": "poder.webp",
       "visible": true,
       "resumen": {
@@ -280,7 +280,7 @@
     },
     {
       "slug": "caixa",
-      "name": "Caixa Sorpresa Grup d'Estudi",
+      "name": "caixa sorpresa",
       "thumbnail": "caixa.webp",
       "visible": true,
       "resumen": {
