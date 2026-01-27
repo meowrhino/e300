@@ -30,5 +30,11 @@
     "es": "Exposición colectiva que analiza los mecanismos de representación del poder a través de la mímesis, la parodia y la descontextualización.",
     "en": "Collective exhibition analyzing mechanisms of power representation through mimesis, parody, and decontextualization."
   },
-  "imatges": []
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp",
+    "./img/05.webp",
+    "./img/06.webp"
+  ]
 }

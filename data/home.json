@@ -224,14 +224,14 @@
       }
     },
     {
-      "slug": "exposicio-pintura",
-      "name": "Exposició per exposar pintura",
-      "thumbnail": "pintura.webp",
+      "slug": "sant-josep",
+      "name": "Sant Josep",
+      "thumbnail": "santJosep.webp",
       "visible": true,
       "resumen": {
-        "ca": "Exposició de pintura clàssica amb un <i>white cube</i> pintat amb guix i una convocatòria oberta on tothom podia penjar una pintura a la paret.",
-        "es": "Exposición de pintura clásica con un <i>white cube</i> pintado con tiza y una convocatoria abierta donde cualquiera podía colgar una pintura en la pared.",
-        "en": "A classic painting exhibition with a chalk-painted <i>white cube</i> and an open call where anyone could hang a painting on the wall."
+        "ca": "Sant Josep és un projecte de Setmana Santa que reivindica Sant Josep, figura secundària del relat cristià totalment oblidat i patró de la fusta, mitjançant la construcció col·lectiva d’una imatge de fusta i la seva processó pel barri de Can Vidalet, acompanyada de xerrades i música tradicional.",
+        "es": "Sant Josep es un proyecto de Semana Santa que reivindica a San José, figura secundaria del relato cristiano totalmente olvidada y patrón de la madera, mediante la construcción colectiva de una imagen de madera y su procesión por el barrio de Can Vidalet, acompañada de charlas y música tradicional.",
+        "en": "Sant Josep is a Holy Week project that reclaims Saint Joseph, a largely forgotten secondary figure in the Christian narrative and patron saint of wood, through the collective construction of a wooden image and its procession through the Can Vidalet neighborhood, accompanied by talks and traditional music."
       }
     },
     {

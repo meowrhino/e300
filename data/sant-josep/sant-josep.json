@@ -1,0 +1,38 @@
+{
+  "slug": "sant-josep",
+  "titulo": "Sant Josep",
+  "primera_imatge": {
+    "src": "./img/01.webp",
+    "alt": "Sant Josep - Estructuras 3000"
+  },
+  "descripcion": {
+    "link": "",
+    "texto": {
+      "ca": [
+        "St Josep és un projecte desenvolupat durant la Setmana Santa que posa el focus en una figura històricament secundària del relat cristià: Sant Josep. Patró de la fusta i estretament vinculat al treball manual, Josep ha estat tradicionalment present com a suport, però absent com a protagonista. Un sant que gairebé mai es treu al carrer durant la Setmana Santa perquè no té un relat suficientment important com per ser tret.",
+        "En el context de Can Vidalet, un barri on la presència religiosa i les processons són molt presents, vam proposar construir col·lectivament un Sant Josep de fusta i fer-lo passejar pel barri. L’acció va generar molta expectativa doncs molta gent del barri era la primera vegada que veien Sant Josep en processó.",
+        "El projecte es va complementar amb converses al voltant de la religió i la figura de Sant Josep com a personatge absolutament secundari i utilitari amb la participació de Marc Boix, professor de religió, i amb l’acompanyament musical de Joana Domènech al flabiol i el tamborí."
+      ],
+      "es": [
+        "St Josep es un proyecto desarrollado durante la Semana Santa que pone el foco en una figura históricamente secundaria del relato cristiano: San José. Patrón de la madera y estrechamente vinculado al trabajo manual, José ha estado tradicionalmente presente como apoyo, pero ausente como protagonista. Un santo que casi nunca sale a la calle durante la Semana Santa porque no tiene un relato lo suficientemente importante como para ser sacado.",
+        "En el contexto de Can Vidalet, un barrio donde la presencia religiosa y las procesiones son muy presentes, propusimos construir colectivamente un San José de madera y hacerlo pasear por el barrio. La acción generó mucha expectativa pues mucha gente del barrio era la primera vez que veía a San José en procesión.",
+        "El proyecto se complementó con conversaciones en torno a la religión y la figura de San José como personaje absolutamente secundario y utilitario, con la participación de Marc Boix, profesor de religión, y con el acompañamiento musical de Joana Domènech al flabiol y el tamborí."
+      ],
+      "en": [
+        "St Josep is a project developed during Holy Week that focuses on a historically secondary figure in the Christian narrative: Saint Joseph. Patron of wood and closely linked to manual labor, Joseph has traditionally been present as support, but absent as protagonist. A saint who is almost never brought out into the streets during Holy Week because he does not have a story important enough to be carried out.",
+        "In the context of Can Vidalet, a neighborhood where religious presence and processions are very visible, we proposed collectively building a wooden Saint Joseph and taking him through the neighborhood. The action generated a lot of expectation, as for many people in the neighborhood it was the first time they had seen Saint Joseph in procession.",
+        "The project was complemented by conversations about religion and the figure of Saint Joseph as an absolutely secondary and utilitarian character, with the participation of Marc Boix, a religion teacher, and with musical accompaniment by Joana Domènech on flabiol and tamborí."
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Sant Josep és un projecte de Setmana Santa que reivindica Sant Josep, figura secundària del relat cristià totalment oblidat i patró de la fusta, mitjançant la construcció col·lectiva d’una imatge de fusta i la seva processó pel barri de Can Vidalet, acompanyada de xerrades i música tradicional.",
+    "es": "Sant Josep es un proyecto de Semana Santa que reivindica a San José, figura secundaria del relato cristiano totalmente olvidada y patrón de la madera, mediante la construcción colectiva de una imagen de madera y su procesión por el barrio de Can Vidalet, acompañada de charlas y música tradicional.",
+    "en": "Sant Josep is a Holy Week project that reclaims Saint Joseph, a largely forgotten secondary figure in the Christian narrative and patron saint of wood, through the collective construction of a wooden image and its procession through the Can Vidalet neighborhood, accompanied by talks and traditional music."
+  },
+  "imatges": [
+    "./img/02.webp",
+    "./img/03.webp",
+    "./img/04.webp"
+  ]
+}

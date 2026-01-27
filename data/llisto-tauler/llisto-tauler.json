@@ -33,5 +33,12 @@
     "es": "Práctica colectiva de transformación de un listón y un tablero que activó múltiples usos y artefactos durante la jornada.",
     "en": "Collective practice of transforming a plank and a board that activated multiple uses and artifacts throughout the day."
   },
-  "imatges": []
+  "imatges": [
+    "./img/02.webp",
+    "./img/07.webp",
+    "./img/04.webp",
+    "./img/05.webp",
+    "./img/06.webp",
+    "./img/03.webp"
+  ]
 }
