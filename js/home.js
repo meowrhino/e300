@@ -80,10 +80,41 @@ function renderServeis(serveis, lang) {
   };
   const scrollToAccordion = (details) => {
     if (!details || typeof details.scrollIntoView !== 'function') return;
-    details.scrollIntoView({
-      behavior: scrollBehavior(),
-      block: 'start'
-    });
+    
+    // Esperar a que termine la animación del accordion (240ms)
+    setTimeout(() => {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+      const rect = details.getBoundingClientRect();
+      const absoluteTop = window.pageYOffset + rect.top;
+      const detailsHeight = rect.height;
+      const viewportHeight = window.innerHeight;
+      
+      // En móvil, alinear arriba (comportamiento nativo)
+      if (isMobile) {
+        details.scrollIntoView({
+          behavior: scrollBehavior(),
+          block: 'start'
+        });
+        return;
+      }
+      
+      // En desktop, centrar si cabe, sino alinear arriba
+      if (detailsHeight >= viewportHeight * 0.85) {
+        window.scrollTo({
+          top: absoluteTop - 20,
+          behavior: scrollBehavior()
+        });
+        return;
+      }
+      
+      // Centrar el accordion
+      const scrollTo = absoluteTop - (viewportHeight / 2) + (detailsHeight / 2);
+      
+      window.scrollTo({
+        top: Math.max(0, scrollTo),
+        behavior: scrollBehavior()
+      });
+    }, 250);
   };
   const scrollToSection = () => {
     if (!section || typeof section.scrollIntoView !== 'function') return;

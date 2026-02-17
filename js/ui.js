@@ -310,6 +310,58 @@ function ensureSectionSpacers() {
 }
 
 // ============================================================================
+// SCROLL CENTRADO - SOLO DESKTOP
+// ============================================================================
+export function initCenteredScrolling() {
+  // Solo aplicar en desktop
+  const isMobile = window.matchMedia('(max-width: 768px)').matches;
+  if (isMobile) return;
+
+  document.addEventListener('click', (event) => {
+    const link = event.target.closest('a[href^="#"]');
+    if (!link) return;
+    
+    // Solo para links del menú
+    if (!link.closest('.menu-links')) return;
+    
+    const href = link.getAttribute('href');
+    if (!href || href === '#') return;
+    
+    event.preventDefault();
+    
+    const targetId = href.slice(1);
+    const targetSection = document.getElementById(targetId);
+    if (!targetSection) return;
+    
+    centerSection(targetSection);
+  });
+}
+
+function centerSection(section) {
+  const rect = section.getBoundingClientRect();
+  const absoluteTop = window.pageYOffset + rect.top;
+  const sectionHeight = rect.height;
+  const viewportHeight = window.innerHeight;
+  
+  // Si la sección es más alta que el viewport, alinear arriba
+  if (sectionHeight >= viewportHeight * 0.9) {
+    window.scrollTo({
+      top: absoluteTop,
+      behavior: 'smooth'
+    });
+    return;
+  }
+  
+  // Centrar verticalmente
+  const scrollTo = absoluteTop - (viewportHeight / 2) + (sectionHeight / 2);
+  
+  window.scrollTo({
+    top: Math.max(0, scrollTo),
+    behavior: 'smooth'
+  });
+}
+
+// ============================================================================
 // INICIALIZAR TODAS LAS FUNCIONALIDADES DE UI
 // ============================================================================
 export function initUI() {
@@ -319,4 +371,5 @@ export function initUI() {
   initImagePopup();
   makeImagesClickable();
   ensureSectionSpacers();
+  initCenteredScrolling();
 }
