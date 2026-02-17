@@ -568,3 +568,81 @@ Subir el sitemap.xml a Google Search Console para monitorizar indexación y rend
 
 **Analytics:**
 Considerar añadir Google Analytics o similar para medir tráfico y comportamiento de usuarios.
+
+
+---
+
+## 18 de febrero de 2026, 00:15
+
+### Título: Actualización de textos SEO personalizados
+
+### Sinopsis
+Se han actualizado las descripciones de Open Graph y Twitter Cards con un texto más directo y activista, y se ha corregido la ubicación de "Barcelona" a "Esplugues de Llobregat" en todos los meta tags.
+
+### Explicación detallada del proceso
+
+#### 1. Texto anterior (genérico)
+
+**Open Graph y Twitter Cards:**
+```
+Asociació sense ànim de lucre per la col·lectivització de l'art i la cultura a Catalunya.
+```
+
+**Problema:** Demasiado formal, no menciona servicios concretos, ubicación incorrecta.
+
+#### 2. Nuevo texto (personalizado)
+
+**Open Graph y Twitter Cards:**
+```
+col·lectivitzem l'art i la cultura. tallers, residències i infraestructures per a pràctiques artístiques col·lectives a esplugues.
+```
+
+**Mejoras:**
+- ✅ Tono activista ("col·lectivitzem" en primera persona)
+- ✅ Minúsculas coherentes con el estilo del proyecto
+- ✅ Menciona servicios concretos (tallers, residències, infraestructures)
+- ✅ Ubicación correcta (esplugues)
+- ✅ Longitud óptima (~120 caracteres, no se trunca)
+- ✅ Sin puntos finales (más fluido, contemporáneo)
+
+#### 3. Actualización de dirección en Schema.org
+
+**Antes:**
+```json
+"address": {
+  "streetAddress": "Carrer de Rosselló, 503",
+  "addressLocality": "Barcelona",
+  "postalCode": "08025"
+}
+```
+
+**Después:**
+```json
+"address": {
+  "streetAddress": "Carrer de Rosselló, 503",
+  "addressLocality": "Esplugues de Llobregat",
+  "postalCode": "08950"
+}
+```
+
+**Beneficio:** Google mostrará la ubicación correcta en los rich snippets y en Google Maps.
+
+#### 4. Archivos modificados
+
+- **index.html** (líneas 24, 34, 64, 66)
+  - Open Graph description
+  - Twitter Card description
+  - Schema.org addressLocality
+  - Schema.org postalCode
+
+#### 5. Impacto esperado
+
+**Redes sociales:**
+- ✅ Mejor CTR al compartir (texto más atractivo)
+- ✅ Mensaje más claro sobre qué es estructuras 3000
+- ✅ Coherencia con el tono político del proyecto
+
+**SEO local:**
+- ✅ Mejor posicionamiento en búsquedas de "arte colectivo esplugues"
+- ✅ Aparición correcta en Google Maps
+- ✅ Rich snippets con ubicación correcta
