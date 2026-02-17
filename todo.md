@@ -1,3 +1,8 @@
+17-02-2026
+que el hipervinculo de estructuras 3000 se abra en una pestaña nueva
+
+
+
 pasar todas las imágenes a webp
 
 pasar al formato basado en .json
