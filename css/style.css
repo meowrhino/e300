@@ -266,6 +266,7 @@ a.link-con-href:hover {
 #equipaments {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 1rem;
     min-height: 100vh;
 }

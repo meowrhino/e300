@@ -350,3 +350,59 @@ Valores sugeridos para pruebas:
 #### 8. Próximos pasos
 
 El usuario ajustará manualmente los valores de `--section-gap` en `css/style.css` (líneas 19, 25, 31, 35) según sus preferencias después de probar el centrado vertical.
+
+
+---
+
+## 17 de febrero de 2026, 23:30
+
+### Título: Corrección del centrado vertical de la sección equipaments
+
+### Sinopsis
+Se corrigió un problema donde la sección `#equipaments` no se centraba verticalmente al hacer clic en el link del menú. El problema era que faltaba la propiedad `justify-content: center` en el CSS.
+
+### Explicación detallada del proceso
+
+#### 1. Problema identificado
+
+Al hacer clic en el link "equipaments" del menú, la sección no se centraba verticalmente como las demás secciones (descripcio, serveis, etc.). El contenido quedaba alineado arriba (top) en lugar de centrado.
+
+#### 2. Causa raíz
+
+La sección `#equipaments` tenía:
+```css
+#equipaments {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    min-height: 100vh;
+}
+```
+
+**Faltaba:** `justify-content: center`
+
+Las otras secciones que sí se centraban correctamente tenían esta propiedad:
+- `#descripcio` → `justify-content: center`
+- `#serveis` → `justify-content: center`
+- `#contacte` → `justify-content: center`
+
+#### 3. Solución aplicada
+
+**css/style.css (línea 269)**
+```css
+#equipaments {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  /* ← AÑADIDO */
+    gap: 1rem;
+    min-height: 100vh;
+}
+```
+
+Con `justify-content: center`, el contenido de la sección se centra verticalmente dentro del contenedor flex, lo que permite que:
+1. La sección se vea centrada cuando ocupa toda la altura del viewport
+2. El script de centrado en `ui.js` calcule correctamente la posición para centrar la sección
+
+#### 4. Archivos modificados
+
+- `css/style.css` - Añadido `justify-content: center` a `#equipaments`
