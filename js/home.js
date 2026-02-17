@@ -17,6 +17,7 @@ export async function renderHome(homeData) {
   // Renderizar secciones
   renderDescripcion(homeData.descripcio, lang);
   renderServeis(homeData.serveis, lang);
+  renderEquipaments(homeData.equipaments, lang);
   renderProjectes(homeData.projectes_visibles, lang);
   renderContacte(homeData.contacte, lang);
   renderMembres(homeData.membres, lang);
@@ -161,6 +162,57 @@ function renderServeis(serveis, lang) {
     accordions.push(details);
     section.appendChild(details);
   });
+}
+
+// ============================================================================
+// RENDERIZAR EQUIPAMENTS
+// ============================================================================
+function renderEquipaments(equipaments, lang) {
+  const section = document.getElementById('equipaments');
+  if (!section) return;
+  
+  section.innerHTML = '';
+  const equipamentsData = getTranslation(equipaments, lang);
+  if (!equipamentsData) return;
+
+  // Renderizar intro
+  if (equipamentsData.intro) {
+    const introP = document.createElement('p');
+    introP.className = 'equipaments-intro';
+    introP.innerHTML = equipamentsData.intro;
+    section.appendChild(introP);
+  }
+
+  // Renderizar items como acordeones
+  if (Array.isArray(equipamentsData.items)) {
+    equipamentsData.items.forEach(item => {
+      if (!item || !item.title) return;
+
+      const details = document.createElement('details');
+      details.className = 'equipament-card';
+
+      const summary = document.createElement('summary');
+      summary.textContent = item.title;
+      details.appendChild(summary);
+
+      const content = document.createElement('div');
+      content.className = 'equipament-card-content';
+      const p = document.createElement('p');
+      p.innerHTML = item.content;
+      content.appendChild(p);
+      details.appendChild(content);
+
+      section.appendChild(details);
+    });
+  }
+
+  // Renderizar outro
+  if (equipamentsData.outro) {
+    const outroP = document.createElement('p');
+    outroP.className = 'equipaments-outro';
+    outroP.innerHTML = equipamentsData.outro;
+    section.appendChild(outroP);
+  }
 }
 
 // ============================================================================

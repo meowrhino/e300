@@ -1,0 +1,31 @@
+#equipaments {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 20px;
+}
+
+.equipament-card {
+    border-bottom: none;
+    border-radius: 0;
+    overflow: hidden;
+}
+
+.equipament-card summary {
+    padding: 15px 5px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none; /* Oculta el marcador en Firefox */
+}
+
+.equipament-card summary::-webkit-details-marker {
+    display: none; /* Oculta el marcador en Chrome, Safari y Edge */
+}
+
+.equipament-card-content {
+    padding: 15px 5px;
+}
+
+.equipament-card[open] summary {
+    margin-bottom: 10px;
+}
