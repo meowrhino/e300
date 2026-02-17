@@ -295,6 +295,7 @@ function renderProjectes(projectes, lang) {
         || thumbnail.startsWith('../');
       img.src = isFullPath ? thumbnail : `img/${thumbnail}`;
       img.alt = project.name;
+      img.loading = 'lazy';
       imgLink.appendChild(img);
       contingut.appendChild(imgLink);
       

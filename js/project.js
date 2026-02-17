@@ -82,6 +82,7 @@ function renderProjectContent(projectData, lang) {
     const img = document.createElement('img');
     img.src = resolveProjectImagePath(projectData.slug, projectData.primera_imatge.src);
     img.alt = projectData.primera_imatge.alt || titulo;
+    img.loading = 'lazy';
     img.classList.add('clickable-image');
     container.appendChild(img);
   }
@@ -105,6 +106,7 @@ function renderProjectContent(projectData, lang) {
       const img = document.createElement('img');
       img.src = resolveProjectImagePath(projectData.slug, imgPath);
       img.alt = `Imatge del projecte ${titulo}`;
+      img.loading = 'lazy';
       img.classList.add('clickable-image');
       galeria.appendChild(img);
     });

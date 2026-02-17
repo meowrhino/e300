@@ -71,9 +71,14 @@ export function initLanguageSelector(onLanguageChange = null) {
     link.textContent = lang;
     link.href = '#';
     
+    // Aria-label para accesibilidad
+    const langNames = { ca: 'catal\u00e0', es: 'castellano', en: 'english' };
+    link.setAttribute('aria-label', `Canviar idioma a ${langNames[lang]}`);
+    
     // Marcar el idioma actual como activo
     if (lang === currentLang) {
       link.classList.add('active');
+      link.setAttribute('aria-current', 'true');
     }
     
     // Evento de clic

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- Página principal -->
+  <url>
+    <loc>https://estructuras3000.com/</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/?lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/?lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://estructuras3000.com/"/>
+  </url>
+  
+  <!-- Proyectos -->
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=judici</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=judici&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=judici&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=judici&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=escola3000</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=escola3000&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=escola3000&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=escola3000&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=peepshow</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=peepshow&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=peepshow&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=peepshow&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=seminari</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=seminari&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=seminari&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=seminari&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=conferencies</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=conferencies&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=conferencies&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=conferencies&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=thereis</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=thereis&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=thereis&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=thereis&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=sant-josep</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=sant-josep&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=sant-josep&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=sant-josep&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=detectiu3000</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=detectiu3000&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=detectiu3000&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=detectiu3000&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=llisto-tauler</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=llisto-tauler&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=llisto-tauler&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=llisto-tauler&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=flama-no-crema</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=flama-no-crema&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=flama-no-crema&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=flama-no-crema&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=poder-sobre-poder</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=poder-sobre-poder&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=poder-sobre-poder&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=poder-sobre-poder&amp;lang=en"/>
+  </url>
+  
+  <url>
+    <loc>https://estructuras3000.com/proyecto.html?slug=caixa</loc>
+    <lastmod>2026-02-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ca" href="https://estructuras3000.com/proyecto.html?slug=caixa&amp;lang=ca"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://estructuras3000.com/proyecto.html?slug=caixa&amp;lang=es"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://estructuras3000.com/proyecto.html?slug=caixa&amp;lang=en"/>
+  </url>
+  
+</urlset>

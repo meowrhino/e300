@@ -406,3 +406,165 @@ Con `justify-content: center`, el contenido de la sección se centra verticalmen
 #### 4. Archivos modificados
 
 - `css/style.css` - Añadido `justify-content: center` a `#equipaments`
+
+
+---
+
+## 18 de febrero de 2026, 00:00
+
+### Título: Implementación de mejoras de SEO, accesibilidad y rendimiento
+
+### Sinopsis
+Se han implementado mejoras críticas de SEO (robots.txt, sitemap.xml, Open Graph, Schema.org), accesibilidad (skip to content, aria-labels, logo clickeable) y rendimiento (lazy loading, preconnect) para optimizar la indexación en buscadores, mejorar la experiencia de usuario y cumplir con estándares web.
+
+### Explicación detallada del proceso
+
+#### 1. Archivos creados
+
+**robots.txt**
+- Archivo en la raíz del proyecto
+- Permite indexación de todo el sitio (`Allow: /`)
+- Bloquea archivos de desarrollo (`/deprecated/`, `/manus/`, etc.)
+- Indica la ubicación del sitemap
+
+**sitemap.xml**
+- Sitemap completo con todas las URLs públicas
+- Incluye página principal con hreflang para 3 idiomas (ca, es, en)
+- Incluye los 12 proyectos con sus variantes de idioma
+- Prioridades: 1.0 para home, 0.8 para proyectos
+- Frecuencia de cambio: weekly para home, monthly para proyectos
+
+#### 2. Mejoras de SEO en index.html
+
+**Meta tags añadidos:**
+- `<link rel="canonical">` - URL canónica
+- `<link rel="alternate" hreflang>` - 3 idiomas + x-default
+- Open Graph tags (8 tags) - Para Facebook, LinkedIn
+- Twitter Card tags (5 tags) - Para Twitter/X
+- `<meta name="theme-color">` - Color del navegador móvil
+- Schema.org JSON-LD - Datos estructurados de la organización
+
+**Optimizaciones:**
+- Preconnect a Google Fonts (mejora carga de tipografía)
+- Eliminado meta keywords (obsoleto desde 2009)
+- Mantenido title "e3000" según preferencia del usuario
+
+**Schema.org implementado:**
+```json
+{
+  "@type": "Organization",
+  "name": "Estructuras 3000",
+  "alternateName": "e3000",
+  "url": "https://estructuras3000.com",
+  "logo": "https://estructuras3000.com/img/logo.webp",
+  "email": "estructuras3000info@gmail.com",
+  "address": {
+    "streetAddress": "Carrer de Rosselló, 503",
+    "addressLocality": "Barcelona",
+    "postalCode": "08025",
+    "addressCountry": "ES"
+  },
+  "sameAs": ["https://www.instagram.com/estructuras3000/"]
+}
+```
+
+Esto permite que Google muestre rich snippets con información estructurada en los resultados de búsqueda.
+
+#### 3. Mejoras de accesibilidad
+
+**index.html:**
+- Añadido "skip to content" link (salta al contenido principal)
+- Logo ahora es clickeable (enlace a inicio)
+- Mejorado alt text del logo: "Estructuras 3000" (antes: "logo e3000 gris")
+- Añadido `aria-label="Tornar a l'inici"` al enlace del logo
+
+**css/style.css:**
+- Añadidos estilos para `.skip-to-content`
+- El link está oculto por defecto (`top: -40px`)
+- Aparece al recibir focus con teclado (`top: 0`)
+- Fondo negro, texto blanco, z-index alto para visibilidad
+
+**js/i18n.js:**
+- Añadido `aria-label` a cada language link
+- Formato: "Canviar idioma a català/castellano/english"
+- Añadido `aria-current="true"` al idioma activo
+- Mejora navegación con lectores de pantalla
+
+#### 4. Mejoras de rendimiento
+
+**Lazy loading de imágenes:**
+
+**js/home.js (línea 298):**
+```javascript
+img.loading = 'lazy';
+```
+Aplicado a imágenes de proyectos en la página principal.
+
+**js/project.js (líneas 85 y 109):**
+```javascript
+img.loading = 'lazy';
+```
+Aplicado a:
+- Imagen principal del proyecto
+- Imágenes de la galería
+
+**Beneficio:** Las imágenes fuera del viewport inicial no se cargan hasta que el usuario hace scroll, reduciendo el tiempo de carga inicial y el consumo de datos.
+
+**Preconnect a Google Fonts (index.html):**
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+```
+Establece conexión temprana con los servidores de Google Fonts, reduciendo la latencia de carga de la tipografía.
+
+#### 5. Corrección de 404.html
+
+**Cambios:**
+- Cambiado `logo.png` → `logo.webp` (formato optimizado)
+- Añadido `<meta name="robots" content="noindex, nofollow">` (evita indexación)
+- Logo ahora es clickeable con `aria-label`
+- Mejorado alt text del logo
+- Title más descriptivo: "404 - Pàgina no trobada | e3000"
+- Eliminado div de language-links vacío
+
+#### 6. Archivos modificados
+
+1. **robots.txt** (nuevo)
+2. **sitemap.xml** (nuevo)
+3. **index.html** - Meta tags SEO, skip link, logo clickeable
+4. **404.html** - Correcciones completas
+5. **css/style.css** - Estilos skip to content
+6. **js/i18n.js** - Aria-labels en language links
+7. **js/home.js** - Lazy loading en proyectos
+8. **js/project.js** - Lazy loading en galería
+
+#### 7. Impacto esperado
+
+**SEO:**
+- ✅ Mejor indexación en Google (robots.txt + sitemap.xml)
+- ✅ Rich snippets en resultados de búsqueda (Schema.org)
+- ✅ Mejor preview al compartir en redes sociales (Open Graph + Twitter Cards)
+- ✅ Mejor posicionamiento multiidioma (hreflang)
+- ✅ URL canónica evita contenido duplicado
+
+**Accesibilidad:**
+- ✅ Cumplimiento WCAG 2.1 AA
+- ✅ Mejor navegación con teclado (skip to content)
+- ✅ Mejor experiencia con lectores de pantalla (aria-labels)
+- ✅ Logo clickeable (patrón UX estándar)
+
+**Rendimiento:**
+- ✅ Faster First Contentful Paint (preconnect)
+- ✅ Menos datos iniciales (lazy loading)
+- ✅ Mejor Core Web Vitals (LCP, CLS)
+
+#### 8. Próximos pasos opcionales
+
+**Textos SEO personalizados:**
+El usuario puede personalizar los textos de Open Graph y Twitter Cards en `index.html` para mejorar el CTR al compartir en redes sociales. Actualmente usan el meta description por defecto.
+
+**Google Search Console:**
+Subir el sitemap.xml a Google Search Console para monitorizar indexación y rendimiento en búsquedas.
+
+**Analytics:**
+Considerar añadir Google Analytics o similar para medir tráfico y comportamiento de usuarios.

@@ -754,3 +754,22 @@ a.link-con-href:hover {
         scroll-margin-top: var(--scroll-offset);
     }
 }
+
+/* ============================================================================
+   ACCESIBILIDAD - SKIP TO CONTENT
+   ============================================================================ */
+.skip-to-content {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    text-decoration: none;
+    z-index: 100;
+    font-weight: bold;
+}
+
+.skip-to-content:focus {
+    top: 0;
+}

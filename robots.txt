@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://estructuras3000.com/sitemap.xml
+
+# Bloquear archivos de desarrollo y documentación interna
+Disallow: /deprecated/
+Disallow: /manus/
+Disallow: /boceto.html
+Disallow: /equipaments.html
+Disallow: /todo.md
+Disallow: /VALORES_ESPACIADO.md
+Disallow: /README.md
