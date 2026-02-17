@@ -753,6 +753,12 @@ a.link-con-href:hover {
     #estatuts {
         scroll-margin-top: var(--scroll-offset);
     }
+    
+    /* Alinear equipaments arriba en móvil para que funcione con scroll-margin-top */
+    #equipaments {
+        justify-content: flex-start;
+        padding-top: 2rem;
+    }
 }
 
 /* ============================================================================
