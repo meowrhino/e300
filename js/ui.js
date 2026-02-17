@@ -16,10 +16,11 @@ export function applyLinkStyles() {
     const href = link.getAttribute('href');
     if (!href) return;
 
-    // Ignorar enlaces de menú o idioma
+    // Ignorar enlaces de menú, idioma o skip-to-content
     const isMenuLink = link.closest('.menu-links') !== null;
     const isLanguageLink = link.closest('.language-links') !== null;
-    if (isMenuLink || isLanguageLink) return;
+    const isSkipLink = link.classList.contains('skip-to-content');
+    if (isMenuLink || isLanguageLink || isSkipLink) return;
 
     // Añadir clase para estilo visual
     link.classList.add('link-con-href');
