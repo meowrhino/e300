@@ -33,9 +33,9 @@ const MENU_ITEMS = [
   {
     id: 'equipaments',
     label: {
-      ca: '🔨 equipaments',
-      es: '🔨 equipamientos',
-      en: '🔨 facilities'
+      ca: 'equipaments',
+      es: 'equipamientos',
+      en: 'facilities'
     }
   },
   {

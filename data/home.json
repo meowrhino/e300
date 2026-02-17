@@ -10,18 +10,18 @@
   },
   "descripcio": {
     "ca": [
-      "<strong>Estructuras 3000</strong> és una associació sense ànim de lucre que té com a objectiu <strong>realitzar, vetllar i divulgar les pràctiques col·lectives i col·laboratives en el context artístic i cultural català.</strong> L'acció de l'entitat vol donar resposta a les dinàmiques habituals cap a un individualisme que atempta contra l'organització del col·lectiu artístic i l'accés democràtics als drets culturals, és per això que l'associació vetlla per la producció d'infraestructures, investigacions, tallers i accions en institucions del territori català per la col·lectivització del sector i les pràctiques artístiques.",
-      "Estructuras3000 és un espai col·laboratiu amb tallers comunitaris dedicats a la creació, l’experimentació i la producció. Cada taller compta amb una persona responsable membre de l’associació i els materials amb una selecció d’ús compartit. L’ús dels espais es basa en la cura col·lectiva, l’autogestió i el respecte pel treball comú.",
+      "<strong>Estructuras 3000</strong> és un col·lectiu artístic en forma d’associació sense ànim de lucre que té com a objectiu <strong>realitzar, vetllar i divulgar les pràctiques col·lectives i col·laboratives en el context artístic i cultural català.</strong> L'acció de l'entitat vol donar resposta a les dinàmiques habituals cap a un individualisme que atempta contra l'organització del col·lectiu artístic i l'accés democràtics als drets culturals, és per això que l'associació vetlla per la producció d'infraestructures, investigacions, tallers i accions en institucions del territori català per la col·lectivització del sector i les pràctiques artístiques.",
+      "El local d’Estructuras3000 és un <strong>espai col·laboratiu amb tallers comunitaris</strong> dedicats a la creació, l’experimentació i la producció. Cada taller compta amb una persona responsable membre de l’associació i els materials amb una selecció d’ús compartit. L’ús dels espais es basa en la <strong>cura col·lectiva, l’autogestió i el respecte pel treball comú.</strong>",
       "Estructuras 3000 treballa per generar oportunitats per a altres col·lectius, contribuir a la defensa d'una remuneració justa, els drets culturals i a la professionalització de les pràctiques col·lectives contemporànies."
     ],
     "es": [
-      "<strong>Estructuras 3000</strong> es un colectivo artístico en forma de asociación sin ánimo de lucro que tiene como objetivo <strong>realizar, velar y divulgar las prácticas colectivas y colaborativas en el contexto artístico y cultural catalán.</strong> La acción de la entidad quiere dar respuesta a las dinámicas habituales hacia un individualismo que atenta contra la organización del colectivo artístico y el acceso democráticos a los derechos culturales, es por eso que la asociación vela por la producción de infraestructuras, investigaciones, talleres y acciones en instituciones del territorio catalán por la colectivización del sector y las prácticas artísticas.",
-      "Estructuras3000 es un espacio colaborativo con talleres comunitarios dedicados a la creación, experimentación y producción. Cada taller cuenta con una persona responsable miembro de la asociación y los materiales con una selección de uso compartido. El funcionamiento se basa en el cuidado colectivo, la autogestión y el respeto por el trabajo común.",
+      "<strong>Estructuras 3000</strong> es un colectivo artístico en forma de asociación sin ánimo de lucro que tiene como objetivo <strong>realizar, velar y divulgar las prácticas colectivas y colaborativas en el contexto artístico y cultural catalán.</strong> La acción de la entidad quiere dar respuesta a las dinámicas habituales hacia un individualismo que atenta contra la organización del colectivo artístico y el acceso democrático a los derechos culturales, por eso la asociación vela por la producción de infraestructuras, investigaciones, talleres y acciones en instituciones del territorio catalán para la colectivización del sector y las prácticas artísticas.",
+      "El local de Estructuras3000 es un <strong>espacio colaborativo con talleres comunitarios</strong> dedicados a la creación, experimentación y producción. Cada taller cuenta con una persona responsable miembro de la asociación y los materiales con una selección de uso compartido. El funcionamiento se basa en el <strong>cuidado colectivo, la autogestión y el respeto por el trabajo común.</strong>",
       "Estructuras 3000 trabaja para generar oportunidades para otros colectivos, contribuir a la defensa de una remuneración justa, los derechos culturales y a la profesionalización de las prácticas colectivas contemporáneas."
     ],
     "en": [
-      "<strong>Estructuras 3000</strong> is a non-profit association that aims to <strong>carry out, oversee and disseminate collective and collaborative practices in the Catalan artistic and cultural context.</strong> The entity's action aims to respond to the usual dynamics towards individualism that threatens the organization of the artistic collective and democratic access to cultural rights, which is why the association oversees the production of infrastructures, research, workshops and actions in institutions of the Catalan territory for the collectivization of the sector and artistic practices.",
-      "Estructuras3000 is a collaborative space with shared workshops dedicated to creation, experimentation, and production. Each workshop has a designated member of the association, and materials are shared accordingly. The space operates through collective care, self-management, and respect for shared work.",
+      "<strong>Estructuras 3000</strong> is an artistic collective organized as a non-profit association whose aim is to <strong>carry out, safeguard, and disseminate collective and collaborative practices in the Catalan artistic and cultural context.</strong> The entity's action seeks to respond to the usual dynamics toward individualism that threaten the organization of the artistic collective and democratic access to cultural rights; this is why the association promotes the production of infrastructures, research, workshops, and actions in institutions across Catalonia for the collectivization of the sector and artistic practices.",
+      "The Estructuras3000 space is a <strong>collaborative space with shared workshops</strong> dedicated to creation, experimentation, and production. Each workshop has a designated member of the association, and materials are shared accordingly. The space operates through <strong>collective care, self-management, and respect for shared work.</strong>",
       "Estructuras 3000 works to generate opportunities for other collectives, contribute to the defense of fair remuneration, cultural rights and the professionalization of contemporary collective practices."
     ]
   },
@@ -155,7 +155,6 @@
   },
   "equipaments": {
     "ca": {
-      "intro": "Estructuras3000 és un espai col·laboratiu amb tallers comunitaris dedicats a la creació, l'experimentació i la producció. Cada taller compta amb una persona responsable membre de l'associació i els materials amb una selecció d'ús compartit. L'ús dels espais es basa en la cura col·lectiva, l'autogestió i el respecte pel treball comú.",
       "items": [
         {
           "title": "Taller de fusteria",
@@ -174,18 +173,16 @@
           "content": "Espai dedicat a l'experimentació amb el so, amb taula, taules de mescla, altaveus i cablejat. Inclou una zona de JAM amb bateria, instruments de corda, sintetitzadors i teclats."
         },
         {
-          "title": "Espai mix",
+          "title": "Espai mixt",
           "content": "Sala de treball gràfic i pictòric amb taula, ordinador i impressora. Disposa d'una paret d'ús lliure i llum natural."
         },
         {
           "title": "Sala comuna",
-          "content": "Espai polivalent amb gran taula de treball i cuina equipada amb microones, placa d'inducció, cafetera, nevera i pica. S'utilitza segons les necessitats de l'associació i projectes col·lectius."
+          "content": "Espai polivalent amb gran taula de treball i cuina equipada amb microones, placa d'inducció, cafetera, nevera i pica. S'utilitza segons les necessitats de l'associació i projectes col·lectius. Estructuras3000 disposa de taulers i cavallets per configurar taules segons les necessitats, prèviament acordades en assemblea."
         }
-      ],
-      "outro": "Estructuras3000 disposa de taulers i cavallets per configurar taules segons les necessitats, prèviament acordades en assemblea."
+      ]
     },
     "es": {
-      "intro": "Estructuras3000 es un espacio colaborativo con talleres comunitarios dedicados a la creación, experimentación y producción. Cada taller cuenta con una persona responsable miembro de la asociación y los materiales con una selección de uso compartido. El funcionamiento se basa en el cuidado colectivo, la autogestión y el respeto por el trabajo común.",
       "items": [
         {
           "title": "Taller de carpintería",
@@ -204,18 +201,16 @@
           "content": "Espacio dedicado a la experimentación sonora con mesa, mesas de mezcla, altavoces y cableado. Incluye zona de JAM con batería, instrumentos de cuerda, sintetizadores y teclados."
         },
         {
-          "title": "Espacio mix",
+          "title": "Espacio mixto",
           "content": "Sala para trabajo gráfico y pictórico con mesa, ordenador e impresora. Dispone de pared de uso libre y luz natural."
         },
         {
           "title": "Sala común",
-          "content": "Espacio polivalente con gran mesa de trabajo y cocina equipada con microondas, placa de inducción, cafetera, nevera y fregadero. Se utiliza según las necesidades de la asociación y proyectos colectivos."
+          "content": "Espacio polivalente con gran mesa de trabajo y cocina equipada con microondas, placa de inducción, cafetera, nevera y fregadero. Se utiliza según las necesidades de la asociación y proyectos colectivos. Estructuras3000 dispone de tableros y caballetes para configurar mesas según las necesidades, previo acuerdo en asamblea."
         }
-      ],
-      "outro": "Estructuras3000 dispone de tableros y caballetes para configurar mesas según las necesidades, previo acuerdo en asamblea."
+      ]
     },
     "en": {
-      "intro": "Estructuras3000 is a collaborative space with shared workshops dedicated to creation, experimentation, and production. Each workshop has a designated member of the association, and materials are shared accordingly. The space operates through collective care, self-management, and respect for shared work.",
       "items": [
         {
           "title": "Wood Workshop",
@@ -234,15 +229,14 @@
           "content": "Space for sound experimentation with desk, mixing consoles, speakers, and cabling. Includes a JAM area with drum kit, string instruments, synthesizers, and keyboards."
         },
         {
-          "title": "Mix Space",
+          "title": "Mixed Space",
           "content": "Room for graphic and pictorial work with desk, computer, and printer. Includes a free-use wall and natural light."
         },
         {
           "title": "Common Room",
-          "content": "Multipurpose space with a large work table and kitchen equipped with microwave, induction cooktop, coffee maker, fridge, and sink. Used according to association needs and collective projects."
+          "content": "Multipurpose space with a large work table and kitchen equipped with microwave, induction cooktop, coffee maker, fridge, and sink. Used according to association needs and collective projects. Estructuras3000 provides boards and trestles to configure tables as needed, subject to prior agreement in assembly."
         }
-      ],
-      "outro": "Estructuras3000 provides boards and trestles to configure tables as needed, subject to prior agreement in assembly."
+      ]
     }
   },
   "projectes_visibles": [

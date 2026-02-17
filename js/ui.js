@@ -24,6 +24,13 @@ export function applyLinkStyles() {
     // Añadir clase para estilo visual
     link.classList.add('link-con-href');
 
+    const forceNewTab = link.dataset.forceNewTab === 'true';
+    if (forceNewTab) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+      return;
+    }
+
     const isHashLink = href.startsWith('#');
     const isMailOrTel = href.startsWith('mailto:') || href.startsWith('tel:');
     let isExternal = false;
@@ -113,6 +120,7 @@ function linkifyEstructuras() {
         const link = document.createElement('a');
         link.href = homeHref;
         link.textContent = ESTRUCTURAS_TEXT;
+        link.dataset.forceNewTab = 'true';
         fragment.appendChild(link);
       }
     });
