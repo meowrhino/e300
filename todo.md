@@ -62,3 +62,70 @@ Structured data JSON‑LD: Organization + WebSite y, por proyecto, CreativeWork/
 Jerarquía semántica: añadir <h1> en home y landmarks (<main>, <nav>) para claridad.
 Performance/CWV: loading="lazy", decoding="async", width/height en imágenes y thumbnails más ligeras.
 Si quieres, puedo empezar por el punto 1 o 2 y lo implemento paso a paso.
+
+
+---
+
+## 18-02-2026 - mejoras opcionales pendientes
+
+### 1. ajustar espaciado entre secciones
+**ubicación:** `css/style.css` líneas 19, 25, 31, 35  
+**valores actuales:** 33vh (desktop), 50vh (móvil)  
+**sugerencia:** 15vh (desktop), 25vh (móvil)  
+**beneficio:** menos espacio vacío, navegación más fluida
+
+### 2. meta tags dinámicos para proyectos
+**qué:** generar meta tags específicos por cada proyecto en `project.js`  
+**actualmente:** `proyecto.html` tiene meta description genérica  
+**beneficio:** mejor SEO para cada proyecto individual, mejor preview al compartir
+
+### 3. imagen og personalizada
+**qué:** crear imagen 1200x630px para `og:image` específica para redes sociales  
+**actualmente:** usa el logo (`img/logo.webp`)  
+**contenido sugerido:** logo + texto "estructuras 3000" o "col·lectivitzem l'art" + fondo corporativo  
+**beneficio:** mejor preview visual al compartir en facebook, linkedin, twitter
+
+### 4. google search console
+**qué:** subir `sitemap.xml` a google search console  
+**beneficio:** monitorizar indexación, ver qué keywords traen tráfico, detectar errores de crawling
+
+### 5. versiones multiidioma de textos seo
+**qué:** añadir versiones en castellano e inglés de los textos de open graph  
+**actualmente:** solo en catalán  
+**beneficio:** mejor preview al compartir según idioma del usuario
+
+**textos sugeridos:**
+
+**català:**
+```
+col·lectivitzem l'art i la cultura. tallers, residències i infraestructures per a pràctiques artístiques col·lectives a esplugues.
+```
+
+**castellano:**
+```
+colectivizamos el arte y la cultura. talleres, residencias e infraestructuras para prácticas artísticas colectivas en esplugues.
+```
+
+**english:**
+```
+we collectivize art and culture. workshops, residencies and infrastructures for collective artistic practices in esplugues.
+```
+
+---
+
+## ✅ completado 18-02-2026
+
+- ✅ centrado vertical en desktop
+- ✅ recentrado de accordions
+- ✅ robots.txt + sitemap.xml
+- ✅ open graph + twitter cards
+- ✅ schema.org json-ld
+- ✅ canonical url + hreflang
+- ✅ lazy loading en imágenes
+- ✅ skip to content
+- ✅ aria-labels
+- ✅ logo clickeable
+- ✅ preconnect a google fonts
+- ✅ textos seo personalizados
+- ✅ ubicación correcta (esplugues)
+- ✅ 404.html corregido
