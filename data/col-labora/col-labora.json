@@ -1,0 +1,31 @@
+{
+  "slug": "col-labora",
+  "titulo": {
+    "ca": "Col·labora",
+    "es": "Colabora",
+    "en": "Collaborate"
+  },
+  "descripcion": {
+    "link": "",
+    "texto": {
+      "ca": [
+        "<strong>Necessites materials?</strong><br>Disposem de materials reutilitzats per a projectes culturals.",
+        "<strong>Tens materials que ja no utilitzes?</strong><br>Recuperem fustes procedents d'exposicions, museus i equipaments culturals.",
+        "<strong>Vols desenvolupar un projecte?</strong><br>Dissenyem solucions de producció cultural basades en la reutilització.",
+        "<strong>Ets una institució?</strong><br>Podem ajudar-te a reduir els residus de la teva producció cultural."
+      ],
+      "es": [
+        "<strong>¿Necesitas materiales?</strong><br>Disponemos de materiales reutilizados para proyectos culturales.",
+        "<strong>¿Tienes materiales que ya no utilizas?</strong><br>Recuperamos maderas procedentes de exposiciones, museos y equipamientos culturales.",
+        "<strong>¿Quieres desarrollar un proyecto?</strong><br>Diseñamos soluciones de producción cultural basadas en la reutilización.",
+        "<strong>¿Eres una institución?</strong><br>Podemos ayudarte a reducir los residuos de tu producción cultural."
+      ],
+      "en": [
+        "<strong>Need materials?</strong><br>We have reused materials for cultural projects.",
+        "<strong>Have materials you no longer use?</strong><br>We recover wood from exhibitions, museums and cultural venues.",
+        "<strong>Want to develop a project?</strong><br>We design cultural production solutions based on reuse.",
+        "<strong>Are you an institution?</strong><br>We can help you reduce the waste from your cultural production."
+      ]
+    }
+  }
+}

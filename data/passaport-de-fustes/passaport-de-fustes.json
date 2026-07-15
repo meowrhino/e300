@@ -1,0 +1,31 @@
+{
+  "slug": "passaport-de-fustes",
+  "titulo": "passaport de fustes",
+  "primera_imatge": {
+    "src": "./img/segell.webp",
+    "alt": "Passaport de Fustes - Estructuras 3000"
+  },
+  "descripcion": {
+    "link": "",
+    "texto": {
+      "ca": [
+        "Passaport de Fustes és un projecte impulsat per Estructures 3000 que investiga noves formes de producció cultural basades en la reutilització, la traçabilitat dels materials i l'economia circular. Cada tauler recuperat incorpora un passaport que documenta la seva procedència, els projectes pels quals ha passat i la seva transformació al llarg del temps. D'aquesta manera, la fusta deixa de ser un residu per convertir-se en patrimoni material compartit.",
+        "<strong>Impacte 2026</strong><br>• XX kg de fusta recuperada<br>• XX projectes realitzats<br>• XX institucions participants<br>• XX taulers reutilitzats<br>• XX kg de residus evitats<br>• XX kg de CO₂ estalviats"
+      ],
+      "es": [
+        "Passaport de Fustes es un proyecto impulsado por Estructures 3000 que investiga nuevas formas de producción cultural basadas en la reutilización, la trazabilidad de los materiales y la economía circular. Cada tablero recuperado incorpora un pasaporte que documenta su procedencia, los proyectos por los que ha pasado y su transformación a lo largo del tiempo. De este modo, la madera deja de ser un residuo para convertirse en patrimonio material compartido.",
+        "<strong>Impacto 2026</strong><br>• XX kg de madera recuperada<br>• XX proyectos realizados<br>• XX instituciones participantes<br>• XX tableros reutilizados<br>• XX kg de residuos evitados<br>• XX kg de CO₂ ahorrados"
+      ],
+      "en": [
+        "Passaport de Fustes is a project driven by Estructures 3000 that explores new forms of cultural production based on reuse, material traceability and the circular economy. Each recovered board carries a passport documenting its origin, the projects it has passed through and its transformation over time. In this way, the wood stops being waste and becomes shared material heritage.",
+        "<strong>Impact 2026</strong><br>• XX kg of recovered wood<br>• XX projects completed<br>• XX participating institutions<br>• XX reused boards<br>• XX kg of waste avoided<br>• XX kg of CO₂ saved"
+      ]
+    }
+  },
+  "resumen": {
+    "ca": "Projecte de recuperació, traçabilitat i reutilització de fustes procedents d'espais culturals per allargar-ne la vida i convertir-les en patrimoni material compartit.",
+    "es": "Proyecto de recuperación, trazabilidad y reutilización de maderas procedentes de espacios culturales para alargar su vida y convertirlas en patrimonio material compartido.",
+    "en": "A project for recovering, tracing and reusing wood from cultural spaces to extend its life and turn it into shared material heritage."
+  },
+  "imatges": []
+}

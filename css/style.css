@@ -260,6 +260,35 @@ a.link-con-href:hover {
     margin: 0 0 0.35rem;
 }
 
+/* Botones CTA dentro de un servei */
+.servei-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+a.servei-cta,
+a.servei-cta.link-con-href {
+    display: inline-block;
+    padding: 0.4rem 0.9rem;
+    border: 1px solid DimGray;
+    border-radius: 999px;
+    color: DimGray;
+    font-size: 0.85rem;
+    line-height: 1.2;
+    text-decoration: none;
+    transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease;
+}
+
+a.servei-cta:hover,
+a.servei-cta.link-con-href:hover {
+    color: white;
+    background-color: black;
+    border-color: black;
+    text-decoration: none;
+}
+
 /* ============================================================================
    SECCIÓN - EQUIPAMENTS
    ============================================================================ */
