@@ -528,6 +528,44 @@
         "en": "Artist and UX/UI designer. Graduated in Arts and Design, manu creates multimedia narratives that are small, consistent and honest. His work integrates the digital and the material to explore interactions and emotions. Maintains an active presence on his <a href=\"https://meowrhino.neocities.org/\">website</a>."
       },
       "lloc_any": "El Puerto de Santa María, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Hugo Moreno Camín",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "bio": {
+        "ca": "Músic i artista, explora les possibilitats del so i l'utilitza com a matèria primera. Graduat en Belles Arts a la UB.",
+        "es": "Músico y artista, explora las posibilidades del sonido y lo utiliza como materia prima. Graduado en Bellas Artes en la UB.",
+        "en": "Musician and artist, he explores the possibilities of sound and uses it as raw material. Graduated in Fine Arts at the UB."
+      },
+      "lloc_any": "Barcelona, 2001"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Emma Calvo",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Artista gràfica. Graduada en Belles Arts i a un posterior Màster en Educació Interdisciplinària de les Arts a la Universitat de Barcelona. Interessada en les arts plàstiques i l'educació, actualment explora les arts com a eina d'intervenció en contextos educatius formals i no formals.",
+        "es": "Artista gráfica. Graduada en Bellas Artes y en un posterior Máster en Educación Interdisciplinaria de las Artes en la Universitat de Barcelona. Interesada en las artes plásticas y la educación, actualmente explora las artes como herramienta de intervención en contextos educativos formales y no formales.",
+        "en": "Graphic artist. Graduated in Fine Arts and later completed a Master's in Interdisciplinary Arts Education at the Universitat de Barcelona. Interested in the plastic arts and education, she currently explores the arts as a tool for intervention in formal and non-formal educational contexts."
+      },
+      "lloc_any": "Esplugues de Llobregat, 2003"
     }
   ],
   "estatuts_link": "estatuts.html"
