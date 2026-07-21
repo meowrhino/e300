@@ -566,6 +566,44 @@
         "en": "Graphic artist. Graduated in Fine Arts and later completed a Master's in Interdisciplinary Arts Education at the Universitat de Barcelona. Interested in the plastic arts and education, she currently explores the arts as a tool for intervention in formal and non-formal educational contexts."
       },
       "lloc_any": "Esplugues de Llobregat, 2003"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Berta Vallès",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Fotògrafa i investigadora. Graduada en Humanitats a la UPF i Màster en Antropologia: Recerca Avançada i Intervenció Social a la UAB. La seva pràctica fotogràfica explora les formes de la natura i el gest humà a través de processos analògics i experimentals.",
+        "es": "Fotógrafa e investigadora. Graduada en Humanidades en la UPF y Máster en Antropología: Investigación Avanzada e Intervención Social en la UAB. Su práctica fotográfica explora las formas de la naturaleza y el gesto humano a través de procesos analógicos y experimentales.",
+        "en": "Photographer and researcher. Graduated in Humanities at the UPF and holds a Master's in Anthropology: Advanced Research and Social Intervention at the UAB. Her photographic practice explores the forms of nature and the human gesture through analogue and experimental processes."
+      },
+      "lloc_any": "Sant Just Desvern, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Alèxia Trulls",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Alèxia Trulls és una artista i navalla multiús. La seva pràctica artística situa el públic com a activador de l'obra i, si no, n'aprofita els cossos per desenvolupar-la. Treballa entre diverses disciplines, que també combina segons el procés en què es trobi. És graduada en Belles Arts per la Universitat de Barcelona i actualment continua la seva formació en el camp de la fotografia.",
+        "es": "Alèxia Trulls es una artista y navaja multiusos. Su práctica artística sitúa al público como activador de la obra y, si no, aprovecha sus cuerpos para desarrollarla. Trabaja entre diversas disciplinas, que también combina según el proceso en el que se encuentre. Es graduada en Bellas Artes por la Universitat de Barcelona y actualmente continúa su formación en el campo de la fotografía.",
+        "en": "Alèxia Trulls is an artist and a Swiss Army knife. Her artistic practice places the audience as the activator of the work and, failing that, makes use of their bodies to develop it. She works across several disciplines, which she also combines depending on the process she is in. She graduated in Fine Arts from the Universitat de Barcelona and is currently continuing her training in the field of photography."
+      },
+      "lloc_any": ""
     }
   ],
   "estatuts_link": "estatuts.html"
