@@ -57,9 +57,9 @@ const MENU_ITEMS = [
   {
     id: 'membres',
     label: {
-      ca: 'membres',
-      es: 'miembros',
-      en: 'members'
+      ca: 'membresia',
+      es: 'membresía',
+      en: 'membership'
     }
   },
   {
