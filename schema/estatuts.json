@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/estatuts.json: els estatuts",
+  "description": "data/estatuts.json: la pàgina dels estatuts de l'associació, en cada idioma. VS Code llegeix aquest fitxer (pel \"$schema\" de dalt del JSON) per autocompletar i subratllar el que està malament; el build el fa servir per revisar.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["ca"],
+  "properties": {
+    "$schema": { "type": "string" },
+    "ca": { "$ref": "#/$defs/idioma" },
+    "es": { "$ref": "#/$defs/idioma" },
+    "en": { "$ref": "#/$defs/idioma" }
+  },
+  "$defs": {
+    "idioma": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "content_html"],
+      "properties": {
+        "title": { "type": "string", "description": "El títol." },
+        "subtitle": { "type": "string", "description": "El subtítol." },
+        "content_html": { "type": "string", "description": "El text, en HTML: <h3> per als capítols, <p> per als paràgrafs." }
+      }
+    }
+  }
+}

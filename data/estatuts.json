@@ -1,4 +1,5 @@
 {
+  "$schema": "../schema/estatuts.json",
   "ca": {
     "title": "ESTATUTS DE L’ASSOCIACIÓ ETRESMIL",
     "subtitle": "Estructures de Treballs Relacionals, Encontres Socials, Materialitats i Imaginaris Liminals",

@@ -39,7 +39,8 @@ const read = (rel) => {
 const schema = (t) => JSON.parse(readFileSync(at('schema', `${t}.json`), 'utf8'));
 const site = read('data/site.json');
 const about = read('data/about.json');
-const errors = [...validar(site, schema('site'), 'data/site.json'), ...validar(about, schema('about'), 'data/about.json')];
+const errors = [...validar(site, schema('site'), 'data/site.json'), ...validar(about, schema('about'), 'data/about.json'),
+  ...validar(read('data/estatuts.json'), schema('estatuts'), 'data/estatuts.json')];
 const entries = errors.length ? [] : entriesOf(site);
 const projects = {};
 for (const { slug } of entries) {
@@ -160,7 +161,7 @@ function projectPage(slug, visible) {
 
 rmSync(OUT, { recursive: true, force: true });
 mkdirSync(OUT, { recursive: true });
-for (const f of ['css', 'js', 'img', 'data', 'projects', '404.html', 'equipaments.html', 'equipaments_data.json'])
+for (const f of ['css', 'js', 'fonts', 'img', 'data', 'projects', '404.html', 'equipaments.html', 'equipaments_data.json'])
   if (existsSync(at(f))) cpSync(at(f), join(OUT, f), { recursive: true, filter: (x) => !x.endsWith('.DS_Store') });
 writeFileSync(join(OUT, 'proyecto.html'), readFileSync(at('proyecto.html'), 'utf8').replace(/<html lang="([^"]*)">/, '<html lang="$1" data-built>'));
 writeFileSync(join(OUT, 'index.html'), homePage());
