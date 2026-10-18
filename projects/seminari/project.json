@@ -1,0 +1,33 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "seminari d'artistes",
+  "summary": {
+    "ca": "Realització de conferències performatives entorn la pràctica artística col·lectiva a la Facultat de Belles Arts. Durant els seminaris es qüestionen temes d'individualització del sector artístic i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística.",
+    "es": "Realización de conferencias performativas en torno a la práctica artística colectiva en la Facultad de Bellas Artes. Durante los seminarios se cuestionan temas de individualización del sector artístico y se presentan diferentes maneras de hacer, organizarse y concebir la práctica artística.",
+    "en": "Performance conferences around collective artistic practice at the Faculty of Fine Arts. During the seminars, issues of individualization of the artistic sector are questioned and different ways of doing, organizing and conceiving artistic practice are presented."
+  },
+  "text": {
+    "ca": [
+      "Realització de conferències performatives entorn la pràctica artística col·lectiva a la Facultat de Belles Arts. Durant els seminaris es qüestionen temes d'individualització del sector artístic i es presenten diferents maneres de fer, organitzar-se i concebre la pràctica artística."
+    ],
+    "es": [
+      "Realización de conferencias performativas en torno a la práctica artística colectiva en la Facultad de Bellas Artes. Durante los seminarios se cuestionan temas de individualización del sector artístico y se presentan diferentes maneras de hacer, organizarse y concebir la práctica artística."
+    ],
+    "en": [
+      "Performance conferences around collective artistic practice at the Faculty of Fine Arts. During the seminars, issues of individualization of the artistic sector are questioned and different ways of doing, organizing and conceiving artistic practice are presented."
+    ]
+  },
+  "image": {
+    "src": "01.webp",
+    "alt": "Seminari d'artistes - Estructuras 3000"
+  },
+  "photos": [
+    "02.webp",
+    "03.webp",
+    "04.webp",
+    "05.webp",
+    "06.webp",
+    "07.webp"
+  ],
+  "thumbnail": "seminari.webp"
+}

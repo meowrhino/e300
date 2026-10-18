@@ -1,0 +1,37 @@
+{
+  "$schema": "../schema/site.json",
+  "title": "e3000",
+  "url": "https://estructuras3000.com",
+  "description": {
+    "ca": "Estructuras 3000: Asociació sense ànim de lucre per la col·lectivització de l'art i la cultura a Catalunya.",
+    "es": "Estructuras 3000: Asociación sin ánimo de lucro para la colectivización del arte y la cultura en Cataluña",
+    "en": "Estructuras 3000: Non-profit association for the collectivization of art and culture in Catalonia"
+  },
+  "keywords": "Estructuras 3000, art col·lectiu, cultura catalana, pràctiques col·laboratives, associacions culturals",
+  "lists": {
+    "home": {
+      "projects": [
+        "judici",
+        "escola3000",
+        "peepshow",
+        "seminari",
+        "conferencies",
+        "thereis",
+        "sant-josep",
+        "detectiu3000",
+        "llisto-tauler",
+        "flama-no-crema",
+        "poder-sobre-poder",
+        "caixa",
+        {
+          "project": "col-labora",
+          "visible": false
+        },
+        {
+          "project": "passaport-de-fustes",
+          "visible": false
+        }
+      ]
+    }
+  }
+}

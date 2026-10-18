@@ -1,0 +1,468 @@
+{
+  "$schema": "../schema/about.json",
+  "description": {
+    "ca": [
+      "<strong>Estructuras 3000</strong> és un col·lectiu artístic en forma d’associació sense ànim de lucre que té com a objectiu <strong>realitzar, vetllar i divulgar les pràctiques col·lectives i col·laboratives en el context artístic i cultural català.</strong> L'acció de l'entitat vol donar resposta a les dinàmiques habituals cap a un individualisme que atempta contra l'organització del col·lectiu artístic i l'accés democràtics als drets culturals, és per això que l'associació vetlla per la producció d'infraestructures, investigacions, tallers i accions en institucions del territori català per la col·lectivització del sector i les pràctiques artístiques.",
+      "El local d’Estructuras 3000 és un <strong>espai col·laboratiu amb tallers comunitaris</strong> dedicats a la creació, l’experimentació i la producció. Cada taller compta amb una persona responsable membre de l’associació i els materials amb una selecció d’ús compartit. L’ús dels espais es basa en la <strong>cura col·lectiva, l’autogestió i el respecte pel treball comú.</strong>",
+      "Estructuras 3000 treballa per generar oportunitats per a altres col·lectius, contribuir a la defensa d'una remuneració justa, els drets culturals i a la professionalització de les pràctiques col·lectives contemporànies."
+    ],
+    "es": [
+      "<strong>Estructuras 3000</strong> es un colectivo artístico en forma de asociación sin ánimo de lucro que tiene como objetivo <strong>realizar, velar y divulgar las prácticas colectivas y colaborativas en el contexto artístico y cultural catalán.</strong> La acción de la entidad quiere dar respuesta a las dinámicas habituales hacia un individualismo que atenta contra la organización del colectivo artístico y el acceso democrático a los derechos culturales, por eso la asociación vela por la producción de infraestructuras, investigaciones, talleres y acciones en instituciones del territorio catalán para la colectivización del sector y las prácticas artísticas.",
+      "El local de Estructuras 3000 es un <strong>espacio colaborativo con talleres comunitarios</strong> dedicados a la creación, experimentación y producción. Cada taller cuenta con una persona responsable miembro de la asociación y los materiales con una selección de uso compartido. El funcionamiento se basa en el <strong>cuidado colectivo, la autogestión y el respeto por el trabajo común.</strong>",
+      "Estructuras 3000 trabaja para generar oportunidades para otros colectivos, contribuir a la defensa de una remuneración justa, los derechos culturales y a la profesionalización de las prácticas colectivas contemporáneas."
+    ],
+    "en": [
+      "<strong>Estructuras 3000</strong> is an artistic collective organized as a non-profit association whose aim is to <strong>carry out, safeguard, and disseminate collective and collaborative practices in the Catalan artistic and cultural context.</strong> The entity's action seeks to respond to the usual dynamics toward individualism that threaten the organization of the artistic collective and democratic access to cultural rights; this is why the association promotes the production of infrastructures, research, workshops, and actions in institutions across Catalonia for the collectivization of the sector and artistic practices.",
+      "The Estructuras 3000 space is a <strong>collaborative space with shared workshops</strong> dedicated to creation, experimentation, and production. Each workshop has a designated member of the association, and materials are shared accordingly. The space operates through <strong>collective care, self-management, and respect for shared work.</strong>",
+      "Estructuras 3000 works to generate opportunities for other collectives, contribute to the defense of fair remuneration, cultural rights and the professionalization of contemporary collective practices."
+    ]
+  },
+  "services": {
+    "ca": [
+      {
+        "title": "FONS INFRAESTRUCTURES: Arxiu de pràctiques artístiques en col·lectivitat i col·laboratives de Catalunya.",
+        "content": [
+          "Què és INFRAESTRUCTURES? És un fons documental i bibliogràfic sobre pràctiques d’organització col·lectiva i creació artística col·laborativa a Catalunya.",
+          "El fons està constituït per un conjunt coherent i especialitzat de textos, documents, llibres, fanzins, publicacions independents i materials autoeditats, així com documentació complementària vinculada a propostes catalanes d’organització col·lectiva, autoorganització cultural i pràctiques artístiques col·laboratives.",
+          "La finalitat del fons és preservar la memòria de les pràctiques col·lectives i artístiques contemporànies de Catalunya, facilitar la recerca i la divulgació cultural i garantir la transmissió de coneixement productiu de col·lectivitat.",
+          "<a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?gid=0#gid=0\">Link al catàleg digital del fons</a>.",
+          "Aquest fons bibliogràfic està supervisat sota la cura d'una arxivera."
+        ]
+      },
+      {
+        "title": "PASSAPORT DE FUSTES: Sistema cooperatiu de reutilització d'infraestructures culturals",
+        "content": [
+          "Transformem materials descartats en infraestructures culturals amb memòria. Recuperem, documentem i reactivem fustes procedents de museus, centres d'art, festivals i espais culturals perquè continuïn generant cultura en lloc de convertir-se en residus.",
+          "<span class=\"servei-cta-row\"><a class=\"servei-cta\" href=\"proyecto.html?slug=passaport-de-fustes&amp;lang=ca\">Descobreix el projecte</a><a class=\"servei-cta\" href=\"proyecto.html?slug=col-labora&amp;lang=ca\">Vols col·laborar?</a></span>"
+        ]
+      },
+      {
+        "title": "RESIDÈNCIA COL·LECTIUS: Residència artística de mitja-llarga durada per a col·lectius artístics.",
+        "content": [
+          "Què és la residència de col·lectius? La residència artística per a col·lectius d’Estructuras 3000 és un programa de creació i recerca adreçat a col·lectius que treballen des de pràctiques col·laboratives, experimentals i crítiques. Amb una durada de vuit mesos, ofereix accés a tallers especialitzats, fons bibliogràfic, espais de convivència i assessorament tècnic, fomentant processos compartits que connecten producció material, pensament crític, sostenibilitat i territori. El programa impulsa metodologies no jeràrquiques i genera un arxiu públic dels processos desenvolupats, reforçant les xarxes col·lectives dins el context de les arts visuals a Catalunya."
+        ]
+      },
+      {
+        "title": "MEMBRESIA AMISTAT: Quota anual per donar suport al col·lectiu que inclou una peça artística cada any.",
+        "content": [
+          "Què és MEMBRESIA AMISTAT? A Estructuras 3000 activem una nova quota de membresia pensada per donar suport directe a la nostra feina activista en la promoció i reproducció d’un model alternatiu de producció, basat en les pràctiques artístiques col·lectives.",
+          "Fer-te membre és apostar per:",
+          "- La promoció de les pràctiques col·lectives i col·laboratives.",
+          "- Col·laborar en l’ampliació i manteniment del Fons Infraestructures.",
+          "- Vetllar per la sostenibilitat cultural.",
+          "La membresia (40 € l’any) inclou:",
+          "- Accés al Fons Infraestructures: arxiu de pràctiques artístiques en col·lectivitat i col·laboratives de Catalunya.",
+          "- Un descompte en el lloguer de material del Passaport de Fustes.",
+          "- Una peça artística produïda per la comunitat d’Estructuras 3000.",
+          "Escriu-nos per fer-te amic/amiga a <a href=\"mailto:estructuras3000info@gmail.com?subject=membresia%20amistat\">estructuras3000info@gmail.com</a>.",
+          "Gràcies per sostenir el que és col·lectiu."
+        ]
+      }
+    ],
+    "es": [
+      {
+        "title": "FONS INFRAESTRUCTURES: Archivo de prácticas artísticas colectivas y colaborativas de Cataluña.",
+        "content": [
+          "¿Qué es INFRAESTRUCTURES? Es un fondo documental y bibliográfico sobre prácticas de organización colectiva y creación artística colaborativa en Cataluña.",
+          "El fondo está constituido por un conjunto coherente y especializado de textos, documentos, libros, fanzines, publicaciones independientes y materiales autoeditados, así como documentación complementaria vinculada a propuestas catalanas de organización colectiva, autoorganización cultural y prácticas artísticas colaborativas.",
+          "La finalidad del fondo es preservar la memoria de las prácticas colectivas y artísticas contemporáneas de Cataluña, facilitar la investigación y la divulgación cultural y garantizar la transmisión de conocimiento productivo de la colectividad.",
+          "<a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?gid=0#gid=0\">Enlace al catálogo digital del fondo</a>.",
+          "Este fondo bibliográfico está supervisado bajo el cuidado de una archivera."
+        ]
+      },
+      {
+        "title": "PASSAPORT DE FUSTES: Sistema cooperativo de reutilización de infraestructuras culturales",
+        "content": [
+          "Transformamos materiales descartados en infraestructuras culturales con memoria. Recuperamos, documentamos y reactivamos maderas procedentes de museos, centros de arte, festivales y espacios culturales para que sigan generando cultura en lugar de convertirse en residuos.",
+          "<span class=\"servei-cta-row\"><a class=\"servei-cta\" href=\"proyecto.html?slug=passaport-de-fustes&amp;lang=es\">Descubre el proyecto</a><a class=\"servei-cta\" href=\"proyecto.html?slug=col-labora&amp;lang=es\">¿Quieres colaborar?</a></span>"
+        ]
+      },
+      {
+        "title": "RESIDENCIA COLECTIVOS: Residencia artística de media-larga duración para colectivos artísticos.",
+        "content": [
+          "¿Qué es la residencia de colectivos? La residencia artística para colectivos de Estructuras 3000 es un programa de creación e investigación dirigido a colectivos que trabajan desde prácticas colaborativas, experimentales y críticas. Con una duración de ocho meses, ofrece acceso a talleres especializados, fondo bibliográfico, espacios de convivencia y asesoramiento técnico, fomentando procesos compartidos que conectan producción material, pensamiento crítico, sostenibilidad y territorio. El programa impulsa metodologías no jerárquicas y genera un archivo público de los procesos desarrollados, reforzando las redes colectivas dentro del contexto de las artes visuales en Cataluña."
+        ]
+      },
+      {
+        "title": "MEMBRESIA AMISTAT: Cuota anual para apoyar al colectivo que incluye una pieza artística cada año.",
+        "content": [
+          "¿Qué es MEMBRESIA AMISTAT? En Estructuras 3000 activamos una nueva cuota de membresía pensada para dar apoyo directo a nuestra labor activista en la promoción y reproducción de un modelo alternativo de producción, basado en las prácticas artísticas colectivas.",
+          "Hacerte miembro es apostar por:",
+          "- La promoción de las prácticas colectivas y colaborativas.",
+          "- Colaborar en la ampliación y mantenimiento del Fons Infraestructures.",
+          "- Velar por la sostenibilidad cultural.",
+          "La membresía (40 € al año) incluye:",
+          "- Acceso al Fons Infraestructures: archivo de prácticas artísticas colectivas y colaborativas de Cataluña.",
+          "- Un descuento en el alquiler de material del Passaport de Fustes.",
+          "- Una pieza artística producida por la comunidad de Estructuras 3000.",
+          "Escríbenos para hacerte amigo/amiga a <a href=\"mailto:estructuras3000info@gmail.com?subject=membresia%20amistat\">estructuras3000info@gmail.com</a>.",
+          "Gracias por sostener lo colectivo."
+        ]
+      }
+    ],
+    "en": [
+      {
+        "title": "FONS INFRAESTRUCTURES: Archive of collective and collaborative artistic practices in Catalonia.",
+        "content": [
+          "What is INFRAESTRUCTURES? It is a documentary and bibliographic fund on practices of collective organization and collaborative artistic creation in Catalonia.",
+          "The fund is made up of a coherent and specialized set of texts, documents, books, zines, independent publications, and self-published materials, as well as complementary documentation linked to Catalan proposals of collective organization, cultural self-organization, and collaborative artistic practices.",
+          "The purpose of the fund is to preserve the memory of contemporary collective and artistic practices in Catalonia, facilitate research and cultural dissemination, and guarantee the transmission of productive collective knowledge.",
+          "<a href=\"https://docs.google.com/spreadsheets/d/1Rl2r5tvw1Tzj45KfsR0lO6Dsi7_Oeg1gTWvdIFwS2WQ/edit?gid=0#gid=0\">Link to the fund's digital catalog</a>.",
+          "This bibliographic fund is supervised under the care of an archivist."
+        ]
+      },
+      {
+        "title": "PASSAPORT DE FUSTES: Cooperative system for reusing cultural infrastructures",
+        "content": [
+          "We transform discarded materials into cultural infrastructures with memory. We recover, document and reactivate wood from museums, art centres, festivals and cultural spaces so it keeps generating culture instead of becoming waste.",
+          "<span class=\"servei-cta-row\"><a class=\"servei-cta\" href=\"proyecto.html?slug=passaport-de-fustes&amp;lang=en\">Discover the project</a><a class=\"servei-cta\" href=\"proyecto.html?slug=col-labora&amp;lang=en\">Want to collaborate?</a></span>"
+        ]
+      },
+      {
+        "title": "COLLECTIVE RESIDENCY: Mid- to long-term artistic residency for artistic collectives.",
+        "content": [
+          "What is the collective residency? The artistic residency for Estructuras 3000 collectives is a creation and research program aimed at groups working from collaborative, experimental, and critical practices. Lasting eight months, it offers access to specialized workshops, a bibliographic fund, shared living spaces, and technical guidance, fostering shared processes that connect material production, critical thinking, sustainability, and territory. The program promotes non-hierarchical methodologies and generates a public archive of the processes developed, strengthening collective networks within the context of visual arts in Catalonia."
+        ]
+      },
+      {
+        "title": "MEMBRESIA AMISTAT: Annual fee to support the collective that includes an artistic piece each year.",
+        "content": [
+          "What is MEMBRESIA AMISTAT? At Estructuras 3000 we are launching a new membership fee designed to directly support our activist work in promoting and reproducing an alternative model of production based on collective artistic practices.",
+          "Becoming a member means supporting:",
+          "- The promotion of collective and collaborative practices.",
+          "- Helping expand and maintain the Fons Infraestructures.",
+          "- Ensuring cultural sustainability.",
+          "Membership (40 € per year) includes:",
+          "- Access to the Fons Infraestructures: an archive of collective and collaborative artistic practices in Catalonia.",
+          "- A discount on Passaport de Fustes material rental.",
+          "- An artistic piece produced by the Estructuras 3000 community.",
+          "Write to us to become a friend at <a href=\"mailto:estructuras3000info@gmail.com?subject=membresia%20amistat\">estructuras3000info@gmail.com</a>.",
+          "Thank you for sustaining what is collective."
+        ]
+      }
+    ]
+  },
+  "facilities": {
+    "ca": {
+      "items": [
+        {
+          "title": "Taller de fusteria",
+          "content": "Espai de treball amb dues taules i una àmplia selecció d'eines de fusteria. Disposa de consumibles compartits i està pensat per a la construcció i manipulació de fusta."
+        },
+        {
+          "title": "Taller de fotografia analògica i serigrafia",
+          "content": "Espai dividit en dues zones. La sala fosca compta amb dues ampliadores de blanc i negre i equip complet de revelatge. L'àrea de serigrafia disposa d'insoladora, pop d'impressió, escàner A3 i espai d'emmagatzematge de pantalles."
+        },
+        {
+          "title": "Espai d'electrònica",
+          "content": "Taula de treball equipada amb ordinador, eines i material per soldadura, Arduino, il·luminació i sistemes de so i vídeo."
+        },
+        {
+          "title": "Laboratori sonor",
+          "content": "Espai dedicat a l'experimentació amb el so, amb taula, taules de mescla, altaveus i cablejat. Inclou una zona de JAM amb bateria, instruments de corda, sintetitzadors i teclats."
+        },
+        {
+          "title": "Espai mixt",
+          "content": "Sala de treball gràfic i pictòric amb taula, ordinador i impressora. Disposa d'una paret d'ús lliure i llum natural."
+        },
+        {
+          "title": "Sala comuna",
+          "content": "Espai polivalent amb gran taula de treball i cuina equipada amb microones, placa d'inducció, cafetera, nevera i pica. S'utilitza segons les necessitats de l'associació i projectes col·lectius. Estructuras 3000 disposa de taulers i cavallets per configurar taules segons les necessitats, prèviament acordades en assemblea."
+        }
+      ]
+    },
+    "es": {
+      "items": [
+        {
+          "title": "Taller de carpintería",
+          "content": "Espacio con dos mesas de trabajo y una amplia selección de herramientas de carpintería. Dispone de consumibles compartidos y está orientado a la construcción y manipulación de madera."
+        },
+        {
+          "title": "Taller de fotografía analógica y serigrafía",
+          "content": "Espacio dividido en dos áreas. El cuarto oscuro cuenta con dos ampliadoras de blanco y negro y equipamiento completo de revelado. El área de serigrafía dispone de insoladora, pulpo de impresión, escáner A3 y espacio para almacenar pantallas."
+        },
+        {
+          "title": "Espacio de electrónica",
+          "content": "Mesa de trabajo con ordenador, herramientas y material para soldadura, Arduino, iluminación y sistemas de sonido y vídeo."
+        },
+        {
+          "title": "Laboratorio sonoro",
+          "content": "Espacio dedicado a la experimentación sonora con mesa, mesas de mezcla, altavoces y cableado. Incluye zona de JAM con batería, instrumentos de cuerda, sintetizadores y teclados."
+        },
+        {
+          "title": "Espacio mixto",
+          "content": "Sala para trabajo gráfico y pictórico con mesa, ordenador e impresora. Dispone de pared de uso libre y luz natural."
+        },
+        {
+          "title": "Sala común",
+          "content": "Espacio polivalente con gran mesa de trabajo y cocina equipada con microondas, placa de inducción, cafetera, nevera y fregadero. Se utiliza según las necesidades de la asociación y proyectos colectivos. Estructuras 3000 dispone de tableros y caballetes para configurar mesas según las necesidades, previo acuerdo en asamblea."
+        }
+      ]
+    },
+    "en": {
+      "items": [
+        {
+          "title": "Wood Workshop",
+          "content": "Workspace with two workbenches and a wide selection of woodworking tools. Shared consumables are available for construction and woodwork."
+        },
+        {
+          "title": "Analogue Photography and Screen Printing Workshop",
+          "content": "Divided into two areas. The darkroom includes two black-and-white enlargers and full developing equipment. The screen printing area includes an exposure unit, printing press, A3 scanner, and storage for screens."
+        },
+        {
+          "title": "Electronics Space",
+          "content": "Workbench with computer, tools, and equipment for soldering, Arduino, lighting, and audio/video systems."
+        },
+        {
+          "title": "Sound Lab",
+          "content": "Space for sound experimentation with desk, mixing consoles, speakers, and cabling. Includes a JAM area with drum kit, string instruments, synthesizers, and keyboards."
+        },
+        {
+          "title": "Mixed Space",
+          "content": "Room for graphic and pictorial work with desk, computer, and printer. Includes a free-use wall and natural light."
+        },
+        {
+          "title": "Common Room",
+          "content": "Multipurpose space with a large work table and kitchen equipped with microwave, induction cooktop, coffee maker, fridge, and sink. Used according to association needs and collective projects. Estructuras 3000 provides boards and trestles to configure tables as needed, subject to prior agreement in assembly."
+        }
+      ]
+    }
+  },
+  "contact": {
+    "email": "estructuras3000info@gmail.com",
+    "address": "C/ Pere Galvany, 28, local, 08950",
+    "maps_url": "https://www.google.com/maps?q=Pere+Galvany+28+08950"
+  },
+  "members": [
+    {
+      "carrec": {
+        "ca": "Presidència",
+        "es": "Presidencia",
+        "en": "Presidency"
+      },
+      "nom": "Joan Boix",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "bio": {
+        "ca": "Artista, docent i fuster. El seu camp d'interès són els espais i la seva formalització i alteració en relació als usuaris, espectadors i objectes. Graduat en Belles Arts a la Universitat de Barcelona, CFGS Disseny i Moblament i Màster de formació del professorat.",
+        "es": "Artista, docente y carpintero. Su campo de interés son los espacios y su formalización y alteración en relación a los usuarios, espectadores y objetos. Graduado en Bellas Artes en la Universidad de Barcelona, CFGS Diseño y Mobiliario y Máster de formación del profesorado.",
+        "en": "Artist, teacher and carpenter. His field of interest is spaces and their formalization and alteration in relation to users, spectators and objects. Graduated in Fine Arts at the University of Barcelona, CFGS Design and Furniture and Master's degree in teacher training."
+      },
+      "lloc_any": "Palamós, 1996"
+    },
+    {
+      "carrec": {
+        "ca": "Vicepresidència",
+        "es": "Vicepresidencia",
+        "en": "Vice-presidency"
+      },
+      "nom": "Bet Pahissa",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Artista i tècnica de polítiques culturals. Graduada en Global Studies per la UPF, també en Belles Arts i un posterior Màster en Disseny de Polítiques Públiques a la Universitat de Barcelona. La seva pràctica treballa entorn la participació i la democratització del sector artístic.",
+        "es": "Artista y técnica de políticas culturales. Graduada en Global Studies por la UPF, también en Bellas Artes y un posterior Máster en Diseño de Políticas Públicas en la Universidad de Barcelona. Su práctica trabaja en torno a la participación y la democratización del sector artístico.",
+        "en": "Artist and cultural policy technician. Graduated in Global Studies from UPF, also in Fine Arts and a subsequent Master's in Public Policy Design at the University of Barcelona. Her practice works around participation and democratization of the artistic sector."
+      },
+      "lloc_any": "Sant Just, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Secretariat",
+        "es": "Secretaría",
+        "en": "Secretary"
+      },
+      "nom": "Celine Lurac",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Artista gràfica i politòloga. Centrada en estudis i polítiques de gènere. Graduada a la Science Po de París i posterior màster en polítiques d'inclusió i gènere. Explora aspectes polítics que atravessen el gènere, la identitat, la violència i la feminització de les cures.",
+        "es": "Artista gráfica y politóloga. Centrada en estudios y políticas de género. Graduada en Science Po de París y posterior máster en políticas de inclusión y género. Explora aspectos políticos que atraviesan el género, la identidad, la violencia y la feminización de los cuidados.",
+        "en": "Graphic artist and political scientist. Focused on gender studies and policies. Graduated from Science Po Paris and subsequent master's degree in inclusion and gender policies. Explores political aspects that cross gender, identity, violence and the feminization of care."
+      },
+      "lloc_any": "Ciutat de Mèxic, 2000"
+    },
+    {
+      "carrec": {
+        "ca": "Tresoreria",
+        "es": "Tesorería",
+        "en": "Treasury"
+      },
+      "nom": "pepe",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "link": "https://www.youtube.com/watch?v=nkgg1W5zyNA",
+      "bio": {
+        "ca": "Recol•lector, dissenyador i artista. Treballa amb objectes. Cerca les seves possibilitats i els acompanya mitjançant arranjaments. Graduat en Belles Arts a la UB i Cultura del Disseny a Eina.",
+        "es": "Recolector, diseñador y artista. Trabaja con objetos. Busca sus posibilidades y los acompaña mediante arreglos. Graduado en Bellas Artes en la UB y Cultura del Diseño en Eina.",
+        "en": "Collector, designer and artist. Works with objects. Seeks their possibilities and accompanies them through arrangements. Graduated in Fine Arts at UB and Design Culture at Eina."
+      },
+      "lloc_any": "Barcelona, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Jordi Bretcha",
+      "pronoms": {
+        "ca": "ell/elle",
+        "es": "él/elle",
+        "en": "he/they"
+      },
+      "bio": {
+        "ca": "Artista, docent i investigador. Treballa en la producció de contextos col·lectius, burocracia alternativa i happenings. Graduat en Belles arts, Màster en Teoria de la Literatura i Literatura Comparada, i Màster en Producció i Investigació artística a la Universitat de Barcelona i Màster de formació del professorat.",
+        "es": "Artista, docente e investigador. Trabaja en la producción de contextos colectivos, burocracia alternativa y happenings. Graduado en Bellas artes, Máster en Teoría de la Literatura y Literatura Comparada, y Máster en Producción e Investigación artística en la Universidad de Barcelona y Máster de formación del profesorado.",
+        "en": "Artist, teacher and researcher. Works in the production of collective contexts, alternative bureaucracy and happenings. Graduated in Fine Arts, Master's in Theory of Literature and Comparative Literature, and Master's in Artistic Production and Research at the University of Barcelona and Master's in teacher training."
+      },
+      "lloc_any": "Esplugues de Llobregat, 1995"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Didac Humà",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "bio": {
+        "ca": "Artista i fotògraf, es centra en la imatge i el videoart experimental. Graduat en Belles Arts a la UB i posterior màster al LAV de Madrid, la seva pràctica parteix de la imatge, però s'expandeix en l'espai comú.",
+        "es": "Artista y fotógrafo, se centra en la imagen y el videoarte experimental. Graduado en Bellas Artes en la UB y posterior máster en el LAV de Madrid, su práctica parte de la imagen, pero se expande en el espacio común.",
+        "en": "Artist and photographer, focuses on image and experimental video art. Graduated in Fine Arts at UB and subsequent master's degree at LAV in Madrid, his practice starts from the image, but expands in the common space."
+      },
+      "lloc_any": "Manlleu, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Jordi Carmona i Maura",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "bio": {
+        "ca": "Fabricant, cuiner i artista. Treballa amb mètodes constructius diversos des de la pràctica col·lectiva. Interessat en els vincles que es generen entre el públic i l'artefacte a través d'activacions. Graduat en Belles Arts a la UB, Màster en Contemporary Design a l'ETSAB.",
+        "es": "Fabricante, cocinero y artista. Trabaja con métodos constructivos diversos desde la práctica colectiva. Interesado en los vínculos que se generan entre el público y el artefacto a través de activaciones. Graduado en Bellas Artes en la UB, Máster en Contemporary Design en la ETSAB.",
+        "en": "Manufacturer, cook and artist. Works with diverse construction methods from collective practice. Interested in the links that are generated between the public and the artifact through activations. Graduated in Fine Arts at UB, Master's in Contemporary Design at ETSAB."
+      },
+      "lloc_any": "Barcelona, 1998"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "manu",
+      "pronoms": {
+        "ca": "elle/ella/ell",
+        "es": "elle/ella/él",
+        "en": "they/she/he"
+      },
+      "bio": {
+        "ca": "Artista i dissenyador UX/UI. Graduat en Arts i Disseny, manu crea narratives multimèdia que són petites, consistents i honestes. La seva obra integra lo digital i lo matèric per explorar interaccions i emocions. Manté una presència activa a la seva <a href=\"https://meowrhino.neocities.org/\">web</a>.",
+        "es": "Artista y diseñador UX/UI. Graduado en Artes y Diseño, manu crea narrativas multimedia que son pequeñas, consistentes y honestas. Su obra integra lo digital y lo matérico para explorar interacciones y emociones. Mantiene una presencia activa en su <a href=\"https://meowrhino.neocities.org/\">web</a>.",
+        "en": "Artist and UX/UI designer. Graduated in Arts and Design, manu creates multimedia narratives that are small, consistent and honest. His work integrates the digital and the material to explore interactions and emotions. Maintains an active presence on his <a href=\"https://meowrhino.neocities.org/\">website</a>."
+      },
+      "lloc_any": "El Puerto de Santa María, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Hugo Moreno Camín",
+      "pronoms": {
+        "ca": "ell",
+        "es": "él",
+        "en": "he"
+      },
+      "bio": {
+        "ca": "Músic i artista, explora les possibilitats del so i l'utilitza com a matèria primera. Graduat en Belles Arts a la UB.",
+        "es": "Músico y artista, explora las posibilidades del sonido y lo utiliza como materia prima. Graduado en Bellas Artes en la UB.",
+        "en": "Musician and artist, he explores the possibilities of sound and uses it as raw material. Graduated in Fine Arts at the UB."
+      },
+      "lloc_any": "Barcelona, 2001"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Emma Calvo",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Artista gràfica. Graduada en Belles Arts i a un posterior Màster en Educació Interdisciplinària de les Arts a la Universitat de Barcelona. Interessada en les arts plàstiques i l'educació, actualment explora les arts com a eina d'intervenció en contextos educatius formals i no formals.",
+        "es": "Artista gráfica. Graduada en Bellas Artes y en un posterior Máster en Educación Interdisciplinaria de las Artes en la Universitat de Barcelona. Interesada en las artes plásticas y la educación, actualmente explora las artes como herramienta de intervención en contextos educativos formales y no formales.",
+        "en": "Graphic artist. Graduated in Fine Arts and later completed a Master's in Interdisciplinary Arts Education at the Universitat de Barcelona. Interested in the plastic arts and education, she currently explores the arts as a tool for intervention in formal and non-formal educational contexts."
+      },
+      "lloc_any": "Esplugues de Llobregat, 2003"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Berta Vallès",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Fotògrafa i investigadora. Graduada en Humanitats a la UPF i Màster en Antropologia: Recerca Avançada i Intervenció Social a la UAB. La seva pràctica fotogràfica explora les formes de la natura i el gest humà a través de processos analògics i experimentals.",
+        "es": "Fotógrafa e investigadora. Graduada en Humanidades en la UPF y Máster en Antropología: Investigación Avanzada e Intervención Social en la UAB. Su práctica fotográfica explora las formas de la naturaleza y el gesto humano a través de procesos analógicos y experimentales.",
+        "en": "Photographer and researcher. Graduated in Humanities at the UPF and holds a Master's in Anthropology: Advanced Research and Social Intervention at the UAB. Her photographic practice explores the forms of nature and the human gesture through analogue and experimental processes."
+      },
+      "lloc_any": "Sant Just Desvern, 1997"
+    },
+    {
+      "carrec": {
+        "ca": "Vocal",
+        "es": "Vocal",
+        "en": "Board Member"
+      },
+      "nom": "Alèxia Trulls",
+      "pronoms": {
+        "ca": "ella",
+        "es": "ella",
+        "en": "she"
+      },
+      "bio": {
+        "ca": "Artista i navalla multiús. La seva pràctica artística situa el públic com a activador de l'obra i, si no, n'aprofita els cossos per desenvolupar-la. Treballa entre diverses disciplines, que també combina segons el procés en què es trobi. És graduada en Belles Arts per la Universitat de Barcelona i actualment continua la seva formació en el camp de la fotografia.",
+        "es": "Artista y navaja multiusos. Su práctica artística sitúa al público como activador de la obra y, si no, aprovecha sus cuerpos para desarrollarla. Trabaja entre diversas disciplinas, que también combina según el proceso en el que se encuentre. Es graduada en Bellas Artes por la Universitat de Barcelona y actualmente continúa su formación en el campo de la fotografía.",
+        "en": "An artist and a Swiss Army knife. Her artistic practice places the audience as the activator of the work and, failing that, makes use of their bodies to develop it. She works across several disciplines, which she also combines depending on the process she is in. She graduated in Fine Arts from the Universitat de Barcelona and is currently continuing her training in the field of photography."
+      },
+      "lloc_any": "Roses, 2002"
+    }
+  ],
+  "statutesLink": "estatuts.html"
+}

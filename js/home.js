@@ -2,6 +2,7 @@
 // HOME.JS - Renderizado de la página principal
 // ============================================================================
 
+import { projectUrl as urlOfProject } from './carga.js';
 import { getCurrentLang, getTranslation } from './i18n.js';
 import { navigateWithFade } from './ui.js';
 
@@ -261,7 +262,7 @@ function renderProjectes(projectes, lang) {
       
       const projectItem = document.createElement('div');
       projectItem.className = 'project-item';
-      const projectUrl = `proyecto.html?slug=${project.slug}&lang=${lang}`;
+      const projectUrl = urlOfProject(project.slug, lang);
       projectItem.setAttribute('role', 'link');
       projectItem.setAttribute('tabindex', '0');
       projectItem.addEventListener('click', (event) => {
@@ -290,6 +291,7 @@ function renderProjectes(projectes, lang) {
       const thumbnail = project.thumbnail || '';
       const isFullPath = /^(https?:)?\/\//.test(thumbnail)
         || thumbnail.startsWith('data/')
+        || thumbnail.startsWith('projects/')
         || thumbnail.startsWith('img/')
         || thumbnail.startsWith('./')
         || thumbnail.startsWith('../');
@@ -423,7 +425,7 @@ async function renderEstatuts(lang) {
   
   try {
     // Cargar datos de estatutos
-    const response = await fetch('data/estatuts/estatuts.json');
+    const response = await fetch('data/estatuts.json');
     if (!response.ok) {
       throw new Error(`HTTP ${response.status}`);
     }

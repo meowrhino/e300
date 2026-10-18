@@ -2,6 +2,7 @@
 // MAIN.JS - Sistema principal de e3000 modernizado
 // ============================================================================
 
+import { getHome, getProject } from './carga.js';
 import { renderHome } from './home.js';
 import { renderProject } from './project.js';
 import { initLanguageSelector, getCurrentLang, getTranslation } from './i18n.js';
@@ -109,11 +110,7 @@ if (pageType === 'home') {
 async function initHome() {
   try {
     // Cargar datos del home
-    const response = await fetch('data/home.json');
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const homeData = await response.json();
+    const homeData = await getHome();
     
     // Renderizar el home
     await refreshHomeContent(homeData);
@@ -144,7 +141,8 @@ async function initProject() {
   try {
     // Obtener slug del proyecto desde la URL
     const params = new URLSearchParams(window.location.search);
-    const slug = params.get('slug');
+    // de ?slug= (la vista prèvia, i els enllaços vells) o de la pàgina /<slug>/ que escriu el build
+    const slug = params.get('slug') || window.__SLUG__;
     
     if (!slug) {
       document.body.innerHTML = '<p style="padding: 2rem;">No se especificó ningún proyecto</p>';
@@ -152,11 +150,7 @@ async function initProject() {
     }
     
     // Cargar datos del proyecto
-    const response = await fetch(`data/${slug}/${slug}.json`);
-    if (!response.ok) {
-      throw new Error(`HTTP ${response.status}`);
-    }
-    const projectData = await response.json();
+    const projectData = await getProject(slug);
     
     await refreshProjectContent(projectData);
     

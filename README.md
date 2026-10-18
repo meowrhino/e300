@@ -1,4 +1,4 @@
-# e3000 - Modernizado
+# e3000
 
 Sitio web modernizado de Estructuras 3000 con sistema de internacionalización basado en JSON.
 
@@ -12,27 +12,29 @@ Sitio web modernizado de Estructuras 3000 con sistema de internacionalización b
 
 ## Estructura del Proyecto
 
+Sigue la receta de [meowrhino/JAMstack](https://github.com/meowrhino/JAMstack) desde el
+2026-10-18 (rama `receta`). Para la asociación: [GUIA.md](GUIA.md). Si el build falla:
+[CLAUDE.md](CLAUDE.md). **Este repo es la web de verdad** (estructuras3000.com): no hay copia
+del cliente.
+
 ```
-e300-modernizado/
-├── index.html              # Página principal
-├── proyecto.html           # Plantilla para páginas de proyecto
-├── 404.html               # Página de error 404
-├── css/
-│   └── style.css          # Estilos refactorizados y organizados
-├── js/
-│   ├── main.js            # Punto de entrada de la aplicación
-│   ├── home.js            # Lógica de la página principal
-│   ├── project.js         # Lógica de las páginas de proyecto
-│   └── i18n.js            # Sistema de internacionalización
-├── data/
-│   ├── home.json          # Contenido de la página principal
-│   └── {proyecto}/        # Carpeta de cada proyecto
-│       ├── {proyecto}.json # Contenido del proyecto
-│       └── img/           # Imágenes del proyecto
-├── img/                   # Imágenes globales (logo, etc.)
-└── manus/
-    └── proceso.md         # Documentación del proceso de modernización
+data/site.json         el nombre, la descripción y "lists": los proyectos de la home (ocultos: visible: false)
+data/about.json        las secciones de la home: descripció, serveis, equipaments, contacte, membres
+data/estatuts.json     los estatutos
+projects/<slug>/       un proyecto: project.json (title, summary, text, image, photos, thumbnail…) + img/
+schema/                qué campos lleva cada JSON (VS Code, el build y la vista previa)
+index.html, proyecto.html   las plantillas, y la vista previa con Live Server
+build/build.mjs        → dist/: la home y /<slug>/ con su contenido y sus meta (hreflang con ?lang=)
+js/house.js            la forma de la casa → la de antes (home.json y data/<slug>/<slug>.json)
+js/carga.js            lee los JSON (en la vista previa, los revisa con schema/); projectUrl()
+js/validar.js          el JSON Schema sin dependencias (de JAMstack)
 ```
+
+- **El build** (`npm ci && node build/build.mjs`) escribe en `dist/` la home y una página por
+  proyecto con title, description, og:image (sharp), canonical y hreflang, y el contenido en catalán
+  dentro. `proyecto.html?slug=` sigue valiendo.
+- **Publicar**: la Action (`.github/workflows/deploy.yml`) a GitHub Pages, en el dominio. Antes de la
+  primera vez, Settings → Pages → Source: **GitHub Actions** (hoy es *legacy*: sirve `main` tal cual).
 
 ## Cómo Usar
 

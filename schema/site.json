@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/site.json: el general de la web",
+  "description": "data/site.json: el nom, la descripció per a Google i els projectes de la home, en ordre. VS Code llegeix aquest fitxer (pel \"$schema\" de dalt del JSON) per completar, explicar cada camp i subratllar el que està malament; el build i la vista prèvia el fan servir per revisar.",
+  "type": "object",
+  "required": [
+    "title",
+    "description",
+    "lists"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "_": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^https://[^/]+$",
+      "description": "El domini, sense barra al final."
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca"
+      ],
+      "description": "El que surt a Google sota el nom.",
+      "properties": {
+        "ca": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "keywords": {
+      "type": "string"
+    },
+    "lists": {
+      "type": "object",
+      "description": "Els projectes de la home, en ordre. Un d'amagat (té la seva pàgina, però no surt a la home ni a Google): { \"project\": \"nom\", \"visible\": false }",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "projects"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "projects": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                  "description": "El nom de la carpeta a projects/: minúscules, números i guions."
+                },
+                {
+                  "type": "object",
+                  "required": [
+                    "project",
+                    "visible"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "project": {
+                      "type": "string",
+                      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+                      "description": "El nom de la carpeta a projects/: minúscules, números i guions."
+                    },
+                    "visible": {
+                      "type": "boolean"
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

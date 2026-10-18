@@ -1,0 +1,29 @@
+{
+  "$schema": "../../schema/project.json",
+  "title": "conferències",
+  "summary": {
+    "ca": "Tant l'espai com els objectes que l'habiten quedan pintats de pissarra per ser l'unic support de diferents conferències al llarg de tres dies. Les condicions com assistents eren tres: no es poden enregistrar las xerrades, tothom ha de participar i no es pot esborrar allò ja escrit.",
+    "es": "Tanto el espacio como los objetos que lo habitan quedan pintados de pizarra para ser el único soporte de diferentes conferencias a lo largo de tres días. Las condiciones como asistentes eran tres: no se pueden grabar las charlas, todos deben participar y no se puede borrar lo ya escrito.",
+    "en": "Both the space and the objects that inhabit it are painted with blackboard to be the only support for different conferences over three days. The conditions as attendees were three: talks cannot be recorded, everyone must participate and what has already been written cannot be erased."
+  },
+  "text": {
+    "ca": [
+      "Tant l'espai com els objectes que l'habiten quedan pintats de pissarra per ser l'unic support de diferents conferències al llarg de tres dies. Les condicions com assistents eren tres: no es poden enregistrar las xerrades, tothom ha de participar i no es pot esborrar allò ja escrit."
+    ],
+    "es": [
+      "Tanto el espacio como los objetos que lo habitan quedan pintados de pizarra para ser el único soporte de diferentes conferencias a lo largo de tres días. Las condiciones como asistentes eran tres: no se pueden grabar las charlas, todos deben participar y no se puede borrar lo ya escrito."
+    ],
+    "en": [
+      "Both the space and the objects that inhabit it are painted with blackboard to be the only support for different conferences over three days. The conditions as attendees were three: talks cannot be recorded, everyone must participate and what has already been written cannot be erased."
+    ]
+  },
+  "image": {
+    "src": "01.webp",
+    "alt": "Conferències - Estructuras 3000"
+  },
+  "photos": [
+    "02.webp",
+    "03.webp"
+  ],
+  "thumbnail": "conferencies.webp"
+}

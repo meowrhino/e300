@@ -1,0 +1,205 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "projects/<nom>/project.json: un projecte",
+  "description": "projects/<nom>/project.json: un projecte. Les imatges, a img/ de la mateixa carpeta, pel seu nom. VS Code llegeix aquest fitxer (pel \"$schema\" de dalt del JSON) per completar, explicar cada camp i subratllar el que està malament; el build i la vista prèvia el fan servir per revisar.",
+  "type": "object",
+  "required": [
+    "title"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "_": {
+      "type": "string"
+    },
+    "title": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ca"
+          ],
+          "description": "En els tres idiomes: { \"ca\": \"…\", \"es\": \"…\", \"en\": \"…\" }",
+          "properties": {
+            "ca": {
+              "type": "string"
+            },
+            "es": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "description": "El títol: un text, o en els tres idiomes."
+    },
+    "subtitle": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ca"
+          ],
+          "description": "En els tres idiomes: { \"ca\": \"…\", \"es\": \"…\", \"en\": \"…\" }",
+          "properties": {
+            "ca": {
+              "type": "string"
+            },
+            "es": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      ],
+      "description": "Opcional: el subtítol, en cursiva."
+    },
+    "summary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca"
+      ],
+      "description": "El resum.",
+      "properties": {
+        "ca": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "text": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca"
+      ],
+      "description": "El text, una llista de paràgrafs per idioma. Pot portar <a href='…'>enllaços</a>.",
+      "properties": {
+        "ca": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "es": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "link": {
+      "type": "string",
+      "description": "Opcional: un enllaç al costat del títol."
+    },
+    "linkText": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca"
+      ],
+      "description": "Opcional: el text de l'enllaç.",
+      "properties": {
+        "ca": {
+          "type": "string"
+        },
+        "es": {
+          "type": "string"
+        },
+        "en": {
+          "type": "string"
+        }
+      }
+    },
+    "image": {
+      "type": "object",
+      "required": [
+        "src"
+      ],
+      "additionalProperties": false,
+      "description": "La primera imatge: { \"src\": \"01.webp\", \"alt\": \"…\" }",
+      "properties": {
+        "src": {
+          "type": "string"
+        },
+        "alt": {
+          "type": "string"
+        }
+      }
+    },
+    "photos": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Les imatges de img/, en ordre: [\"02.webp\", \"03.webp\"]"
+    },
+    "video": {
+      "type": "object",
+      "description": "Opcional: un vídeo (src de l'iframe, width, height)."
+    },
+    "thumbnail": {
+      "type": "string",
+      "description": "La imatge de la home, de img/."
+    },
+    "card": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Opcional: el títol o el resum de la home, si són diferents dels de la fitxa.",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "ca"
+          ],
+          "description": "El resum de la home.",
+          "properties": {
+            "ca": {
+              "type": "string"
+            },
+            "es": {
+              "type": "string"
+            },
+            "en": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "impact2026": {
+      "type": "object"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "data/about.json: les seccions de la home",
+  "description": "data/about.json: la descripció, els serveis, els equipaments, el contacte i els membres. VS Code llegeix aquest fitxer (pel \"$schema\" de dalt del JSON) per completar, explicar cada camp i subratllar el que està malament; el build i la vista prèvia el fan servir per revisar.",
+  "type": "object",
+  "required": [
+    "description",
+    "contact",
+    "members"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "_": {
+      "type": "string"
+    },
+    "description": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca"
+      ],
+      "description": "La descripció, una llista de paràgrafs per idioma.",
+      "properties": {
+        "ca": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "es": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "en": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "services": {
+      "type": "object",
+      "description": "Els serveis, per idioma."
+    },
+    "facilities": {
+      "type": "object",
+      "description": "Els equipaments, per idioma."
+    },
+    "contact": {
+      "type": "object",
+      "description": "El contacte: correu, adreça, mapa…"
+    },
+    "members": {
+      "type": "array",
+      "description": "Els membres: càrrec, nom, pronoms, bio…",
+      "items": {
+        "type": "object"
+      }
+    },
+    "statutesLink": {
+      "description": "L'enllaç als estatuts."
+    }
+  }
+}

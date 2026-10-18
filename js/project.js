@@ -120,5 +120,5 @@ function resolveProjectImagePath(slug, imgPath) {
   const isFullPath = /^(https?:)?\/\//.test(imgPath)
     || imgPath.startsWith('data/')
     || imgPath.startsWith('img/');
-  return isFullPath ? imgPath : `data/${slug}/${imgPath}`;
+  return isFullPath ? imgPath : `projects/${slug}/${imgPath}`;
 }
