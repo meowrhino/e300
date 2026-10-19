@@ -2,7 +2,7 @@
 // MAIN.JS - Sistema principal de e3000 modernizado
 // ============================================================================
 
-import { getHome, getProject } from './carga.js';
+import { getHome, getProject, homeUrl } from './carga.js';
 import { renderHome } from './home.js';
 import { renderProject } from './project.js';
 import { initLanguageSelector, getCurrentLang, getTranslation } from './i18n.js';
@@ -94,7 +94,7 @@ function updateHomeLink() {
     es: 'casa',
     en: 'home'
   }, lang);
-  homeLink.href = `index.html?lang=${lang}`;
+  homeLink.href = homeUrl(lang);
 }
 
 // Inicializar según el tipo de página

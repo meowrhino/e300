@@ -2,6 +2,7 @@
 // UI.JS - Funcionalidades de interfaz de usuario
 // ============================================================================
 
+import { homeUrl } from './carga.js';
 import { getCurrentLang } from './i18n.js';
 
 // ============================================================================
@@ -59,8 +60,7 @@ export function applyLinkStyles() {
 const ESTRUCTURAS_TEXT = 'Estructuras 3000';
 
 function getHomeHref() {
-  const lang = getCurrentLang();
-  return `index.html?lang=${lang}`;
+  return homeUrl(getCurrentLang());
 }
 
 function linkifyEstructuras() {
@@ -319,18 +319,13 @@ export function initCenteredScrolling() {
   if (isMobile) return;
 
   document.addEventListener('click', (event) => {
-    const link = event.target.closest('a[href^="#"]');
+    // Solo para links del menú (menu.js les pone data-section)
+    const link = event.target.closest('.menu-links a[data-section]');
     if (!link) return;
-    
-    // Solo para links del menú
-    if (!link.closest('.menu-links')) return;
-    
-    const href = link.getAttribute('href');
-    if (!href || href === '#') return;
     
     event.preventDefault();
     
-    const targetId = href.slice(1);
+    const targetId = link.dataset.section;
     const targetSection = document.getElementById(targetId);
     if (!targetSection) return;
     

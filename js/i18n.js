@@ -2,6 +2,8 @@
 // I18N.JS - Sistema de internacionalización
 // ============================================================================
 
+import { BUILT } from './carga.js';
+
 // Idiomas disponibles
 const AVAILABLE_LANGS = ['ca', 'es', 'en'];
 const DEFAULT_LANG = 'ca';
@@ -9,6 +11,9 @@ const DEFAULT_LANG = 'ca';
 // ============================================================================
 // OBTENER IDIOMA ACTUAL
 // ============================================================================
+// En la web construida cada idioma es una página (/, /es/, /en/) y lo dice
+// <html lang>; el ?lang= solo vale en la vista previa (Live Server), y un
+// ?lang= viejo en la web construida lo redirige el <head> antes de llegar aquí.
 export function getCurrentLang() {
   const params = new URLSearchParams(window.location.search);
   const langParam = params.get('lang');
@@ -16,6 +21,11 @@ export function getCurrentLang() {
   // Si hay parámetro lang en la URL y es válido, usarlo
   if (langParam && AVAILABLE_LANGS.includes(langParam)) {
     return langParam;
+  }
+  
+  const htmlLang = document.documentElement.lang;
+  if (AVAILABLE_LANGS.includes(htmlLang)) {
+    return htmlLang;
   }
   
   // Si no, usar el idioma por defecto
@@ -61,6 +71,10 @@ export function changeLang(newLang) {
 export function initLanguageSelector(onLanguageChange = null) {
   const container = document.querySelector('.language-links');
   if (!container) return;
+  
+  // En la web construida los enlaces ya vienen escritos por el build, cada
+  // uno a la página de ese idioma (/es/judici/): no hay nada que cambiar aquí.
+  if (BUILT) return;
   
   const currentLang = getCurrentLang();
   container.innerHTML = '';

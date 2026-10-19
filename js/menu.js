@@ -100,7 +100,8 @@ function renderMenuLinks(container) {
   
   MENU_ITEMS.forEach(item => {
     const link = document.createElement('a');
-    link.href = `#${item.id}`;
+    // con la página entera delante: en /es/ hay un <base> a la raíz, y un "#x" solo se iría a /#x
+    link.href = `${window.location.pathname}${window.location.search}#${item.id}`;
     link.textContent = getTranslation(item.label, lang);
     link.dataset.section = item.id;
     container.appendChild(link);

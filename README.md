@@ -24,15 +24,17 @@ data/estatuts.json     los estatutos
 projects/<slug>/       un proyecto: project.json (title, summary, text, image, photos, thumbnail…) + img/
 schema/                qué campos lleva cada JSON (VS Code, el build y la vista previa)
 index.html, proyecto.html   las plantillas, y la vista previa con Live Server
-build/build.mjs        → dist/: la home y /<slug>/ con su contenido y sus meta (hreflang con ?lang=)
+build/build.mjs        → dist/: la home y /<slug>/ en cada idioma (/, /es/, /en/) con su contenido y sus meta
 js/house.js            la forma de la casa → la de antes (home.json y data/<slug>/<slug>.json)
 js/carga.js            lee los JSON (en la vista previa, los revisa con schema/); projectUrl()
 js/validar.js          el JSON Schema sin dependencias (de JAMstack)
 ```
 
 - **El build** (`npm ci && node build/build.mjs`) escribe en `dist/` la home y una página por
-  proyecto con title, description, og:image (sharp), canonical y hreflang, y el contenido en catalán
-  dentro. `proyecto.html?slug=` sigue valiendo.
+  proyecto, en los tres idiomas (`/judici/`, `/es/judici/`, `/en/judici/`), cada una con title,
+  description, og:image (sharp), canonical, hreflang y el contenido en su idioma dentro. El idioma
+  sale de la ruta; `?lang=` solo vale en la vista previa, y los enlaces viejos (`/judici/?lang=es`,
+  `proyecto.html?slug=`) redirigen a la página de verdad.
 - **Publicar**: la Action (`.github/workflows/deploy.yml`) a GitHub Pages, en el dominio. Antes de la
   primera vez, Settings → Pages → Source: **GitHub Actions** (hoy es *legacy*: sirve `main` tal cual).
 

@@ -83,7 +83,8 @@ a la pantalla, i diu on.
 | el text de sota, a Google | el `summary` |
 | la imatge en compartir l'enllaç | la primera imatge (`image`); si no n'hi ha, la de la home |
 
-Hi ha una adreça per idioma: el català, sense res; `?lang=es` i `?lang=en`.
+Hi ha una adreça per idioma: el català, sense res (`estructuras3000.com/judici/`); el castellà a `/es/`
+(`estructuras3000.com/es/judici/`) i l'anglès a `/en/`.
 
 ## Si surt en vermell
 

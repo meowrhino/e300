@@ -60,9 +60,15 @@ export async function getHome() {
 // la forma de data/<slug>/<slug>.json d'abans
 export async function getProject(slug) { return projectOld(slug, await project(slug)); }
 
-// L'adreça d'un projecte: /<slug>/ a la web construïda; a la vista prèvia,
-// proyecto.html?slug=<slug>, perquè les pàgines /<slug>/ només existeixen a dist/.
+// Les adreces, relatives a l'arrel de la web (a cada pàgina construïda, <base> hi apunta):
+// a la web construïda cada idioma és una pàgina (/<slug>/, /es/<slug>/; la home, / o /es/);
+// a la vista prèvia només hi ha index.html i proyecto.html, i l'idioma va per ?lang=.
+const prefix = (lang) => (lang && lang !== 'ca' ? `${lang}/` : '');
 export function projectUrl(slug, lang) {
   if (!BUILT) return `proyecto.html?slug=${encodeURIComponent(slug)}&lang=${lang}`;
-  return `${encodeURIComponent(slug)}/${lang && lang !== 'ca' ? `?lang=${lang}` : ''}`;
+  return `${prefix(lang)}${encodeURIComponent(slug)}/`;
+}
+export function homeUrl(lang) {
+  if (!BUILT) return `index.html?lang=${lang}`;
+  return prefix(lang) || './';
 }
