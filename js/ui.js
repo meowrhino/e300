@@ -37,7 +37,7 @@ export function applyLinkStyles() {
     let isExternal = false;
 
     try {
-      const url = new URL(href, window.location.href);
+      const url = new URL(link.href);
       isExternal = url.origin !== window.location.origin;
     } catch {
       isExternal = false;
@@ -170,7 +170,7 @@ function handlePageTransitionClick(event) {
 
   let url;
   try {
-    url = new URL(href, window.location.href);
+    url = new URL(link.href);
   } catch {
     return;
   }
